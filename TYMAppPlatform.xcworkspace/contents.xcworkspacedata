@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TAPlatform/TAPlatform.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TADemo/TADemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SpeakerSim/SpeakerSim.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Subwoofer Control/Subwoofer Control.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Audio Control/Audio Control.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+
+   </FileRef>
+</Workspace>

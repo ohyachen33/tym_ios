@@ -1,0 +1,1636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4201BE941CD8466800EAF276 /* TAPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4201BE931CD8466800EAF276 /* TAPlatform.framework */; };
+		4201BE951CD8466800EAF276 /* TAPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4201BE931CD8466800EAF276 /* TAPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4201BE9C1CD8535100EAF276 /* TAPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4201BE9B1CD8535100EAF276 /* TAPlatform.framework */; };
+		4201BE9D1CD8535100EAF276 /* TAPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4201BE9B1CD8535100EAF276 /* TAPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		422FEA211C0E9A6700BD88D1 /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA1C1C0E9A6700BD88D1 /* PlotItem.m */; };
+		422FEA221C0E9A6700BD88D1 /* CurvedScatterPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA1E1C0E9A6700BD88D1 /* CurvedScatterPlot.m */; };
+		422FEA231C0E9A6700BD88D1 /* PEQPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA201C0E9A6700BD88D1 /* PEQPlot.m */; };
+		422FEA2A1C0EA0C600BD88D1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422FEA291C0EA0C600BD88D1 /* Accelerate.framework */; };
+		4237D1581C3E49D700301C0C /* ValueUpdateObservingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070581C083FE400A1401C /* ValueUpdateObservingViewController.m */; };
+		423854F61C210D4A009A8A0A /* ActionIntervalFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 423854F51C210D4A009A8A0A /* ActionIntervalFilter.m */; };
+		423855461C3A4F01009A8A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423855451C3A4F01009A8A0A /* main.m */; };
+		423855491C3A4F01009A8A0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 423855481C3A4F01009A8A0A /* AppDelegate.m */; };
+		423855521C3A4F01009A8A0A /* TV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423855501C3A4F01009A8A0A /* TV.storyboard */; };
+		423855541C3A4F01009A8A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423855531C3A4F01009A8A0A /* Assets.xcassets */; };
+		4238555F1C3A4F01009A8A0A /* Subwoofer_Control_TVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238555E1C3A4F01009A8A0A /* Subwoofer_Control_TVTests.m */; };
+		4238556A1C3A4F02009A8A0A /* Subwoofer_Control_TVUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 423855691C3A4F02009A8A0A /* Subwoofer_Control_TVUITests.m */; };
+		4238557A1C3B6EAA009A8A0A /* DiscoveryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423855791C3B6EAA009A8A0A /* DiscoveryTableViewController.m */; };
+		4238557D1C3BA450009A8A0A /* VolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238557C1C3BA450009A8A0A /* VolumeViewController.m */; };
+		4273EF391BEB096A0091DFC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF381BEB096A0091DFC1 /* main.m */; };
+		4273EF3C1BEB096A0091DFC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF3B1BEB096A0091DFC1 /* AppDelegate.m */; };
+		4273EF3F1BEB096A0091DFC1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF3E1BEB096A0091DFC1 /* MasterViewController.m */; };
+		4273EF421BEB096A0091DFC1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF411BEB096A0091DFC1 /* DetailViewController.m */; };
+		4273EF451BEB096A0091DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF431BEB096A0091DFC1 /* Main.storyboard */; };
+		4273EF471BEB096A0091DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF461BEB096A0091DFC1 /* Assets.xcassets */; };
+		4273EF4A1BEB096A0091DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF481BEB096A0091DFC1 /* LaunchScreen.storyboard */; };
+		4273EF551BEB096A0091DFC1 /* Subwoofer_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF541BEB096A0091DFC1 /* Subwoofer_ControlTests.m */; };
+		4273EF601BEB096A0091DFC1 /* Subwoofer_ControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF5F1BEB096A0091DFC1 /* Subwoofer_ControlUITests.m */; };
+		4273EF701BEB25A80091DFC1 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF6F1BEB25A80091DFC1 /* iPhone.storyboard */; };
+		4273EF741BEB274C0091DFC1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF731BEB274C0091DFC1 /* MenuViewController.m */; };
+		4273EF771BEB2DA10091DFC1 /* PannableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF761BEB2DA10091DFC1 /* PannableViewController.m */; };
+		4273EF811BEC7AEB0091DFC1 /* VolumePedalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF801BEC7AEB0091DFC1 /* VolumePedalView.m */; };
+		4273EF851BEC7FEC0091DFC1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4273EF841BEC7FEC0091DFC1 /* QuartzCore.framework */; };
+		4273EF891BEC81040091DFC1 /* PedalCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF881BEC81040091DFC1 /* PedalCaseViewController.m */; };
+		4273EF921BF0A1480091DFC1 /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF8F1BF0A1480091DFC1 /* RWKnobControl.m */; };
+		4273EF931BF0A1480091DFC1 /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF911BF0A1480091DFC1 /* RWKnobRenderer.m */; };
+		4273EF961BF0A29A0091DFC1 /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF951BF0A29A0091DFC1 /* RWRotationGestureRecognizer.m */; };
+		4273EF9D1BF19B260091DFC1 /* TUIKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF9C1BF19B260091DFC1 /* TUIKnob.m */; };
+		4273EFA01BF19E060091DFC1 /* TUIKnobDotStyleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF9F1BF19E060091DFC1 /* TUIKnobDotStyleRenderer.m */; };
+		4273EFA61BF9EC930091DFC1 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFA51BF9EC930091DFC1 /* SystemManager.m */; };
+		4273EFA91BF9ED770091DFC1 /* DocumentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFA81BF9ED770091DFC1 /* DocumentUtils.m */; };
+		4273EFAB1BF9EEDD0091DFC1 /* system.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4273EFAA1BF9EEDD0091DFC1 /* system.plist */; };
+		4273EFB31BFB16C70091DFC1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4273EFB21BFB16C70091DFC1 /* CoreBluetooth.framework */; };
+		4273EFBD1C02AFAC0091DFC1 /* PopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFBA1C02AFAC0091DFC1 /* PopTableViewController.m */; };
+		4273EFBE1C02AFAC0091DFC1 /* PopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFBC1C02AFAC0091DFC1 /* PopTableViewCell.m */; };
+		42747D221C3BC8D1002A87B9 /* TASystemSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070551C083DFC00A1401C /* TASystemSettings.m */; };
+		42747D231C3BC8D1002A87B9 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFA51BF9EC930091DFC1 /* SystemManager.m */; };
+		42747D261C3BCC99002A87B9 /* DocumentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFA81BF9ED770091DFC1 /* DocumentUtils.m */; };
+		42747D271C3CF873002A87B9 /* system.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4273EFAA1BF9EEDD0091DFC1 /* system.plist */; };
+		42C5BCC81C4C891C0075ECCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF3B1BEB096A0091DFC1 /* AppDelegate.m */; };
+		42C5BCC91C4C891C0075ECCF /* PedalCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF881BEC81040091DFC1 /* PedalCaseViewController.m */; };
+		42C5BCCA1C4C891C0075ECCF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF3E1BEB096A0091DFC1 /* MasterViewController.m */; };
+		42C5BCCB1C4C891C0075ECCF /* PhasePedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0705F1C0956AC00A1401C /* PhasePedalViewController.m */; };
+		42C5BCCC1C4C891C0075ECCF /* ThemeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070621C095A7600A1401C /* ThemeUtils.m */; };
+		42C5BCCD1C4C891C0075ECCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF381BEB096A0091DFC1 /* main.m */; };
+		42C5BCCE1C4C891C0075ECCF /* DocumentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFA81BF9ED770091DFC1 /* DocumentUtils.m */; };
+		42C5BCCF1C4C891C0075ECCF /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFA51BF9EC930091DFC1 /* SystemManager.m */; };
+		42C5BCD01C4C891C0075ECCF /* TUIKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF9C1BF19B260091DFC1 /* TUIKnob.m */; };
+		42C5BCD11C4C891C0075ECCF /* PEQPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA201C0E9A6700BD88D1 /* PEQPlot.m */; };
+		42C5BCD21C4C891C0075ECCF /* VolumePedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070471C06B0D400A1401C /* VolumePedalViewController.m */; };
+		42C5BCD31C4C891C0075ECCF /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF951BF0A29A0091DFC1 /* RWRotationGestureRecognizer.m */; };
+		42C5BCD41C4C891C0075ECCF /* UnitLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0704A1C06BE6B00A1401C /* UnitLabel.m */; };
+		42C5BCD51C4C891C0075ECCF /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF8F1BF0A1480091DFC1 /* RWKnobControl.m */; };
+		42C5BCD61C4C891C0075ECCF /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA1C1C0E9A6700BD88D1 /* PlotItem.m */; };
+		42C5BCD71C4C891C0075ECCF /* PopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFBA1C02AFAC0091DFC1 /* PopTableViewController.m */; };
+		42C5BCD81C4C891C0075ECCF /* LowPassFilterPedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0705B1C0849C800A1401C /* LowPassFilterPedalViewController.m */; };
+		42C5BCD91C4C891C0075ECCF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF411BEB096A0091DFC1 /* DetailViewController.m */; };
+		42C5BCDA1C4C891C0075ECCF /* ParametricEQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070771C0D715900A1401C /* ParametricEQViewController.m */; };
+		42C5BCDB1C4C891C0075ECCF /* VolumePedalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF801BEC7AEB0091DFC1 /* VolumePedalView.m */; };
+		42C5BCDC1C4C891C0075ECCF /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF731BEB274C0091DFC1 /* MenuViewController.m */; };
+		42C5BCDD1C4C891C0075ECCF /* PannableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF761BEB2DA10091DFC1 /* PannableViewController.m */; };
+		42C5BCDE1C4C891C0075ECCF /* PopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFBC1C02AFAC0091DFC1 /* PopTableViewCell.m */; };
+		42C5BCDF1C4C891C0075ECCF /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF911BF0A1480091DFC1 /* RWKnobRenderer.m */; };
+		42C5BCE01C4C891C0075ECCF /* ActionIntervalFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 423854F51C210D4A009A8A0A /* ActionIntervalFilter.m */; };
+		42C5BCE11C4C891C0075ECCF /* TUIKnobDotStyleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EF9F1BF19E060091DFC1 /* TUIKnobDotStyleRenderer.m */; };
+		42C5BCE21C4C891C0075ECCF /* RGCPedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070681C0968F300A1401C /* RGCPedalViewController.m */; };
+		42C5BCE31C4C891C0075ECCF /* ValueUpdateObservingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070581C083FE400A1401C /* ValueUpdateObservingViewController.m */; };
+		42C5BCE41C4C891C0075ECCF /* PolarityPedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070651C09623900A1401C /* PolarityPedalViewController.m */; };
+		42C5BCE51C4C891C0075ECCF /* TASystemSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070551C083DFC00A1401C /* TASystemSettings.m */; };
+		42C5BCE61C4C891C0075ECCF /* CurvedScatterPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 422FEA1E1C0E9A6700BD88D1 /* CurvedScatterPlot.m */; };
+		42C5BCE71C4C891C0075ECCF /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D9FE731C113E91002431B4 /* AboutViewController.m */; };
+		42C5BCE81C4C891C0075ECCF /* IntervalSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0704D1C06D73000A1401C /* IntervalSlider.m */; };
+		42C5BCE91C4C891C0075ECCF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0706B1C0C243B00A1401C /* SettingsViewController.m */; };
+		42C5BCEC1C4C891C0075ECCF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422FEA291C0EA0C600BD88D1 /* Accelerate.framework */; };
+		42C5BCEE1C4C891C0075ECCF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4273EFB21BFB16C70091DFC1 /* CoreBluetooth.framework */; };
+		42C5BCEF1C4C891C0075ECCF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4273EF841BEC7FEC0091DFC1 /* QuartzCore.framework */; };
+		42C5BCF11C4C891C0075ECCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF481BEB096A0091DFC1 /* LaunchScreen.storyboard */; };
+		42C5BCF21C4C891C0075ECCF /* system.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4273EFAA1BF9EEDD0091DFC1 /* system.plist */; };
+		42C5BCF31C4C891C0075ECCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF461BEB096A0091DFC1 /* Assets.xcassets */; };
+		42C5BCF41C4C891C0075ECCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF431BEB096A0091DFC1 /* Main.storyboard */; };
+		42C5BCF51C4C891C0075ECCF /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4273EF6F1BEB25A80091DFC1 /* iPhone.storyboard */; };
+		42F070481C06B0D400A1401C /* VolumePedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070471C06B0D400A1401C /* VolumePedalViewController.m */; };
+		42F0704B1C06BE6B00A1401C /* UnitLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0704A1C06BE6B00A1401C /* UnitLabel.m */; };
+		42F0704E1C06D73000A1401C /* IntervalSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0704D1C06D73000A1401C /* IntervalSlider.m */; };
+		42F070561C083DFC00A1401C /* TASystemSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070551C083DFC00A1401C /* TASystemSettings.m */; };
+		42F070591C083FE400A1401C /* ValueUpdateObservingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070581C083FE400A1401C /* ValueUpdateObservingViewController.m */; };
+		42F0705C1C0849C800A1401C /* LowPassFilterPedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0705B1C0849C800A1401C /* LowPassFilterPedalViewController.m */; };
+		42F070601C0956AC00A1401C /* PhasePedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0705F1C0956AC00A1401C /* PhasePedalViewController.m */; };
+		42F070631C095A7600A1401C /* ThemeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070621C095A7600A1401C /* ThemeUtils.m */; };
+		42F070661C09623900A1401C /* PolarityPedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070651C09623900A1401C /* PolarityPedalViewController.m */; };
+		42F070691C0968F300A1401C /* RGCPedalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070681C0968F300A1401C /* RGCPedalViewController.m */; };
+		42F0706C1C0C243B00A1401C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0706B1C0C243B00A1401C /* SettingsViewController.m */; };
+		42F070781C0D715900A1401C /* ParametricEQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070771C0D715900A1401C /* ParametricEQViewController.m */; };
+		CE1B9D051E10B740007CAA15 /* OTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1DC40B1E013B8C00B66CAC /* OTAViewController.m */; };
+		CE1B9D071E10BA6F007CAA15 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D9FE731C113E91002431B4 /* AboutViewController.m */; };
+		CE508F451DB8ADFB00765BD6 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE508F3C1DB8ADEB00765BD6 /* libCorePlot-CocoaTouch.a */; };
+		CE654BBE1D1D13990092A510 /* PolarityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE654BBD1D1D13990092A510 /* PolarityViewController.m */; };
+		CE75CEAC1CDB4D99006A6ED1 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75CEAB1CDB4D99006A6ED1 /* SettingTableViewController.m */; };
+		CE9CBB1A1E10B4940049BEB0 /* OTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1DC40B1E013B8C00B66CAC /* OTAViewController.m */; };
+		CEB392F11CE1B75900E20029 /* LowPassFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB392F01CE1B75900E20029 /* LowPassFilterViewController.m */; };
+		CEC147D71E8CE79900129488 /* SVS_PB3000_hwES_swv1.0.4_Application_release_20170324.hex in Resources */ = {isa = PBXBuildFile; fileRef = CEC147D61E8CE79900129488 /* SVS_PB3000_hwES_swv1.0.4_Application_release_20170324.hex */; };
+		CECB7FB51D0FD9B100EFD6DE /* DiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CECB7FB31D0FD9B100EFD6DE /* DiscoverTableViewCell.m */; };
+		CECB7FB61D0FD9B100EFD6DE /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECB7FB41D0FD9B100EFD6DE /* DiscoverTableViewCell.xib */; };
+		CECE443C1D3F289600A9B1FB /* TAPlatformTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECE443B1D3F289600A9B1FB /* TAPlatformTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CECE443D1D3F28A600A9B1FB /* TAPlatformTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE443B1D3F289600A9B1FB /* TAPlatformTV.framework */; };
+		CEDC44D51E7813140093DA0D /* SVS_PB16_Ultra_hwDVT_swv6.0.3_Application_release_20170315.hex in Resources */ = {isa = PBXBuildFile; fileRef = CEDC44D41E7813140093DA0D /* SVS_PB16_Ultra_hwDVT_swv6.0.3_Application_release_20170315.hex */; };
+		CEFD6A6B1CE30F89000B4C1E /* PhaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD6A6A1CE30F89000B4C1E /* PhaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4238555B1C3A4F01009A8A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4273EF2C1BEB096A0091DFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423855411C3A4F01009A8A0A;
+			remoteInfo = "Subwoofer Control TV";
+		};
+		423855661C3A4F02009A8A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4273EF2C1BEB096A0091DFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423855411C3A4F01009A8A0A;
+			remoteInfo = "Subwoofer Control TV";
+		};
+		4273EF511BEB096A0091DFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4273EF2C1BEB096A0091DFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4273EF331BEB096A0091DFC1;
+			remoteInfo = "Subwoofer Control";
+		};
+		4273EF5C1BEB096A0091DFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4273EF2C1BEB096A0091DFC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4273EF331BEB096A0091DFC1;
+			remoteInfo = "Subwoofer Control";
+		};
+		CE508F331DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = "CorePlot Mac";
+		};
+		CE508F351DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = "UnitTests Mac";
+		};
+		CE508F371DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09781A46185200D45436;
+			remoteInfo = "CorePlot iOS";
+		};
+		CE508F391DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09821A46185300D45436;
+			remoteInfo = "UnitTests iOS";
+		};
+		CE508F3B1DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09BA1A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		CE508F3D1DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09C41A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouchTests";
+		};
+		CE508F3F1DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6921BC83F2A0091C8F7;
+			remoteInfo = "CorePlot tvOS";
+		};
+		CE508F411DB8ADEB00765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6B71BC83F2D0091C8F7;
+			remoteInfo = "UnitTests tvOS";
+		};
+		CE508F431DB8ADF300765BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C38A09B91A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4201BE961CD8466800EAF276 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4201BE951CD8466800EAF276 /* TAPlatform.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423856831C3BC592009A8A0A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CECE443C1D3F289600A9B1FB /* TAPlatformTV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5BD001C4C89590075ECCF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4201BE9D1CD8535100EAF276 /* TAPlatform.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4201BE931CD8466800EAF276 /* TAPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAPlatform.framework; path = ../Frameworks/TAPlatform/TAPlatform.framework; sourceTree = "<group>"; };
+		4201BE9B1CD8535100EAF276 /* TAPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAPlatform.framework; path = ../Frameworks/TAPlatform/TAPlatform.framework; sourceTree = "<group>"; };
+		422FEA1B1C0E9A6700BD88D1 /* PlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
+		422FEA1C1C0E9A6700BD88D1 /* PlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
+		422FEA1D1C0E9A6700BD88D1 /* CurvedScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvedScatterPlot.h; sourceTree = "<group>"; };
+		422FEA1E1C0E9A6700BD88D1 /* CurvedScatterPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedScatterPlot.m; sourceTree = "<group>"; };
+		422FEA1F1C0E9A6700BD88D1 /* PEQPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEQPlot.h; sourceTree = "<group>"; };
+		422FEA201C0E9A6700BD88D1 /* PEQPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEQPlot.m; sourceTree = "<group>"; };
+		422FEA291C0EA0C600BD88D1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		423854F41C210D4A009A8A0A /* ActionIntervalFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionIntervalFilter.h; sourceTree = "<group>"; };
+		423854F51C210D4A009A8A0A /* ActionIntervalFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionIntervalFilter.m; sourceTree = "<group>"; };
+		423855421C3A4F01009A8A0A /* Subwoofer Control TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Subwoofer Control TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		423855451C3A4F01009A8A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		423855471C3A4F01009A8A0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		423855481C3A4F01009A8A0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		423855511C3A4F01009A8A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TV.storyboard; sourceTree = "<group>"; };
+		423855531C3A4F01009A8A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		423855551C3A4F01009A8A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4238555A1C3A4F01009A8A0A /* Subwoofer Control TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subwoofer Control TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4238555E1C3A4F01009A8A0A /* Subwoofer_Control_TVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subwoofer_Control_TVTests.m; sourceTree = "<group>"; };
+		423855601C3A4F01009A8A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423855651C3A4F02009A8A0A /* Subwoofer Control TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subwoofer Control TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		423855691C3A4F02009A8A0A /* Subwoofer_Control_TVUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subwoofer_Control_TVUITests.m; sourceTree = "<group>"; };
+		4238556B1C3A4F02009A8A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423855781C3B6EAA009A8A0A /* DiscoveryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryTableViewController.h; sourceTree = "<group>"; };
+		423855791C3B6EAA009A8A0A /* DiscoveryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryTableViewController.m; sourceTree = "<group>"; };
+		4238557B1C3BA450009A8A0A /* VolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeViewController.h; sourceTree = "<group>"; };
+		4238557C1C3BA450009A8A0A /* VolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeViewController.m; sourceTree = "<group>"; };
+		4273EF341BEB096A0091DFC1 /* Subwoofer Control Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Subwoofer Control Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4273EF381BEB096A0091DFC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4273EF3A1BEB096A0091DFC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4273EF3B1BEB096A0091DFC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4273EF3D1BEB096A0091DFC1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		4273EF3E1BEB096A0091DFC1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		4273EF401BEB096A0091DFC1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4273EF411BEB096A0091DFC1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4273EF441BEB096A0091DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4273EF461BEB096A0091DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4273EF491BEB096A0091DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4273EF4B1BEB096A0091DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4273EF501BEB096A0091DFC1 /* Subwoofer ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subwoofer ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4273EF541BEB096A0091DFC1 /* Subwoofer_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subwoofer_ControlTests.m; sourceTree = "<group>"; };
+		4273EF561BEB096A0091DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4273EF5B1BEB096A0091DFC1 /* Subwoofer ControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subwoofer ControlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4273EF5F1BEB096A0091DFC1 /* Subwoofer_ControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subwoofer_ControlUITests.m; sourceTree = "<group>"; };
+		4273EF611BEB096A0091DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4273EF6F1BEB25A80091DFC1 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		4273EF721BEB274C0091DFC1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		4273EF731BEB274C0091DFC1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		4273EF751BEB2DA10091DFC1 /* PannableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PannableViewController.h; sourceTree = "<group>"; };
+		4273EF761BEB2DA10091DFC1 /* PannableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PannableViewController.m; sourceTree = "<group>"; };
+		4273EF7F1BEC7AEB0091DFC1 /* VolumePedalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumePedalView.h; sourceTree = "<group>"; };
+		4273EF801BEC7AEB0091DFC1 /* VolumePedalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumePedalView.m; sourceTree = "<group>"; };
+		4273EF841BEC7FEC0091DFC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4273EF871BEC81040091DFC1 /* PedalCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedalCaseViewController.h; sourceTree = "<group>"; };
+		4273EF881BEC81040091DFC1 /* PedalCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedalCaseViewController.m; sourceTree = "<group>"; };
+		4273EF8E1BF0A1480091DFC1 /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobControl.h; sourceTree = "<group>"; };
+		4273EF8F1BF0A1480091DFC1 /* RWKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobControl.m; sourceTree = "<group>"; };
+		4273EF901BF0A1480091DFC1 /* RWKnobRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobRenderer.h; sourceTree = "<group>"; };
+		4273EF911BF0A1480091DFC1 /* RWKnobRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobRenderer.m; sourceTree = "<group>"; };
+		4273EF941BF0A29A0091DFC1 /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		4273EF951BF0A29A0091DFC1 /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		4273EF9B1BF19B260091DFC1 /* TUIKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIKnob.h; sourceTree = "<group>"; };
+		4273EF9C1BF19B260091DFC1 /* TUIKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIKnob.m; sourceTree = "<group>"; };
+		4273EF9E1BF19E060091DFC1 /* TUIKnobDotStyleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIKnobDotStyleRenderer.h; sourceTree = "<group>"; };
+		4273EF9F1BF19E060091DFC1 /* TUIKnobDotStyleRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIKnobDotStyleRenderer.m; sourceTree = "<group>"; };
+		4273EFA41BF9EC930091DFC1 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
+		4273EFA51BF9EC930091DFC1 /* SystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemManager.m; sourceTree = "<group>"; };
+		4273EFA71BF9ED770091DFC1 /* DocumentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentUtils.h; sourceTree = "<group>"; };
+		4273EFA81BF9ED770091DFC1 /* DocumentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentUtils.m; sourceTree = "<group>"; };
+		4273EFAA1BF9EEDD0091DFC1 /* system.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = system.plist; sourceTree = "<group>"; };
+		4273EFB21BFB16C70091DFC1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4273EFB91C02AFAC0091DFC1 /* PopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableViewController.h; sourceTree = "<group>"; };
+		4273EFBA1C02AFAC0091DFC1 /* PopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableViewController.m; sourceTree = "<group>"; };
+		4273EFBB1C02AFAC0091DFC1 /* PopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableViewCell.h; sourceTree = "<group>"; };
+		4273EFBC1C02AFAC0091DFC1 /* PopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableViewCell.m; sourceTree = "<group>"; };
+		42C5BCFB1C4C891C0075ECCF /* Subwoofer Control Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Subwoofer Control Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C5BCFC1C4C891C0075ECCF /* Subwoofer Control copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Subwoofer Control copy-Info.plist"; path = "/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/Subwoofer Control/Subwoofer Control copy-Info.plist"; sourceTree = "<absolute>"; };
+		42D9FE721C113E91002431B4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		42D9FE731C113E91002431B4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		42F070461C06B0D400A1401C /* VolumePedalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumePedalViewController.h; sourceTree = "<group>"; };
+		42F070471C06B0D400A1401C /* VolumePedalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumePedalViewController.m; sourceTree = "<group>"; };
+		42F070491C06BE6B00A1401C /* UnitLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitLabel.h; sourceTree = "<group>"; };
+		42F0704A1C06BE6B00A1401C /* UnitLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitLabel.m; sourceTree = "<group>"; };
+		42F0704C1C06D73000A1401C /* IntervalSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalSlider.h; sourceTree = "<group>"; };
+		42F0704D1C06D73000A1401C /* IntervalSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalSlider.m; sourceTree = "<group>"; };
+		42F070541C083DFC00A1401C /* TASystemSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASystemSettings.h; sourceTree = "<group>"; };
+		42F070551C083DFC00A1401C /* TASystemSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASystemSettings.m; sourceTree = "<group>"; };
+		42F070571C083FE400A1401C /* ValueUpdateObservingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueUpdateObservingViewController.h; sourceTree = "<group>"; };
+		42F070581C083FE400A1401C /* ValueUpdateObservingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueUpdateObservingViewController.m; sourceTree = "<group>"; };
+		42F0705A1C0849C800A1401C /* LowPassFilterPedalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassFilterPedalViewController.h; sourceTree = "<group>"; };
+		42F0705B1C0849C800A1401C /* LowPassFilterPedalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowPassFilterPedalViewController.m; sourceTree = "<group>"; };
+		42F0705E1C0956AC00A1401C /* PhasePedalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhasePedalViewController.h; sourceTree = "<group>"; };
+		42F0705F1C0956AC00A1401C /* PhasePedalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhasePedalViewController.m; sourceTree = "<group>"; };
+		42F070611C095A7600A1401C /* ThemeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeUtils.h; sourceTree = "<group>"; };
+		42F070621C095A7600A1401C /* ThemeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeUtils.m; sourceTree = "<group>"; };
+		42F070641C09623900A1401C /* PolarityPedalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolarityPedalViewController.h; sourceTree = "<group>"; };
+		42F070651C09623900A1401C /* PolarityPedalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolarityPedalViewController.m; sourceTree = "<group>"; };
+		42F070671C0968F300A1401C /* RGCPedalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCPedalViewController.h; sourceTree = "<group>"; };
+		42F070681C0968F300A1401C /* RGCPedalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCPedalViewController.m; sourceTree = "<group>"; };
+		42F0706A1C0C243B00A1401C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		42F0706B1C0C243B00A1401C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		42F070761C0D715900A1401C /* ParametricEQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParametricEQViewController.h; sourceTree = "<group>"; };
+		42F070771C0D715900A1401C /* ParametricEQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParametricEQViewController.m; sourceTree = "<group>"; };
+		CE1DC40A1E013B8C00B66CAC /* OTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAViewController.h; sourceTree = "<group>"; };
+		CE1DC40B1E013B8C00B66CAC /* OTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAViewController.m; sourceTree = "<group>"; };
+		CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = "thirdparty/core-plot-master/framework/CorePlot.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		CE654BBC1D1D13990092A510 /* PolarityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolarityViewController.h; sourceTree = "<group>"; };
+		CE654BBD1D1D13990092A510 /* PolarityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolarityViewController.m; sourceTree = "<group>"; };
+		CE75CEAA1CDB4D99006A6ED1 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		CE75CEAB1CDB4D99006A6ED1 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		CEB392EF1CE1B75900E20029 /* LowPassFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassFilterViewController.h; sourceTree = "<group>"; };
+		CEB392F01CE1B75900E20029 /* LowPassFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowPassFilterViewController.m; sourceTree = "<group>"; };
+		CEC147D61E8CE79900129488 /* SVS_PB3000_hwES_swv1.0.4_Application_release_20170324.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVS_PB3000_hwES_swv1.0.4_Application_release_20170324.hex; sourceTree = "<group>"; };
+		CECB7FB21D0FD9B100EFD6DE /* DiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTableViewCell.h; sourceTree = "<group>"; };
+		CECB7FB31D0FD9B100EFD6DE /* DiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTableViewCell.m; sourceTree = "<group>"; };
+		CECB7FB41D0FD9B100EFD6DE /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverTableViewCell.xib; sourceTree = "<group>"; };
+		CECE443B1D3F289600A9B1FB /* TAPlatformTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAPlatformTV.framework; path = ../Frameworks/TAPlatformTV/TAPlatformTV.framework; sourceTree = "<group>"; };
+		CEDC44D41E7813140093DA0D /* SVS_PB16_Ultra_hwDVT_swv6.0.3_Application_release_20170315.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVS_PB16_Ultra_hwDVT_swv6.0.3_Application_release_20170315.hex; sourceTree = "<group>"; };
+		CEFD6A691CE30F89000B4C1E /* PhaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhaseViewController.h; sourceTree = "<group>"; };
+		CEFD6A6A1CE30F89000B4C1E /* PhaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhaseViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4238553F1C3A4F01009A8A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECE443D1D3F28A600A9B1FB /* TAPlatformTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423855571C3A4F01009A8A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423855621C3A4F01009A8A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF311BEB096A0091DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE508F451DB8ADFB00765BD6 /* libCorePlot-CocoaTouch.a in Frameworks */,
+				4201BE941CD8466800EAF276 /* TAPlatform.framework in Frameworks */,
+				422FEA2A1C0EA0C600BD88D1 /* Accelerate.framework in Frameworks */,
+				4273EFB31BFB16C70091DFC1 /* CoreBluetooth.framework in Frameworks */,
+				4273EF851BEC7FEC0091DFC1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF4D1BEB096A0091DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF581BEB096A0091DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5BCEA1C4C891C0075ECCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4201BE9C1CD8535100EAF276 /* TAPlatform.framework in Frameworks */,
+				42C5BCEC1C4C891C0075ECCF /* Accelerate.framework in Frameworks */,
+				42C5BCEE1C4C891C0075ECCF /* CoreBluetooth.framework in Frameworks */,
+				42C5BCEF1C4C891C0075ECCF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422FEA121C0E98D300BD88D1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		422FEA241C0E9A6B00BD88D1 /* CorePlot */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA1B1C0E9A6700BD88D1 /* PlotItem.h */,
+				422FEA1C1C0E9A6700BD88D1 /* PlotItem.m */,
+				422FEA1D1C0E9A6700BD88D1 /* CurvedScatterPlot.h */,
+				422FEA1E1C0E9A6700BD88D1 /* CurvedScatterPlot.m */,
+				422FEA1F1C0E9A6700BD88D1 /* PEQPlot.h */,
+				422FEA201C0E9A6700BD88D1 /* PEQPlot.m */,
+			);
+			name = CorePlot;
+			sourceTree = "<group>";
+		};
+		423855431C3A4F01009A8A0A /* Subwoofer Control TV */ = {
+			isa = PBXGroup;
+			children = (
+				CECB7FB91D0FD9BD00EFD6DE /* Views */,
+				423855471C3A4F01009A8A0A /* AppDelegate.h */,
+				423855481C3A4F01009A8A0A /* AppDelegate.m */,
+				423855781C3B6EAA009A8A0A /* DiscoveryTableViewController.h */,
+				423855791C3B6EAA009A8A0A /* DiscoveryTableViewController.m */,
+				4238557B1C3BA450009A8A0A /* VolumeViewController.h */,
+				4238557C1C3BA450009A8A0A /* VolumeViewController.m */,
+				CEB392EF1CE1B75900E20029 /* LowPassFilterViewController.h */,
+				CEB392F01CE1B75900E20029 /* LowPassFilterViewController.m */,
+				CEFD6A691CE30F89000B4C1E /* PhaseViewController.h */,
+				CEFD6A6A1CE30F89000B4C1E /* PhaseViewController.m */,
+				CE654BBC1D1D13990092A510 /* PolarityViewController.h */,
+				CE654BBD1D1D13990092A510 /* PolarityViewController.m */,
+				CE75CEAA1CDB4D99006A6ED1 /* SettingTableViewController.h */,
+				CE75CEAB1CDB4D99006A6ED1 /* SettingTableViewController.m */,
+				423855501C3A4F01009A8A0A /* TV.storyboard */,
+				423855531C3A4F01009A8A0A /* Assets.xcassets */,
+				423855551C3A4F01009A8A0A /* Info.plist */,
+				423855441C3A4F01009A8A0A /* Supporting Files */,
+			);
+			path = "Subwoofer Control TV";
+			sourceTree = "<group>";
+		};
+		423855441C3A4F01009A8A0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				423855451C3A4F01009A8A0A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4238555D1C3A4F01009A8A0A /* Subwoofer Control TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				4238555E1C3A4F01009A8A0A /* Subwoofer_Control_TVTests.m */,
+				423855601C3A4F01009A8A0A /* Info.plist */,
+			);
+			path = "Subwoofer Control TVTests";
+			sourceTree = "<group>";
+		};
+		423855681C3A4F02009A8A0A /* Subwoofer Control TVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				423855691C3A4F02009A8A0A /* Subwoofer_Control_TVUITests.m */,
+				4238556B1C3A4F02009A8A0A /* Info.plist */,
+			);
+			path = "Subwoofer Control TVUITests";
+			sourceTree = "<group>";
+		};
+		4273EF2B1BEB096A0091DFC1 = {
+			isa = PBXGroup;
+			children = (
+				CECE443B1D3F289600A9B1FB /* TAPlatformTV.framework */,
+				4201BE9B1CD8535100EAF276 /* TAPlatform.framework */,
+				4201BE931CD8466800EAF276 /* TAPlatform.framework */,
+				422FEA291C0EA0C600BD88D1 /* Accelerate.framework */,
+				4273EFB21BFB16C70091DFC1 /* CoreBluetooth.framework */,
+				4273EF841BEC7FEC0091DFC1 /* QuartzCore.framework */,
+				4273EF361BEB096A0091DFC1 /* Subwoofer Control */,
+				4273EF531BEB096A0091DFC1 /* Subwoofer ControlTests */,
+				4273EF5E1BEB096A0091DFC1 /* Subwoofer ControlUITests */,
+				423855431C3A4F01009A8A0A /* Subwoofer Control TV */,
+				4238555D1C3A4F01009A8A0A /* Subwoofer Control TVTests */,
+				423855681C3A4F02009A8A0A /* Subwoofer Control TVUITests */,
+				4273EF351BEB096A0091DFC1 /* Products */,
+				42C5BCFC1C4C891C0075ECCF /* Subwoofer Control copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		4273EF351BEB096A0091DFC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4273EF341BEB096A0091DFC1 /* Subwoofer Control Debug.app */,
+				4273EF501BEB096A0091DFC1 /* Subwoofer ControlTests.xctest */,
+				4273EF5B1BEB096A0091DFC1 /* Subwoofer ControlUITests.xctest */,
+				423855421C3A4F01009A8A0A /* Subwoofer Control TV.app */,
+				4238555A1C3A4F01009A8A0A /* Subwoofer Control TVTests.xctest */,
+				423855651C3A4F02009A8A0A /* Subwoofer Control TVUITests.xctest */,
+				42C5BCFB1C4C891C0075ECCF /* Subwoofer Control Release.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4273EF361BEB096A0091DFC1 /* Subwoofer Control */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA121C0E98D300BD88D1 /* ThirdParty */,
+				4273EF8D1BF0A13C0091DFC1 /* Knob */,
+				4273EF711BEB26F70091DFC1 /* iPad */,
+				4273EFB81C02AF930091DFC1 /* View */,
+				422FEA241C0E9A6B00BD88D1 /* CorePlot */,
+				4273EF3A1BEB096A0091DFC1 /* AppDelegate.h */,
+				4273EF3B1BEB096A0091DFC1 /* AppDelegate.m */,
+				42F070541C083DFC00A1401C /* TASystemSettings.h */,
+				42F070551C083DFC00A1401C /* TASystemSettings.m */,
+				4273EFA41BF9EC930091DFC1 /* SystemManager.h */,
+				4273EFA51BF9EC930091DFC1 /* SystemManager.m */,
+				423854F41C210D4A009A8A0A /* ActionIntervalFilter.h */,
+				423854F51C210D4A009A8A0A /* ActionIntervalFilter.m */,
+				42F070611C095A7600A1401C /* ThemeUtils.h */,
+				42F070621C095A7600A1401C /* ThemeUtils.m */,
+				4273EFA71BF9ED770091DFC1 /* DocumentUtils.h */,
+				4273EFA81BF9ED770091DFC1 /* DocumentUtils.m */,
+				4273EF721BEB274C0091DFC1 /* MenuViewController.h */,
+				4273EF731BEB274C0091DFC1 /* MenuViewController.m */,
+				4273EF751BEB2DA10091DFC1 /* PannableViewController.h */,
+				4273EF761BEB2DA10091DFC1 /* PannableViewController.m */,
+				4273EF871BEC81040091DFC1 /* PedalCaseViewController.h */,
+				4273EF881BEC81040091DFC1 /* PedalCaseViewController.m */,
+				42F070571C083FE400A1401C /* ValueUpdateObservingViewController.h */,
+				42F070581C083FE400A1401C /* ValueUpdateObservingViewController.m */,
+				42F070461C06B0D400A1401C /* VolumePedalViewController.h */,
+				42F070471C06B0D400A1401C /* VolumePedalViewController.m */,
+				42F0705A1C0849C800A1401C /* LowPassFilterPedalViewController.h */,
+				42F0705B1C0849C800A1401C /* LowPassFilterPedalViewController.m */,
+				42F0705E1C0956AC00A1401C /* PhasePedalViewController.h */,
+				42F0705F1C0956AC00A1401C /* PhasePedalViewController.m */,
+				42F070641C09623900A1401C /* PolarityPedalViewController.h */,
+				42F070651C09623900A1401C /* PolarityPedalViewController.m */,
+				42F070671C0968F300A1401C /* RGCPedalViewController.h */,
+				42F070681C0968F300A1401C /* RGCPedalViewController.m */,
+				42F0706A1C0C243B00A1401C /* SettingsViewController.h */,
+				42F0706B1C0C243B00A1401C /* SettingsViewController.m */,
+				42F070761C0D715900A1401C /* ParametricEQViewController.h */,
+				42F070771C0D715900A1401C /* ParametricEQViewController.m */,
+				CE1DC40A1E013B8C00B66CAC /* OTAViewController.h */,
+				CE1DC40B1E013B8C00B66CAC /* OTAViewController.m */,
+				CEDC44D41E7813140093DA0D /* SVS_PB16_Ultra_hwDVT_swv6.0.3_Application_release_20170315.hex */,
+				CEC147D61E8CE79900129488 /* SVS_PB3000_hwES_swv1.0.4_Application_release_20170324.hex */,
+				42D9FE721C113E91002431B4 /* AboutViewController.h */,
+				42D9FE731C113E91002431B4 /* AboutViewController.m */,
+				4273EF7F1BEC7AEB0091DFC1 /* VolumePedalView.h */,
+				4273EF801BEC7AEB0091DFC1 /* VolumePedalView.m */,
+				4273EF431BEB096A0091DFC1 /* Main.storyboard */,
+				4273EF6F1BEB25A80091DFC1 /* iPhone.storyboard */,
+				4273EF461BEB096A0091DFC1 /* Assets.xcassets */,
+				4273EF481BEB096A0091DFC1 /* LaunchScreen.storyboard */,
+				4273EF4B1BEB096A0091DFC1 /* Info.plist */,
+				4273EF371BEB096A0091DFC1 /* Supporting Files */,
+			);
+			path = "Subwoofer Control";
+			sourceTree = "<group>";
+		};
+		4273EF371BEB096A0091DFC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4273EFAA1BF9EEDD0091DFC1 /* system.plist */,
+				4273EF381BEB096A0091DFC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4273EF531BEB096A0091DFC1 /* Subwoofer ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				4273EF541BEB096A0091DFC1 /* Subwoofer_ControlTests.m */,
+				4273EF561BEB096A0091DFC1 /* Info.plist */,
+			);
+			path = "Subwoofer ControlTests";
+			sourceTree = "<group>";
+		};
+		4273EF5E1BEB096A0091DFC1 /* Subwoofer ControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4273EF5F1BEB096A0091DFC1 /* Subwoofer_ControlUITests.m */,
+				4273EF611BEB096A0091DFC1 /* Info.plist */,
+			);
+			path = "Subwoofer ControlUITests";
+			sourceTree = "<group>";
+		};
+		4273EF711BEB26F70091DFC1 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4273EF3D1BEB096A0091DFC1 /* MasterViewController.h */,
+				4273EF3E1BEB096A0091DFC1 /* MasterViewController.m */,
+				4273EF401BEB096A0091DFC1 /* DetailViewController.h */,
+				4273EF411BEB096A0091DFC1 /* DetailViewController.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		4273EF8D1BF0A13C0091DFC1 /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				4273EF8E1BF0A1480091DFC1 /* RWKnobControl.h */,
+				4273EF8F1BF0A1480091DFC1 /* RWKnobControl.m */,
+				4273EF901BF0A1480091DFC1 /* RWKnobRenderer.h */,
+				4273EF911BF0A1480091DFC1 /* RWKnobRenderer.m */,
+				4273EF941BF0A29A0091DFC1 /* RWRotationGestureRecognizer.h */,
+				4273EF951BF0A29A0091DFC1 /* RWRotationGestureRecognizer.m */,
+				4273EF9B1BF19B260091DFC1 /* TUIKnob.h */,
+				4273EF9C1BF19B260091DFC1 /* TUIKnob.m */,
+				4273EF9E1BF19E060091DFC1 /* TUIKnobDotStyleRenderer.h */,
+				4273EF9F1BF19E060091DFC1 /* TUIKnobDotStyleRenderer.m */,
+			);
+			name = Knob;
+			sourceTree = "<group>";
+		};
+		4273EFB81C02AF930091DFC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42F070491C06BE6B00A1401C /* UnitLabel.h */,
+				42F0704A1C06BE6B00A1401C /* UnitLabel.m */,
+				42F0704C1C06D73000A1401C /* IntervalSlider.h */,
+				42F0704D1C06D73000A1401C /* IntervalSlider.m */,
+				4273EFB91C02AFAC0091DFC1 /* PopTableViewController.h */,
+				4273EFBA1C02AFAC0091DFC1 /* PopTableViewController.m */,
+				4273EFBB1C02AFAC0091DFC1 /* PopTableViewCell.h */,
+				4273EFBC1C02AFAC0091DFC1 /* PopTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE508F241DB8ADEB00765BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE508F341DB8ADEB00765BD6 /* CorePlot.framework */,
+				CE508F361DB8ADEB00765BD6 /* UnitTests.xctest */,
+				CE508F381DB8ADEB00765BD6 /* CorePlot.framework */,
+				CE508F3A1DB8ADEB00765BD6 /* UnitTests iOS.xctest */,
+				CE508F3C1DB8ADEB00765BD6 /* libCorePlot-CocoaTouch.a */,
+				CE508F3E1DB8ADEB00765BD6 /* CorePlot-CocoaTouchTests.xctest */,
+				CE508F401DB8ADEB00765BD6 /* CorePlot.framework */,
+				CE508F421DB8ADEB00765BD6 /* UnitTests tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECB7FB91D0FD9BD00EFD6DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CECB7FB21D0FD9B100EFD6DE /* DiscoverTableViewCell.h */,
+				CECB7FB31D0FD9B100EFD6DE /* DiscoverTableViewCell.m */,
+				CECB7FB41D0FD9B100EFD6DE /* DiscoverTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		423855411C3A4F01009A8A0A /* Subwoofer Control TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4238556C1C3A4F02009A8A0A /* Build configuration list for PBXNativeTarget "Subwoofer Control TV" */;
+			buildPhases = (
+				4238553E1C3A4F01009A8A0A /* Sources */,
+				4238553F1C3A4F01009A8A0A /* Frameworks */,
+				423855401C3A4F01009A8A0A /* Resources */,
+				423856831C3BC592009A8A0A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Subwoofer Control TV";
+			productName = "Subwoofer Control TV";
+			productReference = 423855421C3A4F01009A8A0A /* Subwoofer Control TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		423855591C3A4F01009A8A0A /* Subwoofer Control TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4238556F1C3A4F02009A8A0A /* Build configuration list for PBXNativeTarget "Subwoofer Control TVTests" */;
+			buildPhases = (
+				423855561C3A4F01009A8A0A /* Sources */,
+				423855571C3A4F01009A8A0A /* Frameworks */,
+				423855581C3A4F01009A8A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4238555C1C3A4F01009A8A0A /* PBXTargetDependency */,
+			);
+			name = "Subwoofer Control TVTests";
+			productName = "Subwoofer Control TVTests";
+			productReference = 4238555A1C3A4F01009A8A0A /* Subwoofer Control TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		423855641C3A4F01009A8A0A /* Subwoofer Control TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423855721C3A4F02009A8A0A /* Build configuration list for PBXNativeTarget "Subwoofer Control TVUITests" */;
+			buildPhases = (
+				423855611C3A4F01009A8A0A /* Sources */,
+				423855621C3A4F01009A8A0A /* Frameworks */,
+				423855631C3A4F01009A8A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423855671C3A4F02009A8A0A /* PBXTargetDependency */,
+			);
+			name = "Subwoofer Control TVUITests";
+			productName = "Subwoofer Control TVUITests";
+			productReference = 423855651C3A4F02009A8A0A /* Subwoofer Control TVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4273EF331BEB096A0091DFC1 /* Subwoofer Control Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4273EF641BEB096A0091DFC1 /* Build configuration list for PBXNativeTarget "Subwoofer Control Debug" */;
+			buildPhases = (
+				4273EF301BEB096A0091DFC1 /* Sources */,
+				4273EF311BEB096A0091DFC1 /* Frameworks */,
+				4273EF321BEB096A0091DFC1 /* Resources */,
+				4201BE961CD8466800EAF276 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE508F441DB8ADF300765BD6 /* PBXTargetDependency */,
+			);
+			name = "Subwoofer Control Debug";
+			productName = "Subwoofer Control";
+			productReference = 4273EF341BEB096A0091DFC1 /* Subwoofer Control Debug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4273EF4F1BEB096A0091DFC1 /* Subwoofer ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4273EF671BEB096A0091DFC1 /* Build configuration list for PBXNativeTarget "Subwoofer ControlTests" */;
+			buildPhases = (
+				4273EF4C1BEB096A0091DFC1 /* Sources */,
+				4273EF4D1BEB096A0091DFC1 /* Frameworks */,
+				4273EF4E1BEB096A0091DFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4273EF521BEB096A0091DFC1 /* PBXTargetDependency */,
+			);
+			name = "Subwoofer ControlTests";
+			productName = "Subwoofer ControlTests";
+			productReference = 4273EF501BEB096A0091DFC1 /* Subwoofer ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4273EF5A1BEB096A0091DFC1 /* Subwoofer ControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4273EF6A1BEB096A0091DFC1 /* Build configuration list for PBXNativeTarget "Subwoofer ControlUITests" */;
+			buildPhases = (
+				4273EF571BEB096A0091DFC1 /* Sources */,
+				4273EF581BEB096A0091DFC1 /* Frameworks */,
+				4273EF591BEB096A0091DFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4273EF5D1BEB096A0091DFC1 /* PBXTargetDependency */,
+			);
+			name = "Subwoofer ControlUITests";
+			productName = "Subwoofer ControlUITests";
+			productReference = 4273EF5B1BEB096A0091DFC1 /* Subwoofer ControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		42C5BCC41C4C891C0075ECCF /* Subwoofer Control Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C5BCF81C4C891C0075ECCF /* Build configuration list for PBXNativeTarget "Subwoofer Control Release" */;
+			buildPhases = (
+				42C5BCC71C4C891C0075ECCF /* Sources */,
+				42C5BCEA1C4C891C0075ECCF /* Frameworks */,
+				42C5BCF01C4C891C0075ECCF /* Resources */,
+				42C5BD001C4C89590075ECCF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Subwoofer Control Release";
+			productName = "Subwoofer Control";
+			productReference = 42C5BCFB1C4C891C0075ECCF /* Subwoofer Control Release.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4273EF2C1BEB096A0091DFC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Tymphany;
+				TargetAttributes = {
+					423855411C3A4F01009A8A0A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8X5NY24BHS;
+					};
+					423855591C3A4F01009A8A0A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 423855411C3A4F01009A8A0A;
+					};
+					423855641C3A4F01009A8A0A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 423855411C3A4F01009A8A0A;
+					};
+					4273EF331BEB096A0091DFC1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8X5NY24BHS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					4273EF4F1BEB096A0091DFC1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4273EF331BEB096A0091DFC1;
+					};
+					4273EF5A1BEB096A0091DFC1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4273EF331BEB096A0091DFC1;
+					};
+				};
+			};
+			buildConfigurationList = 4273EF2F1BEB096A0091DFC1 /* Build configuration list for PBXProject "Subwoofer Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				English,
+			);
+			mainGroup = 4273EF2B1BEB096A0091DFC1;
+			productRefGroup = 4273EF351BEB096A0091DFC1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE508F241DB8ADEB00765BD6 /* Products */;
+					ProjectRef = CE508F231DB8ADEB00765BD6 /* CorePlot.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4273EF331BEB096A0091DFC1 /* Subwoofer Control Debug */,
+				42C5BCC41C4C891C0075ECCF /* Subwoofer Control Release */,
+				4273EF4F1BEB096A0091DFC1 /* Subwoofer ControlTests */,
+				4273EF5A1BEB096A0091DFC1 /* Subwoofer ControlUITests */,
+				423855411C3A4F01009A8A0A /* Subwoofer Control TV */,
+				423855591C3A4F01009A8A0A /* Subwoofer Control TVTests */,
+				423855641C3A4F01009A8A0A /* Subwoofer Control TVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CE508F341DB8ADEB00765BD6 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = CE508F331DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F361DB8ADEB00765BD6 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = CE508F351DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F381DB8ADEB00765BD6 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = CE508F371DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F3A1DB8ADEB00765BD6 /* UnitTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests iOS.xctest";
+			remoteRef = CE508F391DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F3C1DB8ADEB00765BD6 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = CE508F3B1DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F3E1DB8ADEB00765BD6 /* CorePlot-CocoaTouchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CorePlot-CocoaTouchTests.xctest";
+			remoteRef = CE508F3D1DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F401DB8ADEB00765BD6 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = CE508F3F1DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE508F421DB8ADEB00765BD6 /* UnitTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests tvOS.xctest";
+			remoteRef = CE508F411DB8ADEB00765BD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423855401C3A4F01009A8A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECB7FB61D0FD9B100EFD6DE /* DiscoverTableViewCell.xib in Resources */,
+				423855541C3A4F01009A8A0A /* Assets.xcassets in Resources */,
+				42747D271C3CF873002A87B9 /* system.plist in Resources */,
+				423855521C3A4F01009A8A0A /* TV.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423855581C3A4F01009A8A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423855631C3A4F01009A8A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF321BEB096A0091DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC147D71E8CE79900129488 /* SVS_PB3000_hwES_swv1.0.4_Application_release_20170324.hex in Resources */,
+				CEDC44D51E7813140093DA0D /* SVS_PB16_Ultra_hwDVT_swv6.0.3_Application_release_20170315.hex in Resources */,
+				4273EF4A1BEB096A0091DFC1 /* LaunchScreen.storyboard in Resources */,
+				4273EFAB1BF9EEDD0091DFC1 /* system.plist in Resources */,
+				4273EF471BEB096A0091DFC1 /* Assets.xcassets in Resources */,
+				4273EF451BEB096A0091DFC1 /* Main.storyboard in Resources */,
+				4273EF701BEB25A80091DFC1 /* iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF4E1BEB096A0091DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF591BEB096A0091DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5BCF01C4C891C0075ECCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C5BCF11C4C891C0075ECCF /* LaunchScreen.storyboard in Resources */,
+				42C5BCF21C4C891C0075ECCF /* system.plist in Resources */,
+				42C5BCF31C4C891C0075ECCF /* Assets.xcassets in Resources */,
+				42C5BCF41C4C891C0075ECCF /* Main.storyboard in Resources */,
+				42C5BCF51C4C891C0075ECCF /* iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4238553E1C3A4F01009A8A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECB7FB51D0FD9B100EFD6DE /* DiscoverTableViewCell.m in Sources */,
+				42747D261C3BCC99002A87B9 /* DocumentUtils.m in Sources */,
+				42747D221C3BC8D1002A87B9 /* TASystemSettings.m in Sources */,
+				42747D231C3BC8D1002A87B9 /* SystemManager.m in Sources */,
+				CEFD6A6B1CE30F89000B4C1E /* PhaseViewController.m in Sources */,
+				4238557A1C3B6EAA009A8A0A /* DiscoveryTableViewController.m in Sources */,
+				CE75CEAC1CDB4D99006A6ED1 /* SettingTableViewController.m in Sources */,
+				423855491C3A4F01009A8A0A /* AppDelegate.m in Sources */,
+				4237D1581C3E49D700301C0C /* ValueUpdateObservingViewController.m in Sources */,
+				423855461C3A4F01009A8A0A /* main.m in Sources */,
+				CEB392F11CE1B75900E20029 /* LowPassFilterViewController.m in Sources */,
+				CE654BBE1D1D13990092A510 /* PolarityViewController.m in Sources */,
+				4238557D1C3BA450009A8A0A /* VolumeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423855561C3A4F01009A8A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4238555F1C3A4F01009A8A0A /* Subwoofer_Control_TVTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423855611C3A4F01009A8A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4238556A1C3A4F02009A8A0A /* Subwoofer_Control_TVUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF301BEB096A0091DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1B9D071E10BA6F007CAA15 /* AboutViewController.m in Sources */,
+				CE1B9D051E10B740007CAA15 /* OTAViewController.m in Sources */,
+				4273EF3C1BEB096A0091DFC1 /* AppDelegate.m in Sources */,
+				4273EF891BEC81040091DFC1 /* PedalCaseViewController.m in Sources */,
+				4273EF3F1BEB096A0091DFC1 /* MasterViewController.m in Sources */,
+				42F070601C0956AC00A1401C /* PhasePedalViewController.m in Sources */,
+				42F070631C095A7600A1401C /* ThemeUtils.m in Sources */,
+				4273EF391BEB096A0091DFC1 /* main.m in Sources */,
+				4273EFA91BF9ED770091DFC1 /* DocumentUtils.m in Sources */,
+				4273EFA61BF9EC930091DFC1 /* SystemManager.m in Sources */,
+				4273EF9D1BF19B260091DFC1 /* TUIKnob.m in Sources */,
+				422FEA231C0E9A6700BD88D1 /* PEQPlot.m in Sources */,
+				42F070481C06B0D400A1401C /* VolumePedalViewController.m in Sources */,
+				4273EF961BF0A29A0091DFC1 /* RWRotationGestureRecognizer.m in Sources */,
+				42F0704B1C06BE6B00A1401C /* UnitLabel.m in Sources */,
+				4273EF921BF0A1480091DFC1 /* RWKnobControl.m in Sources */,
+				422FEA211C0E9A6700BD88D1 /* PlotItem.m in Sources */,
+				4273EFBD1C02AFAC0091DFC1 /* PopTableViewController.m in Sources */,
+				42F0705C1C0849C800A1401C /* LowPassFilterPedalViewController.m in Sources */,
+				4273EF421BEB096A0091DFC1 /* DetailViewController.m in Sources */,
+				42F070781C0D715900A1401C /* ParametricEQViewController.m in Sources */,
+				4273EF811BEC7AEB0091DFC1 /* VolumePedalView.m in Sources */,
+				4273EF741BEB274C0091DFC1 /* MenuViewController.m in Sources */,
+				4273EF771BEB2DA10091DFC1 /* PannableViewController.m in Sources */,
+				4273EFBE1C02AFAC0091DFC1 /* PopTableViewCell.m in Sources */,
+				4273EF931BF0A1480091DFC1 /* RWKnobRenderer.m in Sources */,
+				423854F61C210D4A009A8A0A /* ActionIntervalFilter.m in Sources */,
+				4273EFA01BF19E060091DFC1 /* TUIKnobDotStyleRenderer.m in Sources */,
+				42F070691C0968F300A1401C /* RGCPedalViewController.m in Sources */,
+				42F070591C083FE400A1401C /* ValueUpdateObservingViewController.m in Sources */,
+				42F070661C09623900A1401C /* PolarityPedalViewController.m in Sources */,
+				42F070561C083DFC00A1401C /* TASystemSettings.m in Sources */,
+				422FEA221C0E9A6700BD88D1 /* CurvedScatterPlot.m in Sources */,
+				42F0704E1C06D73000A1401C /* IntervalSlider.m in Sources */,
+				42F0706C1C0C243B00A1401C /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF4C1BEB096A0091DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4273EF551BEB096A0091DFC1 /* Subwoofer_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4273EF571BEB096A0091DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4273EF601BEB096A0091DFC1 /* Subwoofer_ControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C5BCC71C4C891C0075ECCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C5BCC81C4C891C0075ECCF /* AppDelegate.m in Sources */,
+				42C5BCC91C4C891C0075ECCF /* PedalCaseViewController.m in Sources */,
+				42C5BCCA1C4C891C0075ECCF /* MasterViewController.m in Sources */,
+				42C5BCCB1C4C891C0075ECCF /* PhasePedalViewController.m in Sources */,
+				42C5BCCC1C4C891C0075ECCF /* ThemeUtils.m in Sources */,
+				42C5BCCD1C4C891C0075ECCF /* main.m in Sources */,
+				42C5BCCE1C4C891C0075ECCF /* DocumentUtils.m in Sources */,
+				42C5BCCF1C4C891C0075ECCF /* SystemManager.m in Sources */,
+				42C5BCD01C4C891C0075ECCF /* TUIKnob.m in Sources */,
+				42C5BCD11C4C891C0075ECCF /* PEQPlot.m in Sources */,
+				42C5BCD21C4C891C0075ECCF /* VolumePedalViewController.m in Sources */,
+				42C5BCD31C4C891C0075ECCF /* RWRotationGestureRecognizer.m in Sources */,
+				42C5BCD41C4C891C0075ECCF /* UnitLabel.m in Sources */,
+				42C5BCD51C4C891C0075ECCF /* RWKnobControl.m in Sources */,
+				42C5BCD61C4C891C0075ECCF /* PlotItem.m in Sources */,
+				42C5BCD71C4C891C0075ECCF /* PopTableViewController.m in Sources */,
+				42C5BCD81C4C891C0075ECCF /* LowPassFilterPedalViewController.m in Sources */,
+				42C5BCD91C4C891C0075ECCF /* DetailViewController.m in Sources */,
+				42C5BCDA1C4C891C0075ECCF /* ParametricEQViewController.m in Sources */,
+				42C5BCDB1C4C891C0075ECCF /* VolumePedalView.m in Sources */,
+				42C5BCDC1C4C891C0075ECCF /* MenuViewController.m in Sources */,
+				42C5BCDD1C4C891C0075ECCF /* PannableViewController.m in Sources */,
+				42C5BCDE1C4C891C0075ECCF /* PopTableViewCell.m in Sources */,
+				42C5BCDF1C4C891C0075ECCF /* RWKnobRenderer.m in Sources */,
+				42C5BCE01C4C891C0075ECCF /* ActionIntervalFilter.m in Sources */,
+				42C5BCE11C4C891C0075ECCF /* TUIKnobDotStyleRenderer.m in Sources */,
+				42C5BCE21C4C891C0075ECCF /* RGCPedalViewController.m in Sources */,
+				42C5BCE31C4C891C0075ECCF /* ValueUpdateObservingViewController.m in Sources */,
+				42C5BCE41C4C891C0075ECCF /* PolarityPedalViewController.m in Sources */,
+				42C5BCE51C4C891C0075ECCF /* TASystemSettings.m in Sources */,
+				42C5BCE61C4C891C0075ECCF /* CurvedScatterPlot.m in Sources */,
+				42C5BCE71C4C891C0075ECCF /* AboutViewController.m in Sources */,
+				42C5BCE81C4C891C0075ECCF /* IntervalSlider.m in Sources */,
+				42C5BCE91C4C891C0075ECCF /* SettingsViewController.m in Sources */,
+				CE9CBB1A1E10B4940049BEB0 /* OTAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4238555C1C3A4F01009A8A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423855411C3A4F01009A8A0A /* Subwoofer Control TV */;
+			targetProxy = 4238555B1C3A4F01009A8A0A /* PBXContainerItemProxy */;
+		};
+		423855671C3A4F02009A8A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423855411C3A4F01009A8A0A /* Subwoofer Control TV */;
+			targetProxy = 423855661C3A4F02009A8A0A /* PBXContainerItemProxy */;
+		};
+		4273EF521BEB096A0091DFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4273EF331BEB096A0091DFC1 /* Subwoofer Control Debug */;
+			targetProxy = 4273EF511BEB096A0091DFC1 /* PBXContainerItemProxy */;
+		};
+		4273EF5D1BEB096A0091DFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4273EF331BEB096A0091DFC1 /* Subwoofer Control Debug */;
+			targetProxy = 4273EF5C1BEB096A0091DFC1 /* PBXContainerItemProxy */;
+		};
+		CE508F441DB8ADF300765BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = CE508F431DB8ADF300765BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		423855501C3A4F01009A8A0A /* TV.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423855511C3A4F01009A8A0A /* Base */,
+			);
+			name = TV.storyboard;
+			sourceTree = "<group>";
+		};
+		4273EF431BEB096A0091DFC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4273EF441BEB096A0091DFC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4273EF481BEB096A0091DFC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4273EF491BEB096A0091DFC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4238556D1C3A4F02009A8A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Subwoofer Control TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		4238556E1C3A4F02009A8A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Subwoofer Control TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		423855701C3A4F02009A8A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Subwoofer Control TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subwoofer Control TV.app/Subwoofer Control TV";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		423855711C3A4F02009A8A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Subwoofer Control TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subwoofer Control TV.app/Subwoofer Control TV";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		423855731C3A4F02009A8A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Subwoofer Control TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = "Subwoofer Control TV";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		423855741C3A4F02009A8A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Subwoofer Control TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = "Subwoofer Control TV";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		4273EF621BEB096A0091DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4273EF631BEB096A0091DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4273EF651BEB096A0091DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = 8X5NY24BHS;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/thirdparty/core-plot-master/framework/**";
+				INFOPLIST_FILE = "Subwoofer Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/arm64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/x86_64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphoneos",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphonesimulator",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4273EF661BEB096A0091DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = 8X5NY24BHS;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/thirdparty/core-plot-master/framework/**";
+				INFOPLIST_FILE = "Subwoofer Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/arm64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/x86_64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphoneos",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphonesimulator",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4273EF681BEB096A0091DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Subwoofer ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subwoofer Control.app/Subwoofer Control";
+			};
+			name = Debug;
+		};
+		4273EF691BEB096A0091DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Subwoofer ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subwoofer Control.app/Subwoofer Control";
+			};
+			name = Release;
+		};
+		4273EF6B1BEB096A0091DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Subwoofer ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Subwoofer Control";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4273EF6C1BEB096A0091DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Subwoofer ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Subwoofer Control";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		42C5BCF91C4C891C0075ECCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/thirdparty/core-plot-master/framework/**";
+				INFOPLIST_FILE = "Subwoofer Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/arm64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/x86_64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphoneos",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphonesimulator",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		42C5BCFA1C4C891C0075ECCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/thirdparty/core-plot-master/framework/**";
+				INFOPLIST_FILE = "Subwoofer Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/arm64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/CorePlot-CocoaTouch.build/Release-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/x86_64",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphoneos",
+					"$(PROJECT_DIR)/thirdparty/core-plot-master/build/Release-iphonesimulator",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Subwoofer-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4238556C1C3A4F02009A8A0A /* Build configuration list for PBXNativeTarget "Subwoofer Control TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4238556D1C3A4F02009A8A0A /* Debug */,
+				4238556E1C3A4F02009A8A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4238556F1C3A4F02009A8A0A /* Build configuration list for PBXNativeTarget "Subwoofer Control TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423855701C3A4F02009A8A0A /* Debug */,
+				423855711C3A4F02009A8A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423855721C3A4F02009A8A0A /* Build configuration list for PBXNativeTarget "Subwoofer Control TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423855731C3A4F02009A8A0A /* Debug */,
+				423855741C3A4F02009A8A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4273EF2F1BEB096A0091DFC1 /* Build configuration list for PBXProject "Subwoofer Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4273EF621BEB096A0091DFC1 /* Debug */,
+				4273EF631BEB096A0091DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4273EF641BEB096A0091DFC1 /* Build configuration list for PBXNativeTarget "Subwoofer Control Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4273EF651BEB096A0091DFC1 /* Debug */,
+				4273EF661BEB096A0091DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4273EF671BEB096A0091DFC1 /* Build configuration list for PBXNativeTarget "Subwoofer ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4273EF681BEB096A0091DFC1 /* Debug */,
+				4273EF691BEB096A0091DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4273EF6A1BEB096A0091DFC1 /* Build configuration list for PBXNativeTarget "Subwoofer ControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4273EF6B1BEB096A0091DFC1 /* Debug */,
+				4273EF6C1BEB096A0091DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C5BCF81C4C891C0075ECCF /* Build configuration list for PBXNativeTarget "Subwoofer Control Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C5BCF91C4C891C0075ECCF /* Debug */,
+				42C5BCFA1C4C891C0075ECCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4273EF2C1BEB096A0091DFC1 /* Project object */;
+}

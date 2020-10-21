@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>services</key>
+	<array>
+		<dict>
+			<key>identifier</key>
+			<string>8FE6819D-D5F9-49FA-90BA-4DA05A7D2725</string>
+			<key>description</key>
+			<string>TYM DEBUG SERVIC</string>
+			<key>characteristic</key>
+			<array>
+				<string>5E868054-3ED3-4ACD-A18A-28F812DFB14F</string>
+			</array>
+		</dict>
+	</array>
+	<key>mode</key>
+	<string>standard</string>
+</dict>
+</plist>

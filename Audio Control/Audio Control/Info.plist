@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APIKey</key>
+	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LjY2OGJjYjBjMmU0NzRiMGM4MjUzMmMxZDZhMDg2MjNmIiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi4wM2NhNDI5YWNhZjk0YzI2OWE5NmM4MmFiM2FhM2RjMyIsImJ1bmRsZVNlZWRJZCI6ImNvbS50eW1waGFueS5hdWRpb2NvbnRyb2wiLCJidW5kbGVJZCI6ImNvbS50eW1waGFueS5hdWRpb2NvbnRyb2wiLCJpc3MiOiJBbWF6b24iLCJ0eXBlIjoiQVBJS2V5IiwiYXBwVmFyaWFudElkIjoiYW16bjEuYXBwbGljYXRpb24tY2xpZW50LjEzYjZlMDZiMTM4ZTRmNzFiZjhlNGM3NmFkNDM4NTE5IiwidHJ1c3RQb29sIjpudWxsLCJhcHBJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC4xM2I2ZTA2YjEzOGU0ZjcxYmY4ZTRjNzZhZDQzODUxOSIsImlkIjoiYThlNWZkYmEtN2ZlMi0xMWU2LWFkYWUtMzVkZTBiYWQyZTBlIiwiaWF0IjoiMTQ3NDQ1MjIxNTQ2MiJ9.ZSfNrtHpyrxBGXDdF6O5xKH9NwQN8VdCBilKRoF7ZXd3Dl2C0AvG9iva1nUz17lYA9WpqJOe3qP2w5m4GpLqlH5zzbq68pwpxEPQYCLtO49+FKxoX57LPS4ckYn2KikhRNsOfjeM4hsvyOnLzdpGM3fb/s+a/9OFWiar/Y50qacT7d2I/1lNrRoKcY1sRxiEtvVLWeOh3+v3mBkHiaTCJsBsw7HIrLI8BgZZwLCZQ2wvTzoFsVH2u/CJHU9MoJsw1/klwy1vrlzYs2T0Bj0pafyMFW/I+nrji/aHNJqHQvfBFrZzlj8I92FKqLlR2eLfZmTKFFtTH4M4LNRX1u1iVQ==</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.0.8</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>20161124</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.amazon.com</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>to get info about current music</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string> to record the voice</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41FAC85C4FA8732BA7DE5FD0 /* libPods-Audio Control.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C554746BC7543F58B74A075 /* libPods-Audio Control.a */; };
+		CE0148001DC8719E006E463E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0147FF1DC8719E006E463E /* AboutViewController.m */; };
+		CE0CA8391D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA8251D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.m */; };
+		CE0CA83A1D92717500CF2FB0 /* AlexaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA8271D92717500CF2FB0 /* AlexaControl.m */; };
+		CE0CA83B1D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA8291D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.m */; };
+		CE0CA83C1D92717500CF2FB0 /* AlexaHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA82B1D92717500CF2FB0 /* AlexaHTTPRequest.m */; };
+		CE0CA83D1D92717500CF2FB0 /* AlexaLogOutDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA82D1D92717500CF2FB0 /* AlexaLogOutDelegate.m */; };
+		CE0CA83E1D92717500CF2FB0 /* AmazonLoginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA82F1D92717500CF2FB0 /* AmazonLoginDelegate.m */; };
+		CE0CA8401D92717500CF2FB0 /* PartData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA8341D92717500CF2FB0 /* PartData.m */; };
+		CE0CA8411D92717500CF2FB0 /* RequestBody.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA8361D92717500CF2FB0 /* RequestBody.m */; };
+		CE0CA8421D92717500CF2FB0 /* ResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA8381D92717500CF2FB0 /* ResponseObject.m */; };
+		CE41FB981D41C4B50091D148 /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41FB8F1D41C4B50091D148 /* RWKnobControl.m */; };
+		CE41FB991D41C4B50091D148 /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41FB911D41C4B50091D148 /* RWKnobRenderer.m */; };
+		CE41FB9A1D41C4B50091D148 /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41FB931D41C4B50091D148 /* RWRotationGestureRecognizer.m */; };
+		CE41FB9B1D41C4B50091D148 /* TUIKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41FB951D41C4B50091D148 /* TUIKnob.m */; };
+		CE41FB9C1D41C4B50091D148 /* TUIKnobDotStyleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41FB971D41C4B50091D148 /* TUIKnobDotStyleRenderer.m */; };
+		CE495A9B1D92729F0061D8B4 /* VioceControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE495A9A1D92729F0061D8B4 /* VioceControlViewController.m */; };
+		CE7E5C601D235D7A00664AE4 /* csr8670.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE7E5C5F1D235D7A00664AE4 /* csr8670.plist */; };
+		CE7E5C641D2370AF00664AE4 /* PopDiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E5C631D2370AF00664AE4 /* PopDiscoveryController.m */; };
+		CE7E5C681D237A0900664AE4 /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E5C671D237A0900664AE4 /* ControlViewController.m */; };
+		CE83D8171F0CDB2600F54E85 /* MarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83D8161F0CDB2600F54E85 /* MarqueeView.m */; };
+		CE8853D81DAC9699005C5221 /* TonescapePlot.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8853D71DAC9699005C5221 /* TonescapePlot.m */; };
+		CE8A3D681D22545D00FCED30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D671D22545D00FCED30 /* main.m */; };
+		CE8A3D6B1D22545D00FCED30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D6A1D22545D00FCED30 /* AppDelegate.m */; };
+		CE8A3D711D22545D00FCED30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A3D6F1D22545D00FCED30 /* Main.storyboard */; };
+		CE8A3D731D22545D00FCED30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A3D721D22545D00FCED30 /* Assets.xcassets */; };
+		CE8A3D761D22545D00FCED30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A3D741D22545D00FCED30 /* LaunchScreen.storyboard */; };
+		CE8A3D811D22545D00FCED30 /* Audio_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D801D22545D00FCED30 /* Audio_ControlTests.m */; };
+		CE8A3D8C1D22545D00FCED30 /* Audio_ControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D8B1D22545D00FCED30 /* Audio_ControlUITests.m */; };
+		CE8A3D9B1D22551E00FCED30 /* IntervalSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D9A1D22551E00FCED30 /* IntervalSlider.m */; };
+		CE8A3DAA1D22552E00FCED30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D9D1D22552E00FCED30 /* MainViewController.m */; };
+		CE8A3DAB1D22552E00FCED30 /* PannableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3D9F1D22552E00FCED30 /* PannableViewController.m */; };
+		CE8A3DAC1D22552E00FCED30 /* PedalCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DA11D22552E00FCED30 /* PedalCaseViewController.m */; };
+		CE8A3DAD1D22552E00FCED30 /* PopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DA31D22552E00FCED30 /* PopTableViewCell.m */; };
+		CE8A3DAE1D22552E00FCED30 /* PopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DA51D22552E00FCED30 /* PopTableViewController.m */; };
+		CE8A3DAF1D22552E00FCED30 /* ThemeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DA71D22552E00FCED30 /* ThemeUtils.m */; };
+		CE8A3DB01D22552E00FCED30 /* UnitLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DA91D22552E00FCED30 /* UnitLabel.m */; };
+		CE8A3DB91D22583A00FCED30 /* TAPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE8A3DB81D22583A00FCED30 /* TAPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE8A3DC41D225D7D00FCED30 /* DocumentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DC31D225D7D00FCED30 /* DocumentUtils.m */; };
+		CE8A3DC71D225DB600FCED30 /* TASystemSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DC61D225DB600FCED30 /* TASystemSettings.m */; };
+		CE8A3DCA1D22695A00FCED30 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A3DC91D22695A00FCED30 /* SystemManager.m */; };
+		CE8A3DCE1D22709400FCED30 /* TAPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8A3DB81D22583A00FCED30 /* TAPlatform.framework */; };
+		CE8A3DD01D2270FB00FCED30 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8A3DCF1D2270FB00FCED30 /* CoreBluetooth.framework */; };
+		CECE43DB1D3632BB00A9B1FB /* PopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE43D81D3632BB00A9B1FB /* PopButton.m */; };
+		CECE43DC1D3632BB00A9B1FB /* PopItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE43DA1D3632BB00A9B1FB /* PopItemButton.m */; };
+		CEE16C251D93D217008A85F8 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE16C241D93D217008A85F8 /* LoginWithAmazon.framework */; };
+		CEF0EF731DDFF73D00B5A6AE /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0EF721DDFF73D00B5A6AE /* HTTPManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE8A3D7D1D22545D00FCED30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8A3D5B1D22545C00FCED30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8A3D621D22545D00FCED30;
+			remoteInfo = "Audio Control";
+		};
+		CE8A3D881D22545D00FCED30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8A3D5B1D22545C00FCED30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8A3D621D22545D00FCED30;
+			remoteInfo = "Audio Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE8A3DB71D2257FA00FCED30 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE8A3DB91D22583A00FCED30 /* TAPlatform.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0408339CA2B09D34277C2F81 /* Pods-Audio Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Control.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Audio Control/Pods-Audio Control.debug.xcconfig"; sourceTree = "<group>"; };
+		1C554746BC7543F58B74A075 /* libPods-Audio Control.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audio Control.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		352EF7D5DB077AD1FB85ED69 /* Pods-Audio Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Control.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Audio Control/Pods-Audio Control.release.xcconfig"; sourceTree = "<group>"; };
+		CE0147FE1DC8719E006E463E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		CE0147FF1DC8719E006E463E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		CE0CA8241D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlexaAuthorizeUserDelegate.h; path = "Audio Control/lib/AlexaAuthorizeUserDelegate.h"; sourceTree = "<group>"; };
+		CE0CA8251D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlexaAuthorizeUserDelegate.m; path = "Audio Control/lib/AlexaAuthorizeUserDelegate.m"; sourceTree = "<group>"; };
+		CE0CA8261D92717500CF2FB0 /* AlexaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlexaControl.h; path = "Audio Control/lib/AlexaControl.h"; sourceTree = "<group>"; };
+		CE0CA8271D92717500CF2FB0 /* AlexaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlexaControl.m; path = "Audio Control/lib/AlexaControl.m"; sourceTree = "<group>"; };
+		CE0CA8281D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlexaGetAccessTokenDelegate.h; path = "Audio Control/lib/AlexaGetAccessTokenDelegate.h"; sourceTree = "<group>"; };
+		CE0CA8291D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlexaGetAccessTokenDelegate.m; path = "Audio Control/lib/AlexaGetAccessTokenDelegate.m"; sourceTree = "<group>"; };
+		CE0CA82A1D92717500CF2FB0 /* AlexaHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlexaHTTPRequest.h; path = "Audio Control/lib/AlexaHTTPRequest.h"; sourceTree = "<group>"; };
+		CE0CA82B1D92717500CF2FB0 /* AlexaHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlexaHTTPRequest.m; path = "Audio Control/lib/AlexaHTTPRequest.m"; sourceTree = "<group>"; };
+		CE0CA82C1D92717500CF2FB0 /* AlexaLogOutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlexaLogOutDelegate.h; path = "Audio Control/lib/AlexaLogOutDelegate.h"; sourceTree = "<group>"; };
+		CE0CA82D1D92717500CF2FB0 /* AlexaLogOutDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlexaLogOutDelegate.m; path = "Audio Control/lib/AlexaLogOutDelegate.m"; sourceTree = "<group>"; };
+		CE0CA82E1D92717500CF2FB0 /* AmazonLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AmazonLoginDelegate.h; path = "Audio Control/lib/AmazonLoginDelegate.h"; sourceTree = "<group>"; };
+		CE0CA82F1D92717500CF2FB0 /* AmazonLoginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AmazonLoginDelegate.m; path = "Audio Control/lib/AmazonLoginDelegate.m"; sourceTree = "<group>"; };
+		CE0CA8301D92717500CF2FB0 /* AmazonLoginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AmazonLoginProtocol.h; path = "Audio Control/lib/AmazonLoginProtocol.h"; sourceTree = "<group>"; };
+		CE0CA8311D92717500CF2FB0 /* AmazonLoginResultsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AmazonLoginResultsProtocol.h; path = "Audio Control/lib/AmazonLoginResultsProtocol.h"; sourceTree = "<group>"; };
+		CE0CA8331D92717500CF2FB0 /* PartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PartData.h; path = "Audio Control/lib/PartData.h"; sourceTree = "<group>"; };
+		CE0CA8341D92717500CF2FB0 /* PartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PartData.m; path = "Audio Control/lib/PartData.m"; sourceTree = "<group>"; };
+		CE0CA8351D92717500CF2FB0 /* RequestBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestBody.h; path = "Audio Control/lib/RequestBody.h"; sourceTree = "<group>"; };
+		CE0CA8361D92717500CF2FB0 /* RequestBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestBody.m; path = "Audio Control/lib/RequestBody.m"; sourceTree = "<group>"; };
+		CE0CA8371D92717500CF2FB0 /* ResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponseObject.h; path = "Audio Control/lib/ResponseObject.h"; sourceTree = "<group>"; };
+		CE0CA8381D92717500CF2FB0 /* ResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponseObject.m; path = "Audio Control/lib/ResponseObject.m"; sourceTree = "<group>"; };
+		CE41FB8E1D41C4B50091D148 /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWKnobControl.h; path = "../../Subwoofer Control/Subwoofer Control/RWKnobControl.h"; sourceTree = "<group>"; };
+		CE41FB8F1D41C4B50091D148 /* RWKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWKnobControl.m; path = "../../Subwoofer Control/Subwoofer Control/RWKnobControl.m"; sourceTree = "<group>"; };
+		CE41FB901D41C4B50091D148 /* RWKnobRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWKnobRenderer.h; path = "../../Subwoofer Control/Subwoofer Control/RWKnobRenderer.h"; sourceTree = "<group>"; };
+		CE41FB911D41C4B50091D148 /* RWKnobRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWKnobRenderer.m; path = "../../Subwoofer Control/Subwoofer Control/RWKnobRenderer.m"; sourceTree = "<group>"; };
+		CE41FB921D41C4B50091D148 /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWRotationGestureRecognizer.h; path = "../../Subwoofer Control/Subwoofer Control/RWRotationGestureRecognizer.h"; sourceTree = "<group>"; };
+		CE41FB931D41C4B50091D148 /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWRotationGestureRecognizer.m; path = "../../Subwoofer Control/Subwoofer Control/RWRotationGestureRecognizer.m"; sourceTree = "<group>"; };
+		CE41FB941D41C4B50091D148 /* TUIKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUIKnob.h; path = "../../Subwoofer Control/Subwoofer Control/TUIKnob.h"; sourceTree = "<group>"; };
+		CE41FB951D41C4B50091D148 /* TUIKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUIKnob.m; path = "../../Subwoofer Control/Subwoofer Control/TUIKnob.m"; sourceTree = "<group>"; };
+		CE41FB961D41C4B50091D148 /* TUIKnobDotStyleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUIKnobDotStyleRenderer.h; path = "../../Subwoofer Control/Subwoofer Control/TUIKnobDotStyleRenderer.h"; sourceTree = "<group>"; };
+		CE41FB971D41C4B50091D148 /* TUIKnobDotStyleRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUIKnobDotStyleRenderer.m; path = "../../Subwoofer Control/Subwoofer Control/TUIKnobDotStyleRenderer.m"; sourceTree = "<group>"; };
+		CE495A991D92729F0061D8B4 /* VioceControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VioceControlViewController.h; sourceTree = "<group>"; };
+		CE495A9A1D92729F0061D8B4 /* VioceControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VioceControlViewController.m; sourceTree = "<group>"; };
+		CE495A9D1D9275800061D8B4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		CE7E5C5F1D235D7A00664AE4 /* csr8670.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = csr8670.plist; sourceTree = "<group>"; };
+		CE7E5C621D2370AF00664AE4 /* PopDiscoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopDiscoveryController.h; sourceTree = "<group>"; };
+		CE7E5C631D2370AF00664AE4 /* PopDiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopDiscoveryController.m; sourceTree = "<group>"; };
+		CE7E5C661D237A0900664AE4 /* ControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlViewController.h; sourceTree = "<group>"; };
+		CE7E5C671D237A0900664AE4 /* ControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
+		CE83D8151F0CDB2600F54E85 /* MarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeView.h; sourceTree = "<group>"; };
+		CE83D8161F0CDB2600F54E85 /* MarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeView.m; sourceTree = "<group>"; };
+		CE8853D61DAC9699005C5221 /* TonescapePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TonescapePlot.h; sourceTree = "<group>"; };
+		CE8853D71DAC9699005C5221 /* TonescapePlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TonescapePlot.m; sourceTree = "<group>"; };
+		CE8A3D631D22545D00FCED30 /* Audio Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8A3D671D22545D00FCED30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE8A3D691D22545D00FCED30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE8A3D6A1D22545D00FCED30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE8A3D701D22545D00FCED30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE8A3D721D22545D00FCED30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8A3D751D22545D00FCED30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE8A3D771D22545D00FCED30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8A3D7C1D22545D00FCED30 /* Audio ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8A3D801D22545D00FCED30 /* Audio_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio_ControlTests.m; sourceTree = "<group>"; };
+		CE8A3D821D22545D00FCED30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8A3D871D22545D00FCED30 /* Audio ControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio ControlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8A3D8B1D22545D00FCED30 /* Audio_ControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio_ControlUITests.m; sourceTree = "<group>"; };
+		CE8A3D8D1D22545D00FCED30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8A3D991D22551E00FCED30 /* IntervalSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalSlider.h; sourceTree = "<group>"; };
+		CE8A3D9A1D22551E00FCED30 /* IntervalSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalSlider.m; sourceTree = "<group>"; };
+		CE8A3D9C1D22552E00FCED30 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CE8A3D9D1D22552E00FCED30 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CE8A3D9E1D22552E00FCED30 /* PannableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PannableViewController.h; sourceTree = "<group>"; };
+		CE8A3D9F1D22552E00FCED30 /* PannableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PannableViewController.m; sourceTree = "<group>"; };
+		CE8A3DA01D22552E00FCED30 /* PedalCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedalCaseViewController.h; sourceTree = "<group>"; };
+		CE8A3DA11D22552E00FCED30 /* PedalCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedalCaseViewController.m; sourceTree = "<group>"; };
+		CE8A3DA21D22552E00FCED30 /* PopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableViewCell.h; sourceTree = "<group>"; };
+		CE8A3DA31D22552E00FCED30 /* PopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableViewCell.m; sourceTree = "<group>"; };
+		CE8A3DA41D22552E00FCED30 /* PopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableViewController.h; sourceTree = "<group>"; };
+		CE8A3DA51D22552E00FCED30 /* PopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableViewController.m; sourceTree = "<group>"; };
+		CE8A3DA61D22552E00FCED30 /* ThemeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeUtils.h; sourceTree = "<group>"; };
+		CE8A3DA71D22552E00FCED30 /* ThemeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeUtils.m; sourceTree = "<group>"; };
+		CE8A3DA81D22552E00FCED30 /* UnitLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitLabel.h; sourceTree = "<group>"; };
+		CE8A3DA91D22552E00FCED30 /* UnitLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitLabel.m; sourceTree = "<group>"; };
+		CE8A3DB81D22583A00FCED30 /* TAPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAPlatform.framework; path = ../Frameworks/TAPlatform/TAPlatform.framework; sourceTree = "<group>"; };
+		CE8A3DC21D225D7D00FCED30 /* DocumentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentUtils.h; sourceTree = "<group>"; };
+		CE8A3DC31D225D7D00FCED30 /* DocumentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentUtils.m; sourceTree = "<group>"; };
+		CE8A3DC51D225DB600FCED30 /* TASystemSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASystemSettings.h; sourceTree = "<group>"; };
+		CE8A3DC61D225DB600FCED30 /* TASystemSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASystemSettings.m; sourceTree = "<group>"; };
+		CE8A3DC81D22695A00FCED30 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
+		CE8A3DC91D22695A00FCED30 /* SystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemManager.m; sourceTree = "<group>"; };
+		CE8A3DCF1D2270FB00FCED30 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CECE43D71D3632BB00A9B1FB /* PopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopButton.h; sourceTree = "<group>"; };
+		CECE43D81D3632BB00A9B1FB /* PopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopButton.m; sourceTree = "<group>"; };
+		CECE43D91D3632BB00A9B1FB /* PopItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopItemButton.h; sourceTree = "<group>"; };
+		CECE43DA1D3632BB00A9B1FB /* PopItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopItemButton.m; sourceTree = "<group>"; };
+		CECE43DD1D3632D600A9B1FB /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
+		CECE43DE1D3632D600A9B1FB /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
+		CECE43DF1D3632D600A9B1FB /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
+		CEE16C241D93D217008A85F8 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = "Audio Control/lib/LoginWithAmazon.framework"; sourceTree = "<group>"; };
+		CEF0EF711DDFF73D00B5A6AE /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		CEF0EF721DDFF73D00B5A6AE /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8A3D601D22545D00FCED30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE16C251D93D217008A85F8 /* LoginWithAmazon.framework in Frameworks */,
+				CE8A3DD01D2270FB00FCED30 /* CoreBluetooth.framework in Frameworks */,
+				CE8A3DCE1D22709400FCED30 /* TAPlatform.framework in Frameworks */,
+				41FAC85C4FA8732BA7DE5FD0 /* libPods-Audio Control.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8A3D791D22545D00FCED30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8A3D841D22545D00FCED30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E3063FD758FD84557BE19F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0408339CA2B09D34277C2F81 /* Pods-Audio Control.debug.xcconfig */,
+				352EF7D5DB077AD1FB85ED69 /* Pods-Audio Control.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE41FB9D1D41C4C20091D148 /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				CE41FB8E1D41C4B50091D148 /* RWKnobControl.h */,
+				CE41FB8F1D41C4B50091D148 /* RWKnobControl.m */,
+				CE41FB901D41C4B50091D148 /* RWKnobRenderer.h */,
+				CE41FB911D41C4B50091D148 /* RWKnobRenderer.m */,
+				CE41FB921D41C4B50091D148 /* RWRotationGestureRecognizer.h */,
+				CE41FB931D41C4B50091D148 /* RWRotationGestureRecognizer.m */,
+				CE41FB941D41C4B50091D148 /* TUIKnob.h */,
+				CE41FB951D41C4B50091D148 /* TUIKnob.m */,
+				CE41FB961D41C4B50091D148 /* TUIKnobDotStyleRenderer.h */,
+				CE41FB971D41C4B50091D148 /* TUIKnobDotStyleRenderer.m */,
+			);
+			name = Knob;
+			sourceTree = "<group>";
+		};
+		CE495A941D9271E20061D8B4 /* LWA */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CA8241D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.h */,
+				CE0CA8251D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.m */,
+				CE0CA8281D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.h */,
+				CE0CA8291D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.m */,
+				CE0CA82C1D92717500CF2FB0 /* AlexaLogOutDelegate.h */,
+				CE0CA82D1D92717500CF2FB0 /* AlexaLogOutDelegate.m */,
+				CE0CA82E1D92717500CF2FB0 /* AmazonLoginDelegate.h */,
+				CE0CA82F1D92717500CF2FB0 /* AmazonLoginDelegate.m */,
+				CE0CA8301D92717500CF2FB0 /* AmazonLoginProtocol.h */,
+				CE0CA8311D92717500CF2FB0 /* AmazonLoginResultsProtocol.h */,
+			);
+			name = LWA;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CE495A951D9271F20061D8B4 /* AVS */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CA8261D92717500CF2FB0 /* AlexaControl.h */,
+				CE0CA8271D92717500CF2FB0 /* AlexaControl.m */,
+				CE0CA82A1D92717500CF2FB0 /* AlexaHTTPRequest.h */,
+				CE0CA82B1D92717500CF2FB0 /* AlexaHTTPRequest.m */,
+				CEF0EF711DDFF73D00B5A6AE /* HTTPManager.h */,
+				CEF0EF721DDFF73D00B5A6AE /* HTTPManager.m */,
+				CE0CA8331D92717500CF2FB0 /* PartData.h */,
+				CE0CA8341D92717500CF2FB0 /* PartData.m */,
+				CE0CA8351D92717500CF2FB0 /* RequestBody.h */,
+				CE0CA8361D92717500CF2FB0 /* RequestBody.m */,
+				CE0CA8371D92717500CF2FB0 /* ResponseObject.h */,
+				CE0CA8381D92717500CF2FB0 /* ResponseObject.m */,
+			);
+			name = AVS;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CE495A9C1D9275800061D8B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE16C241D93D217008A85F8 /* LoginWithAmazon.framework */,
+				CE495A9D1D9275800061D8B4 /* SafariServices.framework */,
+				1C554746BC7543F58B74A075 /* libPods-Audio Control.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8A3D5A1D22545C00FCED30 = {
+			isa = PBXGroup;
+			children = (
+				CE8A3DCF1D2270FB00FCED30 /* CoreBluetooth.framework */,
+				CE8A3DB81D22583A00FCED30 /* TAPlatform.framework */,
+				CE8A3D651D22545D00FCED30 /* Audio Control */,
+				CE8A3D7F1D22545D00FCED30 /* Audio ControlTests */,
+				CE8A3D8A1D22545D00FCED30 /* Audio ControlUITests */,
+				CE8A3D641D22545D00FCED30 /* Products */,
+				CE495A9C1D9275800061D8B4 /* Frameworks */,
+				63E3063FD758FD84557BE19F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8A3D641D22545D00FCED30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A3D631D22545D00FCED30 /* Audio Control.app */,
+				CE8A3D7C1D22545D00FCED30 /* Audio ControlTests.xctest */,
+				CE8A3D871D22545D00FCED30 /* Audio ControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8A3D651D22545D00FCED30 /* Audio Control */ = {
+			isa = PBXGroup;
+			children = (
+				CE495A941D9271E20061D8B4 /* LWA */,
+				CE495A951D9271F20061D8B4 /* AVS */,
+				CE41FB9D1D41C4C20091D148 /* Knob */,
+				CECE43E01D3632EF00A9B1FB /* PopBtn */,
+				CE8A3DB41D2256BA00FCED30 /* View */,
+				CE8A3D691D22545D00FCED30 /* AppDelegate.h */,
+				CE8A3D6A1D22545D00FCED30 /* AppDelegate.m */,
+				CE8A3DA61D22552E00FCED30 /* ThemeUtils.h */,
+				CE8A3DA71D22552E00FCED30 /* ThemeUtils.m */,
+				CE8A3DC21D225D7D00FCED30 /* DocumentUtils.h */,
+				CE8A3DC31D225D7D00FCED30 /* DocumentUtils.m */,
+				CE8A3DC51D225DB600FCED30 /* TASystemSettings.h */,
+				CE8A3DC61D225DB600FCED30 /* TASystemSettings.m */,
+				CE8A3DC81D22695A00FCED30 /* SystemManager.h */,
+				CE8A3DC91D22695A00FCED30 /* SystemManager.m */,
+				CE8A3D9C1D22552E00FCED30 /* MainViewController.h */,
+				CE8A3D9D1D22552E00FCED30 /* MainViewController.m */,
+				CE8A3D9E1D22552E00FCED30 /* PannableViewController.h */,
+				CE8A3D9F1D22552E00FCED30 /* PannableViewController.m */,
+				CE8A3DA01D22552E00FCED30 /* PedalCaseViewController.h */,
+				CE8A3DA11D22552E00FCED30 /* PedalCaseViewController.m */,
+				CE7E5C661D237A0900664AE4 /* ControlViewController.h */,
+				CE7E5C671D237A0900664AE4 /* ControlViewController.m */,
+				CE495A991D92729F0061D8B4 /* VioceControlViewController.h */,
+				CE495A9A1D92729F0061D8B4 /* VioceControlViewController.m */,
+				CE0147FE1DC8719E006E463E /* AboutViewController.h */,
+				CE0147FF1DC8719E006E463E /* AboutViewController.m */,
+				CE8853D61DAC9699005C5221 /* TonescapePlot.h */,
+				CE8853D71DAC9699005C5221 /* TonescapePlot.m */,
+				CE8A3D6F1D22545D00FCED30 /* Main.storyboard */,
+				CE8A3D721D22545D00FCED30 /* Assets.xcassets */,
+				CE8A3D741D22545D00FCED30 /* LaunchScreen.storyboard */,
+				CE8A3D771D22545D00FCED30 /* Info.plist */,
+				CE8A3D661D22545D00FCED30 /* Supporting Files */,
+			);
+			path = "Audio Control";
+			sourceTree = "<group>";
+		};
+		CE8A3D661D22545D00FCED30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E5C5F1D235D7A00664AE4 /* csr8670.plist */,
+				CE8A3D671D22545D00FCED30 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE8A3D7F1D22545D00FCED30 /* Audio ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A3D801D22545D00FCED30 /* Audio_ControlTests.m */,
+				CE8A3D821D22545D00FCED30 /* Info.plist */,
+			);
+			path = "Audio ControlTests";
+			sourceTree = "<group>";
+		};
+		CE8A3D8A1D22545D00FCED30 /* Audio ControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A3D8B1D22545D00FCED30 /* Audio_ControlUITests.m */,
+				CE8A3D8D1D22545D00FCED30 /* Info.plist */,
+			);
+			path = "Audio ControlUITests";
+			sourceTree = "<group>";
+		};
+		CE8A3DB41D2256BA00FCED30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A3D991D22551E00FCED30 /* IntervalSlider.h */,
+				CE8A3D9A1D22551E00FCED30 /* IntervalSlider.m */,
+				CE8A3DA21D22552E00FCED30 /* PopTableViewCell.h */,
+				CE8A3DA31D22552E00FCED30 /* PopTableViewCell.m */,
+				CE8A3DA41D22552E00FCED30 /* PopTableViewController.h */,
+				CE8A3DA51D22552E00FCED30 /* PopTableViewController.m */,
+				CE7E5C621D2370AF00664AE4 /* PopDiscoveryController.h */,
+				CE7E5C631D2370AF00664AE4 /* PopDiscoveryController.m */,
+				CE8A3DA81D22552E00FCED30 /* UnitLabel.h */,
+				CE8A3DA91D22552E00FCED30 /* UnitLabel.m */,
+				CE83D8151F0CDB2600F54E85 /* MarqueeView.h */,
+				CE83D8161F0CDB2600F54E85 /* MarqueeView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CECE43E01D3632EF00A9B1FB /* PopBtn */ = {
+			isa = PBXGroup;
+			children = (
+				CECE43D71D3632BB00A9B1FB /* PopButton.h */,
+				CECE43D81D3632BB00A9B1FB /* PopButton.m */,
+				CECE43D91D3632BB00A9B1FB /* PopItemButton.h */,
+				CECE43DA1D3632BB00A9B1FB /* PopItemButton.m */,
+				CECE43DD1D3632D600A9B1FB /* bloom.caf */,
+				CECE43DE1D3632D600A9B1FB /* fold.caf */,
+				CECE43DF1D3632D600A9B1FB /* selected.caf */,
+			);
+			name = PopBtn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8A3D621D22545D00FCED30 /* Audio Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8A3D901D22545D00FCED30 /* Build configuration list for PBXNativeTarget "Audio Control" */;
+			buildPhases = (
+				75B70445BDC78640342762B4 /* [CP] Check Pods Manifest.lock */,
+				B62AB809970BA53626C5D0EF /* Check Pods Manifest.lock */,
+				CE8A3D5F1D22545D00FCED30 /* Sources */,
+				CE8A3D601D22545D00FCED30 /* Frameworks */,
+				CE8A3D611D22545D00FCED30 /* Resources */,
+				CE8A3DB71D2257FA00FCED30 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Audio Control";
+			productName = "Audio Control";
+			productReference = CE8A3D631D22545D00FCED30 /* Audio Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE8A3D7B1D22545D00FCED30 /* Audio ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8A3D931D22545D00FCED30 /* Build configuration list for PBXNativeTarget "Audio ControlTests" */;
+			buildPhases = (
+				CE8A3D781D22545D00FCED30 /* Sources */,
+				CE8A3D791D22545D00FCED30 /* Frameworks */,
+				CE8A3D7A1D22545D00FCED30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8A3D7E1D22545D00FCED30 /* PBXTargetDependency */,
+			);
+			name = "Audio ControlTests";
+			productName = "Audio ControlTests";
+			productReference = CE8A3D7C1D22545D00FCED30 /* Audio ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE8A3D861D22545D00FCED30 /* Audio ControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8A3D961D22545D00FCED30 /* Build configuration list for PBXNativeTarget "Audio ControlUITests" */;
+			buildPhases = (
+				CE8A3D831D22545D00FCED30 /* Sources */,
+				CE8A3D841D22545D00FCED30 /* Frameworks */,
+				CE8A3D851D22545D00FCED30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8A3D891D22545D00FCED30 /* PBXTargetDependency */,
+			);
+			name = "Audio ControlUITests";
+			productName = "Audio ControlUITests";
+			productReference = CE8A3D871D22545D00FCED30 /* Audio ControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE8A3D5B1D22545C00FCED30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tymphanysz;
+				TargetAttributes = {
+					CE8A3D621D22545D00FCED30 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8X5NY24BHS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					CE8A3D7B1D22545D00FCED30 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CE8A3D621D22545D00FCED30;
+					};
+					CE8A3D861D22545D00FCED30 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CE8A3D621D22545D00FCED30;
+					};
+				};
+			};
+			buildConfigurationList = CE8A3D5E1D22545C00FCED30 /* Build configuration list for PBXProject "Audio Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE8A3D5A1D22545C00FCED30;
+			productRefGroup = CE8A3D641D22545D00FCED30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8A3D621D22545D00FCED30 /* Audio Control */,
+				CE8A3D7B1D22545D00FCED30 /* Audio ControlTests */,
+				CE8A3D861D22545D00FCED30 /* Audio ControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8A3D611D22545D00FCED30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8A3D761D22545D00FCED30 /* LaunchScreen.storyboard in Resources */,
+				CE8A3D731D22545D00FCED30 /* Assets.xcassets in Resources */,
+				CE8A3D711D22545D00FCED30 /* Main.storyboard in Resources */,
+				CE7E5C601D235D7A00664AE4 /* csr8670.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8A3D7A1D22545D00FCED30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8A3D851D22545D00FCED30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75B70445BDC78640342762B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audio Control-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62AB809970BA53626C5D0EF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8A3D5F1D22545D00FCED30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8A3D6B1D22545D00FCED30 /* AppDelegate.m in Sources */,
+				CE8A3DAE1D22552E00FCED30 /* PopTableViewController.m in Sources */,
+				CE0CA83A1D92717500CF2FB0 /* AlexaControl.m in Sources */,
+				CE0CA83C1D92717500CF2FB0 /* AlexaHTTPRequest.m in Sources */,
+				CE0CA83E1D92717500CF2FB0 /* AmazonLoginDelegate.m in Sources */,
+				CE495A9B1D92729F0061D8B4 /* VioceControlViewController.m in Sources */,
+				CE7E5C681D237A0900664AE4 /* ControlViewController.m in Sources */,
+				CE8A3D681D22545D00FCED30 /* main.m in Sources */,
+				CE8A3DAA1D22552E00FCED30 /* MainViewController.m in Sources */,
+				CE41FB991D41C4B50091D148 /* RWKnobRenderer.m in Sources */,
+				CECE43DB1D3632BB00A9B1FB /* PopButton.m in Sources */,
+				CE8A3DCA1D22695A00FCED30 /* SystemManager.m in Sources */,
+				CE41FB9B1D41C4B50091D148 /* TUIKnob.m in Sources */,
+				CE41FB9C1D41C4B50091D148 /* TUIKnobDotStyleRenderer.m in Sources */,
+				CE8A3D9B1D22551E00FCED30 /* IntervalSlider.m in Sources */,
+				CE8A3DC41D225D7D00FCED30 /* DocumentUtils.m in Sources */,
+				CE8A3DAC1D22552E00FCED30 /* PedalCaseViewController.m in Sources */,
+				CE8A3DAB1D22552E00FCED30 /* PannableViewController.m in Sources */,
+				CE0CA8421D92717500CF2FB0 /* ResponseObject.m in Sources */,
+				CE0CA83D1D92717500CF2FB0 /* AlexaLogOutDelegate.m in Sources */,
+				CE0CA8401D92717500CF2FB0 /* PartData.m in Sources */,
+				CE8853D81DAC9699005C5221 /* TonescapePlot.m in Sources */,
+				CE8A3DAD1D22552E00FCED30 /* PopTableViewCell.m in Sources */,
+				CE0CA83B1D92717500CF2FB0 /* AlexaGetAccessTokenDelegate.m in Sources */,
+				CE41FB981D41C4B50091D148 /* RWKnobControl.m in Sources */,
+				CEF0EF731DDFF73D00B5A6AE /* HTTPManager.m in Sources */,
+				CE0CA8411D92717500CF2FB0 /* RequestBody.m in Sources */,
+				CE0148001DC8719E006E463E /* AboutViewController.m in Sources */,
+				CE7E5C641D2370AF00664AE4 /* PopDiscoveryController.m in Sources */,
+				CE41FB9A1D41C4B50091D148 /* RWRotationGestureRecognizer.m in Sources */,
+				CECE43DC1D3632BB00A9B1FB /* PopItemButton.m in Sources */,
+				CE8A3DB01D22552E00FCED30 /* UnitLabel.m in Sources */,
+				CE83D8171F0CDB2600F54E85 /* MarqueeView.m in Sources */,
+				CE8A3DC71D225DB600FCED30 /* TASystemSettings.m in Sources */,
+				CE8A3DAF1D22552E00FCED30 /* ThemeUtils.m in Sources */,
+				CE0CA8391D92717500CF2FB0 /* AlexaAuthorizeUserDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8A3D781D22545D00FCED30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8A3D811D22545D00FCED30 /* Audio_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8A3D831D22545D00FCED30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8A3D8C1D22545D00FCED30 /* Audio_ControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8A3D7E1D22545D00FCED30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8A3D621D22545D00FCED30 /* Audio Control */;
+			targetProxy = CE8A3D7D1D22545D00FCED30 /* PBXContainerItemProxy */;
+		};
+		CE8A3D891D22545D00FCED30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8A3D621D22545D00FCED30 /* Audio Control */;
+			targetProxy = CE8A3D881D22545D00FCED30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE8A3D6F1D22545D00FCED30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8A3D701D22545D00FCED30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE8A3D741D22545D00FCED30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8A3D751D22545D00FCED30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8A3D8E1D22545D00FCED30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE8A3D8F1D22545D00FCED30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE8A3D911D22545D00FCED30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0408339CA2B09D34277C2F81 /* Pods-Audio Control.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8X5NY24BHS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Audio\\ Control/lib",
+					"$(PROJECT_DIR)/Audio\\ Control/lib",
+				);
+				INFOPLIST_FILE = "Audio Control/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymphany.audiocontrol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE8A3D921D22545D00FCED30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352EF7D5DB077AD1FB85ED69 /* Pods-Audio Control.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8X5NY24BHS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Audio\\ Control/lib",
+					"$(PROJECT_DIR)/Audio\\ Control/lib",
+				);
+				INFOPLIST_FILE = "Audio Control/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymphany.audiocontrol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE8A3D941D22545D00FCED30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Audio ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Audio-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audio Control.app/Audio Control";
+			};
+			name = Debug;
+		};
+		CE8A3D951D22545D00FCED30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Audio ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Audio-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audio Control.app/Audio Control";
+			};
+			name = Release;
+		};
+		CE8A3D971D22545D00FCED30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Audio ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Audio-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Audio Control";
+			};
+			name = Debug;
+		};
+		CE8A3D981D22545D00FCED30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Audio ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymphany.Audio-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Audio Control";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE8A3D5E1D22545C00FCED30 /* Build configuration list for PBXProject "Audio Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8A3D8E1D22545D00FCED30 /* Debug */,
+				CE8A3D8F1D22545D00FCED30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8A3D901D22545D00FCED30 /* Build configuration list for PBXNativeTarget "Audio Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8A3D911D22545D00FCED30 /* Debug */,
+				CE8A3D921D22545D00FCED30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8A3D931D22545D00FCED30 /* Build configuration list for PBXNativeTarget "Audio ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8A3D941D22545D00FCED30 /* Debug */,
+				CE8A3D951D22545D00FCED30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8A3D961D22545D00FCED30 /* Build configuration list for PBXNativeTarget "Audio ControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8A3D971D22545D00FCED30 /* Debug */,
+				CE8A3D981D22545D00FCED30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE8A3D5B1D22545C00FCED30 /* Project object */;
+}

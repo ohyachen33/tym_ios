@@ -1,0 +1,191 @@
+/*!
+
+	\mainpage Tymphany App Platform API for iOS
+
+	\tableofcontents
+
+	\todo This main page is a work in progress.
+
+	Tymphany App Platform(TAP) provides a robust implementation of communication with Tymphany audio product system on Smartphone and mobile devices. The TAP is well integrated with the Tymphany Platform used in TYM Audio product and easy to re-use across different projects.
+
+	TAP implementations are separated into different modules. In iOS, in a form of a static library. The modules are encapsulated into different conceptual layers. The public interface of TAP including modules within two layers: Protocol and Service. The modules are all decoupled from each other and can be re-use for different purposes.
+
+
+	\section Protocol Protocol Modules
+
+	The protocol layer modules are targeted to be used for communication between the mobile App and the Tymphany system.
+
+	\subsection BLE Bluetooth Low Energy
+
+	The BLE module provide communications to any BLE peripheral devices. The implementation on this module is common and re-usable in any App which needs to discover, connect and exchange information with a BLE peripheral devices.
+
+	On iOS, it based on CoreBluetooth framework provided by the iOS App SDK and implement an easy to use interface and some extra functionalities.
+
+	Please read the \ref ble-guide on how to use the BLE module to communicate with Tymphany audio products.
+
+	\section Service Service Modules
+
+	The service layer modules are targeted to provide high level API for application to make use of protocol modules and communicate with Tymphany system.
+*/
+
+/*!
+
+	\page ble-guide Bluetooth Low Energy Programming Guide
+
+	\tableofcontents
+	
+	\section ble-sample-code Coding how to’s
+
+	\subsection ble-sample-code-initialization Initialization
+
+The easiest way to define the service IDs and Characteristic IDs you are interested, will be prepare a config file. 
+
+	The config file should be a plist in your App project named: TymphanyServices.plist
+
+\todo Also accept the JSON db file used by CSP ADK
+
+	\code {.xml}
+
+	<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>services</key>
+	<array>
+		<dict>
+			<key>identifier</key>
+			<string>1801</string>
+			<key>description</key>
+			<string>GATT_SERVICE</string>
+			<key>characteristic</key>
+			<array>
+				<string>4000</string>
+			</array>
+		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>1800</string>
+			<key>description</key>
+			<string>GAP_SERVICE</string>
+			<key>characteristic</key>
+			<array>
+				<string>2A00</string>
+				<string>2A01</string>
+			</array>
+		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>180A</string>
+			<key>description</key>
+			<string>DEVICE_INFO_SERVICE</string>
+			<key>characteristic</key>
+			<array>
+				<string>2A26</string>
+			</array>
+		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>180F</string>
+			<key>description</key>
+			<string>BATTERY_SERVICE</string>
+			<key>characteristic</key>
+			<array>
+				<string>2A19</string>
+			</array>
+		</dict>
+		<dict>
+			<key>identifier</key>
+			<string>DCD78A10-B58C-4E03-BA5D-8218C2E9C03E</string>
+			<key>description</key>
+			<string>PRV_AUDIO_CONTROL_SERVICE</string>
+			<key>characteristic</key>
+			<array>
+				<string>44FA50B2-D0A3-472E-A939-D80CF17638BB</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+	\endcode
+
+Initialize the modules. Note that you don’t need to specify the service and characteristic IDs in-code and  the serviceInfo is nil. The other way is you can create your own service info dictionary in a scheme equivalent to the TymphanySerivce.plist and supply it by the parameter serviceInfo at -(id)initWithDelegate:serviceInfo:scanMode:connectMode:.
+	\code {.m}
+	//initialize the TAP modules
+	self.bleCentral = [[TABluetoothLowEnergyCentral alloc] initWithDelegate:self serviceInfo:nil scanMode:TABluetoothLowEnergyCentralScanModeAuto connectMode:TABluetoothLowEnergyCentralConnectModeManual]; //Use auto mode for both scan and connect, to make it easy and simple
+    
+    	self.systemService = [[TASystemService alloc] initWithProtocol:self.bleCentral];
+    	self.dspService = [[TADigitalSignalProcessingService alloc] initWithProtocol:self.bleCentral];
+    	self.playControlService = [[TAPlayControlService alloc] initWithProtocol:self.bleCentral];
+	\endcode
+
+	\subsection ble-sample-code-service-read Read value by Service Module
+
+This code snippet shows how to read volume value by the Play Control Module.
+
+	\code {.m}
+//Demo using play control service to read value
+- (void)readVolume
+{
+   	CBPeripheral* system = [[self.bleCentral connectedPeripherals] objectAtIndex:0];
+    
+    	[self.playControlService system:system volume:^(NSString* volume){
+        
+        	NSLog(@"Volume: %@", volume);
+    	}];
+}
+	\endcode
+
+	\subsection ble-sample-code-service-write Write value by Service Module
+
+This code snippet shows how to set new volume value by the Play Control Module.
+
+	\code {.m}
+//Demo using play control service to write value
+- (void)writeVolume:(NSInteger)volume
+{
+    	CBPeripheral* system = [[self.bleCentral connectedPeripherals] objectAtIndex:0];
+
+	[self.playControlService system:system writeVolume:volume completion:^(id complete){
+		
+		NSLog(@“Volume written”);
+	}];
+}
+	\endcode
+
+
+	\subsection ble-sample-code-protocol-read Read value by BLE Protocol Module
+
+You may also read/write a value directly by the BLE protocol module. Note that it means your class must have adopted the protocol TABluetoothLowEnergyCentralDelegate and also understand how to decode the byte information.
+
+	\code {.m}
+//Demo using BLE protocol module to read value
+- (void)readVolume
+{
+    	CBPeripheral* system = [[self.bleCentral connectedPeripherals] objectAtIndex:0];
+    
+    	[self.bleCentral readDataForCharacteristic:TABluetoothLowEnergyCharacteristicTypeVolumeControl device:system];
+}
+	
+//Delegate method of TABluetoothLowEnergyCentralDelegate
+- (void)bluetoothLowEnergyCentralDidUpdateValueForCharacteristic:(TABluetoothLowEnergyCharacteristic *)characteristic error:(NSError *)error
+{
+    //only handle the volume here since it's the one we directly read by the BLE module
+    if(characteristic.type == TABluetoothLowEnergyCharacteristicTypeSoftwareVersion)
+    {
+        NSData* data = characteristic.value;
+
+        //We understand how to convert the return byte array to human readable information
+        char buff;
+        [data getBytes:&buff length:1];
+        int i = buff;
+        
+        NSString* volume = [NSString stringWithFormat:@"%d", i];
+        
+        NSLog(@"Volume: %@", volume);
+    }
+    
+}
+
+\endcode
+
+*/

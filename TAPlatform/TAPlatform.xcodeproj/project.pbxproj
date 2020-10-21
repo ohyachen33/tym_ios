@@ -1,0 +1,1856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4201BE971CD8523000EAF276 /* TPSignalReadFeaturesPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C5BD0C1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.h */; };
+		4201BE981CD8523600EAF276 /* TPSignalReadFeaturesPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C5BD0D1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.m */; };
+		4201BE991CD8526100EAF276 /* TPSignalReadFeaturesResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C5BD101C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.h */; };
+		4201BE9A1CD8526400EAF276 /* TPSignalReadFeaturesResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C5BD111C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.m */; };
+		420B2FBD1BA7F79F003BB171 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FA21BA7F79F003BB171 /* CLIColor.m */; };
+		420B2FC11BA7F79F003BB171 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FA61BA7F79F003BB171 /* DDAbstractDatabaseLogger.m */; };
+		420B2FC31BA7F79F003BB171 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FA81BA7F79F003BB171 /* DDASLLogCapture.m */; };
+		420B2FC51BA7F79F003BB171 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FAA1BA7F79F003BB171 /* DDASLLogger.m */; };
+		420B2FC81BA7F79F003BB171 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FAD1BA7F79F003BB171 /* DDFileLogger.m */; };
+		420B2FCC1BA7F79F003BB171 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB11BA7F79F003BB171 /* DDLog.m */; };
+		420B2FCF1BA7F79F003BB171 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB41BA7F79F003BB171 /* DDTTYLogger.m */; };
+		420B2FD11BA7F79F003BB171 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB71BA7F79F003BB171 /* DDContextFilterLogFormatter.m */; };
+		420B2FD31BA7F79F003BB171 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB91BA7F79F003BB171 /* DDDispatchQueueLogFormatter.m */; };
+		420B2FD51BA7F79F003BB171 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FBB1BA7F79F003BB171 /* DDMultiFormatter.m */; };
+		420B2FDA1BA7F8F3003BB171 /* TAPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FD81BA7F8F3003BB171 /* TAPLogger.m */; };
+		4238560D1C3BBCBB009A8A0A /* TAPlatformTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423856031C3BBCBB009A8A0A /* TAPlatformTV.framework */; };
+		423856121C3BBCBB009A8A0A /* TAPlatformTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 423856111C3BBCBB009A8A0A /* TAPlatformTVTests.m */; };
+		4238561A1C3BBD52009A8A0A /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FA21BA7F79F003BB171 /* CLIColor.m */; };
+		4238561B1C3BBD52009A8A0A /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FA61BA7F79F003BB171 /* DDAbstractDatabaseLogger.m */; };
+		4238561C1C3BBD52009A8A0A /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FA81BA7F79F003BB171 /* DDASLLogCapture.m */; };
+		4238561D1C3BBD52009A8A0A /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FAA1BA7F79F003BB171 /* DDASLLogger.m */; };
+		4238561E1C3BBD52009A8A0A /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FAD1BA7F79F003BB171 /* DDFileLogger.m */; };
+		4238561F1C3BBD52009A8A0A /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB11BA7F79F003BB171 /* DDLog.m */; };
+		423856201C3BBD52009A8A0A /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB41BA7F79F003BB171 /* DDTTYLogger.m */; };
+		423856211C3BBD52009A8A0A /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB71BA7F79F003BB171 /* DDContextFilterLogFormatter.m */; };
+		423856221C3BBD52009A8A0A /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FB91BA7F79F003BB171 /* DDDispatchQueueLogFormatter.m */; };
+		423856231C3BBD52009A8A0A /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FBB1BA7F79F003BB171 /* DDMultiFormatter.m */; };
+		423856241C3BBD52009A8A0A /* TAPBluetoothLowEnergyCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66F71B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.m */; };
+		423856251C3BBD52009A8A0A /* TAPBluetoothLowEnergyDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66FB1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.m */; };
+		423856261C3BBD52009A8A0A /* TAPBluetoothLowEnergyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66FF1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.m */; };
+		423856271C3BBD52009A8A0A /* TAPDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67041B8D907A00A3A1D3 /* TAPDataUtils.m */; };
+		423856281C3BBD52009A8A0A /* TAPDocumentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67061B8D907A00A3A1D3 /* TAPDocumentUtils.m */; };
+		423856291C3BBD52009A8A0A /* TAPBluetoothLowEnergyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A525481B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.m */; };
+		4238562A1C3BBD52009A8A0A /* TAPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67081B8D907A00A3A1D3 /* TAPOperation.m */; };
+		4238562B1C3BBD52009A8A0A /* TAPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC670A1B8D907A00A3A1D3 /* TAPOperationQueue.m */; };
+		4238562C1C3BBD52009A8A0A /* Crc16.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67531B8D907A00A3A1D3 /* Crc16.m */; };
+		4238562D1C3BBD52009A8A0A /* TPSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC675B1B8D907A00A3A1D3 /* TPSignal.m */; };
+		4238562E1C3BBD52009A8A0A /* TPSignalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0703B1C04379300A1401C /* TPSignalConfig.m */; };
+		4238562F1C3BBD52009A8A0A /* TPSignalButtonPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC675D1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.m */; };
+		423856301C3BBD52009A8A0A /* TPSignalDataPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC675F1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.m */; };
+		423856311C3BBD52009A8A0A /* TPSignalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67611B8D907A00A3A1D3 /* TPSignalHeader.m */; };
+		423856321C3BBD52009A8A0A /* TPSignalReadSettingPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67631B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.m */; };
+		423856331C3BBD52009A8A0A /* TPSignalReadSettingResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67651B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.m */; };
+		423856341C3BBD52009A8A0A /* TPSignalReadStringPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67671B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.m */; };
+		423856351C3BBD52009A8A0A /* TPSignalReadStringResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67691B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.m */; };
+		423856361C3BBD52009A8A0A /* TPSignalResetItemPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070431C0468F200A1401C /* TPSignalResetItemPacketEncoder.m */; };
+		423856371C3BBD52009A8A0A /* TPSignalReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC676B1B8D907A00A3A1D3 /* TPSignalReceiver.m */; };
+		423856381C3BBD52009A8A0A /* TPSignalSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC676D1B8D907A00A3A1D3 /* TPSignalSender.m */; };
+		423856391C3BBD52009A8A0A /* TPSignalWriteSettingPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC676F1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.m */; };
+		4238563A1C3BBD52009A8A0A /* TPSignalWriteStringsPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67711B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.m */; };
+		4238563B1C3BBD52009A8A0A /* TAPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67551B8D907A00A3A1D3 /* TAPProtocol.m */; };
+		4238563C1C3BBD52009A8A0A /* TAPSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67581B8D907A00A3A1D3 /* TAPSystem.m */; };
+		4238563D1C3BBD52009A8A0A /* TAPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CCA28A1BC6579200F6491E /* TAPError.m */; };
+		4238563E1C3BBD52009A8A0A /* TAPDigitalSignalProcessingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67761B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.m */; };
+		4238563F1C3BBD52009A8A0A /* TAMediaImportService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC677A1B8D907A00A3A1D3 /* TAMediaImportService.m */; };
+		423856401C3BBD52009A8A0A /* TAMediaLibraryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC677C1B8D907A00A3A1D3 /* TAMediaLibraryService.m */; };
+		423856411C3BBD52009A8A0A /* TSLibraryImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC677F1B8D907A00A3A1D3 /* TSLibraryImport.m */; };
+		423856421C3BBD52009A8A0A /* TAPPlayControlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67851B8D907A00A3A1D3 /* TAPPlayControlService.m */; };
+		423856431C3BBD52009A8A0A /* TAPProtocolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67881B8D907A00A3A1D3 /* TAPProtocolFactory.m */; };
+		423856441C3BBD52009A8A0A /* TAPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC678A1B8D907A00A3A1D3 /* TAPService.m */; };
+		423856451C3BBD52009A8A0A /* TAPSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC678D1B8D907A00A3A1D3 /* TAPSystemService.m */; };
+		423856461C3BBD52009A8A0A /* TAPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B2FD81BA7F8F3003BB171 /* TAPLogger.m */; };
+		423856471C3BBD52009A8A0A /* TAPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFB51BFB31C90091DFC1 /* TAPLoggerFormatter.m */; };
+		423856481C3BC098009A8A0A /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FA11BA7F79F003BB171 /* CLIColor.h */; };
+		423856491C3BC098009A8A0A /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FA31BA7F79F003BB171 /* CocoaLumberjack.h */; };
+		4238564A1C3BC098009A8A0A /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FA51BA7F79F003BB171 /* DDAbstractDatabaseLogger.h */; };
+		4238564B1C3BC098009A8A0A /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FA71BA7F79F003BB171 /* DDASLLogCapture.h */; };
+		4238564C1C3BC098009A8A0A /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FA91BA7F79F003BB171 /* DDASLLogger.h */; };
+		4238564D1C3BC098009A8A0A /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FAB1BA7F79F003BB171 /* DDAssertMacros.h */; };
+		4238564E1C3BC098009A8A0A /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FAC1BA7F79F003BB171 /* DDFileLogger.h */; };
+		4238564F1C3BC098009A8A0A /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FAE1BA7F79F003BB171 /* DDLegacyMacros.h */; };
+		423856501C3BC098009A8A0A /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FAF1BA7F79F003BB171 /* DDLog+LOGV.h */; };
+		423856511C3BC098009A8A0A /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FB01BA7F79F003BB171 /* DDLog.h */; };
+		423856521C3BC099009A8A0A /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FB21BA7F79F003BB171 /* DDLogMacros.h */; };
+		423856531C3BC099009A8A0A /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FB31BA7F79F003BB171 /* DDTTYLogger.h */; };
+		423856541C3BC099009A8A0A /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FB61BA7F79F003BB171 /* DDContextFilterLogFormatter.h */; };
+		423856551C3BC099009A8A0A /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FB81BA7F79F003BB171 /* DDDispatchQueueLogFormatter.h */; };
+		423856561C3BC099009A8A0A /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FBA1BA7F79F003BB171 /* DDMultiFormatter.h */; };
+		423856571C3BC099009A8A0A /* TAPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC63C61B8D8B9B00A3A1D3 /* TAPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856581C3BC099009A8A0A /* TAPBluetoothLowEnergyCentral.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC66F61B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856591C3BC099009A8A0A /* TAPBluetoothLowEnergyDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC66FA1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238565A1C3BC099009A8A0A /* TAPBluetoothLowEnergyProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC66FE1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238565B1C3BC099009A8A0A /* TAPBluetoothLowEnergyService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67021B8D907A00A3A1D3 /* TAPBluetoothLowEnergyService.h */; };
+		4238565C1C3BC099009A8A0A /* TAPDataUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67031B8D907A00A3A1D3 /* TAPDataUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238565D1C3BC099009A8A0A /* TAPDocumentUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67051B8D907A00A3A1D3 /* TAPDocumentUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238565E1C3BC099009A8A0A /* TAPBluetoothLowEnergyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A525471B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238565F1C3BC099009A8A0A /* TAPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67071B8D907A00A3A1D3 /* TAPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856601C3BC099009A8A0A /* TAPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67091B8D907A00A3A1D3 /* TAPOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856611C3BC099009A8A0A /* Crc16.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67521B8D907A00A3A1D3 /* Crc16.h */; };
+		423856621C3BC099009A8A0A /* TPDataPacketSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67591B8D907A00A3A1D3 /* TPDataPacketSet.h */; };
+		423856631C3BC099009A8A0A /* TPSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC675A1B8D907A00A3A1D3 /* TPSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856641C3BC099009A8A0A /* TPSignalConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F0703A1C04379300A1401C /* TPSignalConfig.h */; };
+		423856651C3BC099009A8A0A /* TPSignalButtonPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC675C1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.h */; };
+		423856661C3BC099009A8A0A /* TPSignalDataPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC675E1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.h */; };
+		423856671C3BC099009A8A0A /* TPSignalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67601B8D907A00A3A1D3 /* TPSignalHeader.h */; };
+		423856681C3BC099009A8A0A /* TPSignalReadSettingPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67621B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.h */; };
+		423856691C3BC099009A8A0A /* TPSignalReadSettingResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67641B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.h */; };
+		4238566A1C3BC09A009A8A0A /* TPSignalReadStringPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67661B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.h */; };
+		4238566B1C3BC09A009A8A0A /* TPSignalReadStringResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67681B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.h */; };
+		4238566C1C3BC09A009A8A0A /* TPSignalResetItemPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F070421C0468F200A1401C /* TPSignalResetItemPacketEncoder.h */; };
+		4238566D1C3BC09A009A8A0A /* TPSignalReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC676A1B8D907A00A3A1D3 /* TPSignalReceiver.h */; };
+		4238566E1C3BC09A009A8A0A /* TPSignalSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC676C1B8D907A00A3A1D3 /* TPSignalSender.h */; };
+		4238566F1C3BC09A009A8A0A /* TPSignalWriteSettingPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC676E1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.h */; };
+		423856701C3BC09A009A8A0A /* TPSignalWriteStringsPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67701B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.h */; };
+		423856711C3BC09A009A8A0A /* TASignalType.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67721B8D907A00A3A1D3 /* TASignalType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856721C3BC09A009A8A0A /* TAPProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67541B8D907A00A3A1D3 /* TAPProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856731C3BC09A009A8A0A /* TAPProtocolAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67561B8D907A00A3A1D3 /* TAPProtocolAdaptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856741C3BC09A009A8A0A /* TAPSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67571B8D907A00A3A1D3 /* TAPSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856751C3BC09A009A8A0A /* TAPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CCA2891BC6579200F6491E /* TAPError.h */; };
+		423856761C3BC09A009A8A0A /* TAPDigitalSignalProcessingService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67751B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856771C3BC09B009A8A0A /* TAMediaImportService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67791B8D907A00A3A1D3 /* TAMediaImportService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856781C3BC09B009A8A0A /* TAMediaLibraryService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC677B1B8D907A00A3A1D3 /* TAMediaLibraryService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423856791C3BC09B009A8A0A /* TSLibraryImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC677E1B8D907A00A3A1D3 /* TSLibraryImport.h */; };
+		4238567A1C3BC09B009A8A0A /* TAPPlayControlService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67841B8D907A00A3A1D3 /* TAPPlayControlService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238567B1C3BC09B009A8A0A /* TAPProtocolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67871B8D907A00A3A1D3 /* TAPProtocolFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238567C1C3BC09B009A8A0A /* TAPService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67891B8D907A00A3A1D3 /* TAPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238567D1C3BC09B009A8A0A /* TAPSystemService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC678C1B8D907A00A3A1D3 /* TAPSystemService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4238567E1C3BC09B009A8A0A /* TAPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B2FD71BA7F8F3003BB171 /* TAPLogger.h */; };
+		4238567F1C3BC09B009A8A0A /* TAPLoggerFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4273EFB41BFB31C90091DFC1 /* TAPLoggerFormatter.h */; };
+		4273EFB71BFB31C90091DFC1 /* TAPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273EFB51BFB31C90091DFC1 /* TAPLoggerFormatter.m */; };
+		428425A61CE57A2200BBB1FB /* TAPropertyDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 428425A41CE57A2200BBB1FB /* TAPropertyDevice.h */; };
+		428425A71CE57A2200BBB1FB /* TAPropertyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 428425A51CE57A2200BBB1FB /* TAPropertyDevice.m */; };
+		428425A91CE57FDD00BBB1FB /* TAPropertyFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 428425A81CE57FDD00BBB1FB /* TAPropertyFactoryTests.m */; };
+		42A525491B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A525471B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.h */; };
+		42A5254A1B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A525481B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.m */; };
+		42BED2BA1CD8AB59003B176A /* TASystemServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2B91CD8AB59003B176A /* TASystemServiceTests.m */; };
+		42BED2C11CE43403003B176A /* TAProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2BF1CE43403003B176A /* TAProperty.h */; };
+		42BED2C21CE43403003B176A /* TAProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2C01CE43403003B176A /* TAProperty.m */; };
+		42BED2C51CE43417003B176A /* TAPropertyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2C31CE43417003B176A /* TAPropertyFactory.h */; };
+		42BED2C61CE43417003B176A /* TAPropertyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2C41CE43417003B176A /* TAPropertyFactory.m */; };
+		42BED2C91CE43573003B176A /* TAPropertyVolume.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2C71CE43573003B176A /* TAPropertyVolume.h */; };
+		42BED2CA1CE43573003B176A /* TAPropertyVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2C81CE43573003B176A /* TAPropertyVolume.m */; };
+		42BED2CD1CE43C46003B176A /* TAPropertyLowPassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2CB1CE43C46003B176A /* TAPropertyLowPassFilter.h */; };
+		42BED2CE1CE43C46003B176A /* TAPropertyLowPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2CC1CE43C46003B176A /* TAPropertyLowPassFilter.m */; };
+		42BED2D11CE44B4A003B176A /* TAPropertyRGC.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2CF1CE44B4A003B176A /* TAPropertyRGC.h */; };
+		42BED2D21CE44B4A003B176A /* TAPropertyRGC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2D01CE44B4A003B176A /* TAPropertyRGC.m */; };
+		42BED2D51CE44F31003B176A /* TAPropertyPhase.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2D31CE44F31003B176A /* TAPropertyPhase.h */; };
+		42BED2D61CE44F31003B176A /* TAPropertyPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2D41CE44F31003B176A /* TAPropertyPhase.m */; };
+		42BED2D91CE4584E003B176A /* TAPropertyPortTuning.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2D71CE4584E003B176A /* TAPropertyPortTuning.h */; };
+		42BED2DA1CE4584E003B176A /* TAPropertyPortTuning.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2D81CE4584E003B176A /* TAPropertyPortTuning.m */; };
+		42BED2DD1CE45D59003B176A /* TAPropertyParametricEQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2DB1CE45D59003B176A /* TAPropertyParametricEQ.h */; };
+		42BED2DE1CE45D59003B176A /* TAPropertyParametricEQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2DC1CE45D59003B176A /* TAPropertyParametricEQ.m */; };
+		42BED2E11CE4659F003B176A /* TAPropertySettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2DF1CE4659F003B176A /* TAPropertySettings.h */; };
+		42BED2E21CE4659F003B176A /* TAPropertySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2E01CE4659F003B176A /* TAPropertySettings.m */; };
+		42BED2E51CE46AA6003B176A /* TAPropertyScreenDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2E31CE46AA6003B176A /* TAPropertyScreenDisplay.h */; };
+		42BED2E61CE46AA6003B176A /* TAPropertyScreenDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2E41CE46AA6003B176A /* TAPropertyScreenDisplay.m */; };
+		42BED2E91CE475E0003B176A /* TAPropertyPreset.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BED2E71CE475E0003B176A /* TAPropertyPreset.h */; };
+		42BED2EA1CE475E0003B176A /* TAPropertyPreset.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BED2E81CE475E0003B176A /* TAPropertyPreset.m */; };
+		42C5BD0E1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C5BD0C1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.h */; };
+		42C5BD0F1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C5BD0D1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.m */; };
+		42C5BD121C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C5BD101C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.h */; };
+		42C5BD131C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C5BD111C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.m */; };
+		42CCA28B1BC6579200F6491E /* TAPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CCA2891BC6579200F6491E /* TAPError.h */; };
+		42CCA28C1BC6579200F6491E /* TAPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CCA28A1BC6579200F6491E /* TAPError.m */; };
+		42CCA28E1BCCB31000F6491E /* TAPServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CCA28D1BCCB31000F6491E /* TAPServiceTests.m */; };
+		42F0703C1C04379300A1401C /* TPSignalConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F0703A1C04379300A1401C /* TPSignalConfig.h */; };
+		42F0703D1C04379300A1401C /* TPSignalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0703B1C04379300A1401C /* TPSignalConfig.m */; };
+		42F070441C0468F200A1401C /* TPSignalResetItemPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F070421C0468F200A1401C /* TPSignalResetItemPacketEncoder.h */; };
+		42F070451C0468F200A1401C /* TPSignalResetItemPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F070431C0468F200A1401C /* TPSignalResetItemPacketEncoder.m */; };
+		42FC63C71B8D8B9B00A3A1D3 /* TAPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC63C61B8D8B9B00A3A1D3 /* TAPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC63CD1B8D8B9B00A3A1D3 /* TAPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FC63C11B8D8B9B00A3A1D3 /* TAPlatform.framework */; };
+		42FC63D41B8D8B9B00A3A1D3 /* TAPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC63D31B8D8B9B00A3A1D3 /* TAPlatformTests.m */; };
+		42FC65341B8D8EE100A3A1D3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FC65331B8D8EE100A3A1D3 /* libOCMock.a */; };
+		42FC66DF1B8D902900A3A1D3 /* TAPBluetoothLowEnergyDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66C21B8D902900A3A1D3 /* TAPBluetoothLowEnergyDefaultsTests.m */; };
+		42FC66E01B8D902900A3A1D3 /* TAPBluetoothLowEnergyProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66C31B8D902900A3A1D3 /* TAPBluetoothLowEnergyProxyTests.m */; };
+		42FC66E11B8D902900A3A1D3 /* TAPOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66C41B8D902900A3A1D3 /* TAPOperationQueueTests.m */; };
+		42FC66E21B8D902900A3A1D3 /* TAPOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66C51B8D902900A3A1D3 /* TAPOperationTests.m */; };
+		42FC66E51B8D902900A3A1D3 /* crc16Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66CA1B8D902900A3A1D3 /* crc16Test.m */; };
+		42FC66E71B8D902900A3A1D3 /* TPSignalReceiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66CC1B8D902900A3A1D3 /* TPSignalReceiverTests.m */; };
+		42FC66E81B8D902900A3A1D3 /* TPSignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66CD1B8D902900A3A1D3 /* TPSignalTests.m */; };
+		42FC66EB1B8D902900A3A1D3 /* TAMediaImportServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66D31B8D902900A3A1D3 /* TAMediaImportServiceTests.m */; };
+		42FC66ED1B8D902900A3A1D3 /* TAPlatformServicesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66D61B8D902900A3A1D3 /* TAPlatformServicesTests.m */; };
+		42FC67901B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC66F61B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67911B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66F71B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.m */; };
+		42FC67941B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC66FA1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67951B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66FB1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.m */; };
+		42FC67981B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC66FE1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67991B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC66FF1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.m */; };
+		42FC679C1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67021B8D907A00A3A1D3 /* TAPBluetoothLowEnergyService.h */; };
+		42FC679D1B8D907A00A3A1D3 /* TAPDataUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67031B8D907A00A3A1D3 /* TAPDataUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC679E1B8D907A00A3A1D3 /* TAPDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67041B8D907A00A3A1D3 /* TAPDataUtils.m */; };
+		42FC679F1B8D907A00A3A1D3 /* TAPDocumentUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67051B8D907A00A3A1D3 /* TAPDocumentUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67A01B8D907A00A3A1D3 /* TAPDocumentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67061B8D907A00A3A1D3 /* TAPDocumentUtils.m */; };
+		42FC67A11B8D907A00A3A1D3 /* TAPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67071B8D907A00A3A1D3 /* TAPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67A21B8D907A00A3A1D3 /* TAPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67081B8D907A00A3A1D3 /* TAPOperation.m */; };
+		42FC67A31B8D907A00A3A1D3 /* TAPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67091B8D907A00A3A1D3 /* TAPOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67A41B8D907A00A3A1D3 /* TAPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC670A1B8D907A00A3A1D3 /* TAPOperationQueue.m */; };
+		42FC67E01B8D907A00A3A1D3 /* Crc16.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67521B8D907A00A3A1D3 /* Crc16.h */; };
+		42FC67E11B8D907A00A3A1D3 /* Crc16.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67531B8D907A00A3A1D3 /* Crc16.m */; };
+		42FC67E21B8D907A00A3A1D3 /* TAPProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67541B8D907A00A3A1D3 /* TAPProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67E31B8D907A00A3A1D3 /* TAPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67551B8D907A00A3A1D3 /* TAPProtocol.m */; };
+		42FC67E41B8D907A00A3A1D3 /* TAPProtocolAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67561B8D907A00A3A1D3 /* TAPProtocolAdaptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67E51B8D907A00A3A1D3 /* TAPSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67571B8D907A00A3A1D3 /* TAPSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67E61B8D907A00A3A1D3 /* TAPSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67581B8D907A00A3A1D3 /* TAPSystem.m */; };
+		42FC67E71B8D907A00A3A1D3 /* TPDataPacketSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67591B8D907A00A3A1D3 /* TPDataPacketSet.h */; };
+		42FC67E81B8D907A00A3A1D3 /* TPSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC675A1B8D907A00A3A1D3 /* TPSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC67E91B8D907A00A3A1D3 /* TPSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC675B1B8D907A00A3A1D3 /* TPSignal.m */; };
+		42FC67EA1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC675C1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.h */; };
+		42FC67EB1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC675D1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.m */; };
+		42FC67EC1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC675E1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.h */; };
+		42FC67ED1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC675F1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.m */; };
+		42FC67EE1B8D907A00A3A1D3 /* TPSignalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67601B8D907A00A3A1D3 /* TPSignalHeader.h */; };
+		42FC67EF1B8D907A00A3A1D3 /* TPSignalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67611B8D907A00A3A1D3 /* TPSignalHeader.m */; };
+		42FC67F01B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67621B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.h */; };
+		42FC67F11B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67631B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.m */; };
+		42FC67F21B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67641B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.h */; };
+		42FC67F31B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67651B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.m */; };
+		42FC67F41B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67661B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.h */; };
+		42FC67F51B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67671B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.m */; };
+		42FC67F61B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67681B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.h */; };
+		42FC67F71B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67691B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.m */; };
+		42FC67F81B8D907A00A3A1D3 /* TPSignalReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC676A1B8D907A00A3A1D3 /* TPSignalReceiver.h */; };
+		42FC67F91B8D907A00A3A1D3 /* TPSignalReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC676B1B8D907A00A3A1D3 /* TPSignalReceiver.m */; };
+		42FC67FA1B8D907A00A3A1D3 /* TPSignalSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC676C1B8D907A00A3A1D3 /* TPSignalSender.h */; };
+		42FC67FB1B8D907A00A3A1D3 /* TPSignalSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC676D1B8D907A00A3A1D3 /* TPSignalSender.m */; };
+		42FC67FC1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC676E1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.h */; };
+		42FC67FD1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC676F1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.m */; };
+		42FC67FE1B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67701B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.h */; };
+		42FC67FF1B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67711B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.m */; };
+		42FC68001B8D907A00A3A1D3 /* TASignalType.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67721B8D907A00A3A1D3 /* TASignalType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC68011B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67751B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC68021B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67761B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.m */; };
+		42FC68031B8D907A00A3A1D3 /* TAMediaImportService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67791B8D907A00A3A1D3 /* TAMediaImportService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC68041B8D907A00A3A1D3 /* TAMediaImportService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC677A1B8D907A00A3A1D3 /* TAMediaImportService.m */; };
+		42FC68051B8D907A00A3A1D3 /* TAMediaLibraryService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC677B1B8D907A00A3A1D3 /* TAMediaLibraryService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC68061B8D907A00A3A1D3 /* TAMediaLibraryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC677C1B8D907A00A3A1D3 /* TAMediaLibraryService.m */; };
+		42FC68071B8D907A00A3A1D3 /* TSLibraryImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC677E1B8D907A00A3A1D3 /* TSLibraryImport.h */; };
+		42FC68081B8D907A00A3A1D3 /* TSLibraryImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC677F1B8D907A00A3A1D3 /* TSLibraryImport.m */; };
+		42FC680B1B8D907A00A3A1D3 /* TAPPlayControlService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67841B8D907A00A3A1D3 /* TAPPlayControlService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC680C1B8D907A00A3A1D3 /* TAPPlayControlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67851B8D907A00A3A1D3 /* TAPPlayControlService.m */; };
+		42FC680D1B8D907A00A3A1D3 /* TAPProtocolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67871B8D907A00A3A1D3 /* TAPProtocolFactory.h */; };
+		42FC680E1B8D907A00A3A1D3 /* TAPProtocolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC67881B8D907A00A3A1D3 /* TAPProtocolFactory.m */; };
+		42FC680F1B8D907A00A3A1D3 /* TAPService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC67891B8D907A00A3A1D3 /* TAPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC68101B8D907A00A3A1D3 /* TAPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC678A1B8D907A00A3A1D3 /* TAPService.m */; };
+		42FC68111B8D907A00A3A1D3 /* TAPSystemService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FC678C1B8D907A00A3A1D3 /* TAPSystemService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FC68121B8D907A00A3A1D3 /* TAPSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC678D1B8D907A00A3A1D3 /* TAPSystemService.m */; };
+		CE0FDA3A1F39591F0021D524 /* TPSignalReadProductPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0FDA361F39591F0021D524 /* TPSignalReadProductPacketEncoder.h */; };
+		CE0FDA3C1F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0FDA381F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.h */; };
+		CE5A9D591D1BC686002C1053 /* TPSignalReadFactoryReset.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5A9D571D1BC686002C1053 /* TPSignalReadFactoryReset.h */; };
+		CE5A9D5A1D1BC686002C1053 /* TPSignalReadFactoryReset.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A9D581D1BC686002C1053 /* TPSignalReadFactoryReset.m */; };
+		CEC7732F1E49AF7300B68F84 /* TPSignalReadVersionEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC7732D1E49AF7300B68F84 /* TPSignalReadVersionEncoder.h */; };
+		CEC773301E49AF7300B68F84 /* TPSignalReadVersionEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC7732E1E49AF7300B68F84 /* TPSignalReadVersionEncoder.m */; };
+		CEC773331E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC773311E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.h */; };
+		CEC773341E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC773321E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.m */; };
+		CECE44371D3F0F0800A9B1FB /* TPSignalReadFactoryReset.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5A9D571D1BC686002C1053 /* TPSignalReadFactoryReset.h */; };
+		CECE44381D3F0FF300A9B1FB /* TPSignalReadFactoryReset.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A9D581D1BC686002C1053 /* TPSignalReadFactoryReset.m */; };
+		CEDC44BD1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDC44BB1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.h */; };
+		CEDC44BE1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC44BC1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.m */; };
+		CEDC44C51E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDC44C31E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.h */; };
+		CEDC44C61E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC44C41E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.m */; };
+		CEDCF05A1DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDCF0581DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.h */; };
+		CEDCF05B1DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCF0591DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.m */; };
+		CEE83DEB1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE83DE91E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.h */; };
+		CEE83DEC1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE83DEA1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.m */; };
+		CEEC3FA71E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEC3FA11E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEEC3FA81E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC3FA21E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.m */; };
+		CEEC3FBE1E55858800D8718D /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEC3FBB1E55858800D8718D /* parser.h */; };
+		CEEC3FBF1E55858800D8718D /* utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC3FBC1E55858800D8718D /* utils.m */; };
+		CEEC3FC01E55858800D8718D /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEC3FBD1E55858800D8718D /* utils.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4238560E1C3BBCBB009A8A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42FC63B81B8D8B9B00A3A1D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423856021C3BBCBB009A8A0A;
+			remoteInfo = TAPlatformTV;
+		};
+		42FC63CE1B8D8B9B00A3A1D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42FC63B81B8D8B9B00A3A1D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42FC63C01B8D8B9B00A3A1D3;
+			remoteInfo = TAPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4201BE911CD8464600EAF276 /* TAPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAPlatform.framework; path = ../Frameworks/TAPlatform/TAPlatform.framework; sourceTree = "<group>"; };
+		420B2FA11BA7F79F003BB171 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		420B2FA21BA7F79F003BB171 /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		420B2FA31BA7F79F003BB171 /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		420B2FA51BA7F79F003BB171 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		420B2FA61BA7F79F003BB171 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		420B2FA71BA7F79F003BB171 /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		420B2FA81BA7F79F003BB171 /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		420B2FA91BA7F79F003BB171 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		420B2FAA1BA7F79F003BB171 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		420B2FAB1BA7F79F003BB171 /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		420B2FAC1BA7F79F003BB171 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		420B2FAD1BA7F79F003BB171 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		420B2FAE1BA7F79F003BB171 /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		420B2FAF1BA7F79F003BB171 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		420B2FB01BA7F79F003BB171 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		420B2FB11BA7F79F003BB171 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		420B2FB21BA7F79F003BB171 /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		420B2FB31BA7F79F003BB171 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		420B2FB41BA7F79F003BB171 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		420B2FB61BA7F79F003BB171 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		420B2FB71BA7F79F003BB171 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		420B2FB81BA7F79F003BB171 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		420B2FB91BA7F79F003BB171 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		420B2FBA1BA7F79F003BB171 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		420B2FBB1BA7F79F003BB171 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		420B2FD71BA7F8F3003BB171 /* TAPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPLogger.h; sourceTree = "<group>"; };
+		420B2FD81BA7F8F3003BB171 /* TAPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPLogger.m; sourceTree = "<group>"; };
+		420B2FDB1BA7FEC4003BB171 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		423855F71C3BA5C6009A8A0A /* TAPlatform copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TAPlatform copy-Info.plist"; path = "/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/TAPlatform/TAPlatform copy-Info.plist"; sourceTree = "<absolute>"; };
+		423856031C3BBCBB009A8A0A /* TAPlatformTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAPlatformTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		423856051C3BBCBB009A8A0A /* TAPlatformTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAPlatformTV.h; sourceTree = "<group>"; };
+		423856071C3BBCBB009A8A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4238560C1C3BBCBB009A8A0A /* TAPlatformTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAPlatformTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		423856111C3BBCBB009A8A0A /* TAPlatformTVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPlatformTVTests.m; sourceTree = "<group>"; };
+		423856131C3BBCBB009A8A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4273EFB41BFB31C90091DFC1 /* TAPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPLoggerFormatter.h; sourceTree = "<group>"; };
+		4273EFB51BFB31C90091DFC1 /* TAPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPLoggerFormatter.m; sourceTree = "<group>"; };
+		428425A41CE57A2200BBB1FB /* TAPropertyDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyDevice.h; sourceTree = "<group>"; };
+		428425A51CE57A2200BBB1FB /* TAPropertyDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyDevice.m; sourceTree = "<group>"; };
+		428425A81CE57FDD00BBB1FB /* TAPropertyFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyFactoryTests.m; sourceTree = "<group>"; };
+		42A525471B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPBluetoothLowEnergyUtils.h; sourceTree = "<group>"; };
+		42A525481B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPBluetoothLowEnergyUtils.m; sourceTree = "<group>"; };
+		42BED2B91CD8AB59003B176A /* TASystemServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASystemServiceTests.m; sourceTree = "<group>"; };
+		42BED2BF1CE43403003B176A /* TAProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAProperty.h; sourceTree = "<group>"; };
+		42BED2C01CE43403003B176A /* TAProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAProperty.m; sourceTree = "<group>"; };
+		42BED2C31CE43417003B176A /* TAPropertyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyFactory.h; sourceTree = "<group>"; };
+		42BED2C41CE43417003B176A /* TAPropertyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyFactory.m; sourceTree = "<group>"; };
+		42BED2C71CE43573003B176A /* TAPropertyVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyVolume.h; sourceTree = "<group>"; };
+		42BED2C81CE43573003B176A /* TAPropertyVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyVolume.m; sourceTree = "<group>"; };
+		42BED2CB1CE43C46003B176A /* TAPropertyLowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyLowPassFilter.h; sourceTree = "<group>"; };
+		42BED2CC1CE43C46003B176A /* TAPropertyLowPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyLowPassFilter.m; sourceTree = "<group>"; };
+		42BED2CF1CE44B4A003B176A /* TAPropertyRGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyRGC.h; sourceTree = "<group>"; };
+		42BED2D01CE44B4A003B176A /* TAPropertyRGC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyRGC.m; sourceTree = "<group>"; };
+		42BED2D31CE44F31003B176A /* TAPropertyPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyPhase.h; sourceTree = "<group>"; };
+		42BED2D41CE44F31003B176A /* TAPropertyPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyPhase.m; sourceTree = "<group>"; };
+		42BED2D71CE4584E003B176A /* TAPropertyPortTuning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyPortTuning.h; sourceTree = "<group>"; };
+		42BED2D81CE4584E003B176A /* TAPropertyPortTuning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyPortTuning.m; sourceTree = "<group>"; };
+		42BED2DB1CE45D59003B176A /* TAPropertyParametricEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyParametricEQ.h; sourceTree = "<group>"; };
+		42BED2DC1CE45D59003B176A /* TAPropertyParametricEQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyParametricEQ.m; sourceTree = "<group>"; };
+		42BED2DF1CE4659F003B176A /* TAPropertySettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertySettings.h; sourceTree = "<group>"; };
+		42BED2E01CE4659F003B176A /* TAPropertySettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertySettings.m; sourceTree = "<group>"; };
+		42BED2E31CE46AA6003B176A /* TAPropertyScreenDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyScreenDisplay.h; sourceTree = "<group>"; };
+		42BED2E41CE46AA6003B176A /* TAPropertyScreenDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyScreenDisplay.m; sourceTree = "<group>"; };
+		42BED2E71CE475E0003B176A /* TAPropertyPreset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPropertyPreset.h; sourceTree = "<group>"; };
+		42BED2E81CE475E0003B176A /* TAPropertyPreset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPropertyPreset.m; sourceTree = "<group>"; };
+		42C5BD0C1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadFeaturesPacketEncoder.h; sourceTree = "<group>"; };
+		42C5BD0D1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadFeaturesPacketEncoder.m; sourceTree = "<group>"; };
+		42C5BD101C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadFeaturesResponseEncoder.h; sourceTree = "<group>"; };
+		42C5BD111C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadFeaturesResponseEncoder.m; sourceTree = "<group>"; };
+		42CCA2891BC6579200F6491E /* TAPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPError.h; sourceTree = "<group>"; };
+		42CCA28A1BC6579200F6491E /* TAPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPError.m; sourceTree = "<group>"; };
+		42CCA28D1BCCB31000F6491E /* TAPServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPServiceTests.m; sourceTree = "<group>"; };
+		42F0703A1C04379300A1401C /* TPSignalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalConfig.h; sourceTree = "<group>"; };
+		42F0703B1C04379300A1401C /* TPSignalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalConfig.m; sourceTree = "<group>"; };
+		42F070421C0468F200A1401C /* TPSignalResetItemPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalResetItemPacketEncoder.h; sourceTree = "<group>"; };
+		42F070431C0468F200A1401C /* TPSignalResetItemPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalResetItemPacketEncoder.m; sourceTree = "<group>"; };
+		42FC63C11B8D8B9B00A3A1D3 /* TAPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FC63C51B8D8B9B00A3A1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FC63C61B8D8B9B00A3A1D3 /* TAPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAPlatform.h; sourceTree = "<group>"; };
+		42FC63CC1B8D8B9B00A3A1D3 /* TAPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FC63D21B8D8B9B00A3A1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FC63D31B8D8B9B00A3A1D3 /* TAPlatformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPlatformTests.m; sourceTree = "<group>"; };
+		42FC65331B8D8EE100A3A1D3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../OCMock/libOCMock.a; sourceTree = "<group>"; };
+		42FC66C21B8D902900A3A1D3 /* TAPBluetoothLowEnergyDefaultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPBluetoothLowEnergyDefaultsTests.m; sourceTree = "<group>"; };
+		42FC66C31B8D902900A3A1D3 /* TAPBluetoothLowEnergyProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPBluetoothLowEnergyProxyTests.m; sourceTree = "<group>"; };
+		42FC66C41B8D902900A3A1D3 /* TAPOperationQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPOperationQueueTests.m; sourceTree = "<group>"; };
+		42FC66C51B8D902900A3A1D3 /* TAPOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPOperationTests.m; sourceTree = "<group>"; };
+		42FC66CA1B8D902900A3A1D3 /* crc16Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crc16Test.m; sourceTree = "<group>"; };
+		42FC66CC1B8D902900A3A1D3 /* TPSignalReceiverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReceiverTests.m; sourceTree = "<group>"; };
+		42FC66CD1B8D902900A3A1D3 /* TPSignalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalTests.m; sourceTree = "<group>"; };
+		42FC66D31B8D902900A3A1D3 /* TAMediaImportServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMediaImportServiceTests.m; sourceTree = "<group>"; };
+		42FC66D61B8D902900A3A1D3 /* TAPlatformServicesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPlatformServicesTests.m; sourceTree = "<group>"; };
+		42FC66F61B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPBluetoothLowEnergyCentral.h; sourceTree = "<group>"; };
+		42FC66F71B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPBluetoothLowEnergyCentral.m; sourceTree = "<group>"; };
+		42FC66FA1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPBluetoothLowEnergyDefaults.h; sourceTree = "<group>"; };
+		42FC66FB1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPBluetoothLowEnergyDefaults.m; sourceTree = "<group>"; };
+		42FC66FE1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPBluetoothLowEnergyProxy.h; sourceTree = "<group>"; };
+		42FC66FF1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPBluetoothLowEnergyProxy.m; sourceTree = "<group>"; };
+		42FC67021B8D907A00A3A1D3 /* TAPBluetoothLowEnergyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPBluetoothLowEnergyService.h; sourceTree = "<group>"; };
+		42FC67031B8D907A00A3A1D3 /* TAPDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPDataUtils.h; sourceTree = "<group>"; };
+		42FC67041B8D907A00A3A1D3 /* TAPDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPDataUtils.m; sourceTree = "<group>"; };
+		42FC67051B8D907A00A3A1D3 /* TAPDocumentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPDocumentUtils.h; sourceTree = "<group>"; };
+		42FC67061B8D907A00A3A1D3 /* TAPDocumentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPDocumentUtils.m; sourceTree = "<group>"; };
+		42FC67071B8D907A00A3A1D3 /* TAPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPOperation.h; sourceTree = "<group>"; };
+		42FC67081B8D907A00A3A1D3 /* TAPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPOperation.m; sourceTree = "<group>"; };
+		42FC67091B8D907A00A3A1D3 /* TAPOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPOperationQueue.h; sourceTree = "<group>"; };
+		42FC670A1B8D907A00A3A1D3 /* TAPOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPOperationQueue.m; sourceTree = "<group>"; };
+		42FC67521B8D907A00A3A1D3 /* Crc16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crc16.h; sourceTree = "<group>"; };
+		42FC67531B8D907A00A3A1D3 /* Crc16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crc16.m; sourceTree = "<group>"; };
+		42FC67541B8D907A00A3A1D3 /* TAPProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPProtocol.h; sourceTree = "<group>"; };
+		42FC67551B8D907A00A3A1D3 /* TAPProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPProtocol.m; sourceTree = "<group>"; };
+		42FC67561B8D907A00A3A1D3 /* TAPProtocolAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPProtocolAdaptor.h; sourceTree = "<group>"; };
+		42FC67571B8D907A00A3A1D3 /* TAPSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPSystem.h; sourceTree = "<group>"; };
+		42FC67581B8D907A00A3A1D3 /* TAPSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPSystem.m; sourceTree = "<group>"; };
+		42FC67591B8D907A00A3A1D3 /* TPDataPacketSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDataPacketSet.h; sourceTree = "<group>"; };
+		42FC675A1B8D907A00A3A1D3 /* TPSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignal.h; sourceTree = "<group>"; };
+		42FC675B1B8D907A00A3A1D3 /* TPSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignal.m; sourceTree = "<group>"; };
+		42FC675C1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalButtonPacketEncoder.h; sourceTree = "<group>"; };
+		42FC675D1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalButtonPacketEncoder.m; sourceTree = "<group>"; };
+		42FC675E1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalDataPacketEncoder.h; sourceTree = "<group>"; };
+		42FC675F1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalDataPacketEncoder.m; sourceTree = "<group>"; };
+		42FC67601B8D907A00A3A1D3 /* TPSignalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalHeader.h; sourceTree = "<group>"; };
+		42FC67611B8D907A00A3A1D3 /* TPSignalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalHeader.m; sourceTree = "<group>"; };
+		42FC67621B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadSettingPacketEncoder.h; sourceTree = "<group>"; };
+		42FC67631B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadSettingPacketEncoder.m; sourceTree = "<group>"; };
+		42FC67641B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadSettingResponseEncoder.h; sourceTree = "<group>"; };
+		42FC67651B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadSettingResponseEncoder.m; sourceTree = "<group>"; };
+		42FC67661B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadStringPacketEncoder.h; sourceTree = "<group>"; };
+		42FC67671B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadStringPacketEncoder.m; sourceTree = "<group>"; };
+		42FC67681B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadStringResponseEncoder.h; sourceTree = "<group>"; };
+		42FC67691B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadStringResponseEncoder.m; sourceTree = "<group>"; };
+		42FC676A1B8D907A00A3A1D3 /* TPSignalReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReceiver.h; sourceTree = "<group>"; };
+		42FC676B1B8D907A00A3A1D3 /* TPSignalReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReceiver.m; sourceTree = "<group>"; };
+		42FC676C1B8D907A00A3A1D3 /* TPSignalSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalSender.h; sourceTree = "<group>"; };
+		42FC676D1B8D907A00A3A1D3 /* TPSignalSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalSender.m; sourceTree = "<group>"; };
+		42FC676E1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalWriteSettingPacketEncoder.h; sourceTree = "<group>"; };
+		42FC676F1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalWriteSettingPacketEncoder.m; sourceTree = "<group>"; };
+		42FC67701B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalWriteStringsPacketEncoder.h; sourceTree = "<group>"; };
+		42FC67711B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalWriteStringsPacketEncoder.m; sourceTree = "<group>"; };
+		42FC67721B8D907A00A3A1D3 /* TASignalType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASignalType.h; sourceTree = "<group>"; };
+		42FC67751B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPDigitalSignalProcessingService.h; sourceTree = "<group>"; };
+		42FC67761B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPDigitalSignalProcessingService.m; sourceTree = "<group>"; };
+		42FC67791B8D907A00A3A1D3 /* TAMediaImportService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMediaImportService.h; sourceTree = "<group>"; };
+		42FC677A1B8D907A00A3A1D3 /* TAMediaImportService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMediaImportService.m; sourceTree = "<group>"; };
+		42FC677B1B8D907A00A3A1D3 /* TAMediaLibraryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMediaLibraryService.h; sourceTree = "<group>"; };
+		42FC677C1B8D907A00A3A1D3 /* TAMediaLibraryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMediaLibraryService.m; sourceTree = "<group>"; };
+		42FC677E1B8D907A00A3A1D3 /* TSLibraryImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLibraryImport.h; sourceTree = "<group>"; };
+		42FC677F1B8D907A00A3A1D3 /* TSLibraryImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLibraryImport.m; sourceTree = "<group>"; };
+		42FC67841B8D907A00A3A1D3 /* TAPPlayControlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPPlayControlService.h; sourceTree = "<group>"; };
+		42FC67851B8D907A00A3A1D3 /* TAPPlayControlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPPlayControlService.m; sourceTree = "<group>"; };
+		42FC67871B8D907A00A3A1D3 /* TAPProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPProtocolFactory.h; sourceTree = "<group>"; };
+		42FC67881B8D907A00A3A1D3 /* TAPProtocolFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPProtocolFactory.m; sourceTree = "<group>"; };
+		42FC67891B8D907A00A3A1D3 /* TAPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPService.h; sourceTree = "<group>"; };
+		42FC678A1B8D907A00A3A1D3 /* TAPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPService.m; sourceTree = "<group>"; };
+		42FC678C1B8D907A00A3A1D3 /* TAPSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPSystemService.h; sourceTree = "<group>"; };
+		42FC678D1B8D907A00A3A1D3 /* TAPSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPSystemService.m; sourceTree = "<group>"; };
+		CE0FDA361F39591F0021D524 /* TPSignalReadProductPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadProductPacketEncoder.h; sourceTree = "<group>"; };
+		CE0FDA371F39591F0021D524 /* TPSignalReadProductPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadProductPacketEncoder.m; sourceTree = "<group>"; };
+		CE0FDA381F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadProductResponseDataPacketEncoder.h; sourceTree = "<group>"; };
+		CE0FDA391F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadProductResponseDataPacketEncoder.m; sourceTree = "<group>"; };
+		CE5A9D571D1BC686002C1053 /* TPSignalReadFactoryReset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadFactoryReset.h; sourceTree = "<group>"; };
+		CE5A9D581D1BC686002C1053 /* TPSignalReadFactoryReset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadFactoryReset.m; sourceTree = "<group>"; };
+		CEC7732D1E49AF7300B68F84 /* TPSignalReadVersionEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadVersionEncoder.h; sourceTree = "<group>"; };
+		CEC7732E1E49AF7300B68F84 /* TPSignalReadVersionEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadVersionEncoder.m; sourceTree = "<group>"; };
+		CEC773311E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadVersionResponseEncoder.h; sourceTree = "<group>"; };
+		CEC773321E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadVersionResponseEncoder.m; sourceTree = "<group>"; };
+		CEDC44BB1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadProductPacketEncoder.h; sourceTree = "<group>"; };
+		CEDC44BC1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadProductPacketEncoder.m; sourceTree = "<group>"; };
+		CEDC44C31E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadProductResponseDataPacketEncoder.h; sourceTree = "<group>"; };
+		CEDC44C41E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadProductResponseDataPacketEncoder.m; sourceTree = "<group>"; };
+		CEDCF0581DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadDFUPacketEncoder.h; sourceTree = "<group>"; };
+		CEDCF0591DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadDFUPacketEncoder.m; sourceTree = "<group>"; };
+		CEE83DE91E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSignalReadDFUResponseEncoder.h; sourceTree = "<group>"; };
+		CEE83DEA1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSignalReadDFUResponseEncoder.m; sourceTree = "<group>"; };
+		CEEC3FA11E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPFirmwareOverTheAirUpdateService.h; sourceTree = "<group>"; };
+		CEEC3FA21E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPFirmwareOverTheAirUpdateService.m; sourceTree = "<group>"; };
+		CEEC3FBB1E55858800D8718D /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		CEEC3FBC1E55858800D8718D /* utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utils.m; sourceTree = "<group>"; };
+		CEEC3FBD1E55858800D8718D /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		423855FF1C3BBCBB009A8A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423856091C3BBCBB009A8A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4238560D1C3BBCBB009A8A0A /* TAPlatformTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63BD1B8D8B9B00A3A1D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63C91B8D8B9B00A3A1D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FC65341B8D8EE100A3A1D3 /* libOCMock.a in Frameworks */,
+				42FC63CD1B8D8B9B00A3A1D3 /* TAPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420B2F9E1BA7F789003BB171 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				420B2F9F1BA7F79F003BB171 /* Classes */,
+			);
+			name = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		420B2F9F1BA7F79F003BB171 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				420B2FA01BA7F79F003BB171 /* CLI */,
+				420B2FA31BA7F79F003BB171 /* CocoaLumberjack.h */,
+				420B2FA51BA7F79F003BB171 /* DDAbstractDatabaseLogger.h */,
+				420B2FA61BA7F79F003BB171 /* DDAbstractDatabaseLogger.m */,
+				420B2FA71BA7F79F003BB171 /* DDASLLogCapture.h */,
+				420B2FA81BA7F79F003BB171 /* DDASLLogCapture.m */,
+				420B2FA91BA7F79F003BB171 /* DDASLLogger.h */,
+				420B2FAA1BA7F79F003BB171 /* DDASLLogger.m */,
+				420B2FAB1BA7F79F003BB171 /* DDAssertMacros.h */,
+				420B2FAC1BA7F79F003BB171 /* DDFileLogger.h */,
+				420B2FAD1BA7F79F003BB171 /* DDFileLogger.m */,
+				420B2FAE1BA7F79F003BB171 /* DDLegacyMacros.h */,
+				420B2FAF1BA7F79F003BB171 /* DDLog+LOGV.h */,
+				420B2FB01BA7F79F003BB171 /* DDLog.h */,
+				420B2FB11BA7F79F003BB171 /* DDLog.m */,
+				420B2FB21BA7F79F003BB171 /* DDLogMacros.h */,
+				420B2FB31BA7F79F003BB171 /* DDTTYLogger.h */,
+				420B2FB41BA7F79F003BB171 /* DDTTYLogger.m */,
+				420B2FB51BA7F79F003BB171 /* Extensions */,
+			);
+			name = Classes;
+			path = "../CocoaLumberjack-master/Classes";
+			sourceTree = "<group>";
+		};
+		420B2FA01BA7F79F003BB171 /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				420B2FA11BA7F79F003BB171 /* CLIColor.h */,
+				420B2FA21BA7F79F003BB171 /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		420B2FB51BA7F79F003BB171 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				420B2FB61BA7F79F003BB171 /* DDContextFilterLogFormatter.h */,
+				420B2FB71BA7F79F003BB171 /* DDContextFilterLogFormatter.m */,
+				420B2FB81BA7F79F003BB171 /* DDDispatchQueueLogFormatter.h */,
+				420B2FB91BA7F79F003BB171 /* DDDispatchQueueLogFormatter.m */,
+				420B2FBA1BA7F79F003BB171 /* DDMultiFormatter.h */,
+				420B2FBB1BA7F79F003BB171 /* DDMultiFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		420B2FD61BA7F8D5003BB171 /* TAShare */ = {
+			isa = PBXGroup;
+			children = (
+				420B2FD71BA7F8F3003BB171 /* TAPLogger.h */,
+				420B2FD81BA7F8F3003BB171 /* TAPLogger.m */,
+				4273EFB41BFB31C90091DFC1 /* TAPLoggerFormatter.h */,
+				4273EFB51BFB31C90091DFC1 /* TAPLoggerFormatter.m */,
+			);
+			path = TAShare;
+			sourceTree = "<group>";
+		};
+		423856041C3BBCBB009A8A0A /* TAPlatformTV */ = {
+			isa = PBXGroup;
+			children = (
+				423856051C3BBCBB009A8A0A /* TAPlatformTV.h */,
+				423856071C3BBCBB009A8A0A /* Info.plist */,
+			);
+			path = TAPlatformTV;
+			sourceTree = "<group>";
+		};
+		423856101C3BBCBB009A8A0A /* TAPlatformTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				423856111C3BBCBB009A8A0A /* TAPlatformTVTests.m */,
+				423856131C3BBCBB009A8A0A /* Info.plist */,
+			);
+			path = TAPlatformTVTests;
+			sourceTree = "<group>";
+		};
+		42BED2BE1CE432DA003B176A /* TAProperty */ = {
+			isa = PBXGroup;
+			children = (
+				42BED2C31CE43417003B176A /* TAPropertyFactory.h */,
+				42BED2C41CE43417003B176A /* TAPropertyFactory.m */,
+				42BED2BF1CE43403003B176A /* TAProperty.h */,
+				42BED2C01CE43403003B176A /* TAProperty.m */,
+				42BED2C71CE43573003B176A /* TAPropertyVolume.h */,
+				42BED2C81CE43573003B176A /* TAPropertyVolume.m */,
+				42BED2CB1CE43C46003B176A /* TAPropertyLowPassFilter.h */,
+				42BED2CC1CE43C46003B176A /* TAPropertyLowPassFilter.m */,
+				42BED2CF1CE44B4A003B176A /* TAPropertyRGC.h */,
+				42BED2D01CE44B4A003B176A /* TAPropertyRGC.m */,
+				42BED2D31CE44F31003B176A /* TAPropertyPhase.h */,
+				42BED2D41CE44F31003B176A /* TAPropertyPhase.m */,
+				42BED2D71CE4584E003B176A /* TAPropertyPortTuning.h */,
+				42BED2D81CE4584E003B176A /* TAPropertyPortTuning.m */,
+				42BED2DB1CE45D59003B176A /* TAPropertyParametricEQ.h */,
+				42BED2DC1CE45D59003B176A /* TAPropertyParametricEQ.m */,
+				42BED2DF1CE4659F003B176A /* TAPropertySettings.h */,
+				42BED2E01CE4659F003B176A /* TAPropertySettings.m */,
+				42BED2E31CE46AA6003B176A /* TAPropertyScreenDisplay.h */,
+				42BED2E41CE46AA6003B176A /* TAPropertyScreenDisplay.m */,
+				42BED2E71CE475E0003B176A /* TAPropertyPreset.h */,
+				42BED2E81CE475E0003B176A /* TAPropertyPreset.m */,
+				428425A41CE57A2200BBB1FB /* TAPropertyDevice.h */,
+				428425A51CE57A2200BBB1FB /* TAPropertyDevice.m */,
+			);
+			name = TAProperty;
+			sourceTree = "<group>";
+		};
+		42FC63B71B8D8B9B00A3A1D3 = {
+			isa = PBXGroup;
+			children = (
+				4201BE911CD8464600EAF276 /* TAPlatform.framework */,
+				42FC68131B8D909900A3A1D3 /* ThirdPartyLibraries */,
+				42FC63C31B8D8B9B00A3A1D3 /* TAPlatform */,
+				42FC63D01B8D8B9B00A3A1D3 /* TAPlatformTests */,
+				423856041C3BBCBB009A8A0A /* TAPlatformTV */,
+				423856101C3BBCBB009A8A0A /* TAPlatformTVTests */,
+				42FC63C21B8D8B9B00A3A1D3 /* Products */,
+				423855F71C3BA5C6009A8A0A /* TAPlatform copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		42FC63C21B8D8B9B00A3A1D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42FC63C11B8D8B9B00A3A1D3 /* TAPlatform.framework */,
+				42FC63CC1B8D8B9B00A3A1D3 /* TAPlatformTests.xctest */,
+				423856031C3BBCBB009A8A0A /* TAPlatformTV.framework */,
+				4238560C1C3BBCBB009A8A0A /* TAPlatformTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42FC63C31B8D8B9B00A3A1D3 /* TAPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				42FC63C41B8D8B9B00A3A1D3 /* Supporting Files */,
+				42FC63C61B8D8B9B00A3A1D3 /* TAPlatform.h */,
+				42FC66F11B8D907A00A3A1D3 /* TAProtocol */,
+				42FC67731B8D907A00A3A1D3 /* TAService */,
+				420B2FD61BA7F8D5003BB171 /* TAShare */,
+			);
+			path = TAPlatform;
+			sourceTree = "<group>";
+		};
+		42FC63C41B8D8B9B00A3A1D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FC63C51B8D8B9B00A3A1D3 /* Info.plist */,
+				420B2FDB1BA7FEC4003BB171 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42FC63D01B8D8B9B00A3A1D3 /* TAPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC63D31B8D8B9B00A3A1D3 /* TAPlatformTests.m */,
+				42FC66BD1B8D902900A3A1D3 /* TAProtocolTests */,
+				42FC66CE1B8D902900A3A1D3 /* TAPServiceTests */,
+				42FC63D11B8D8B9B00A3A1D3 /* Supporting Files */,
+			);
+			path = TAPlatformTests;
+			sourceTree = "<group>";
+		};
+		42FC63D11B8D8B9B00A3A1D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FC63D21B8D8B9B00A3A1D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42FC66BD1B8D902900A3A1D3 /* TAProtocolTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66BE1B8D902900A3A1D3 /* TAAllPlayTests */,
+				42FC66C01B8D902900A3A1D3 /* TAPBluetoothLowEnergyTests */,
+				42FC66C91B8D902900A3A1D3 /* TAProtocolTests */,
+			);
+			path = TAProtocolTests;
+			sourceTree = "<group>";
+		};
+		42FC66BE1B8D902900A3A1D3 /* TAAllPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TAAllPlayTests;
+			sourceTree = "<group>";
+		};
+		42FC66C01B8D902900A3A1D3 /* TAPBluetoothLowEnergyTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66C21B8D902900A3A1D3 /* TAPBluetoothLowEnergyDefaultsTests.m */,
+				42FC66C31B8D902900A3A1D3 /* TAPBluetoothLowEnergyProxyTests.m */,
+				42FC66C41B8D902900A3A1D3 /* TAPOperationQueueTests.m */,
+				42FC66C51B8D902900A3A1D3 /* TAPOperationTests.m */,
+			);
+			name = TAPBluetoothLowEnergyTests;
+			path = TABluetoothLowEnergyTests;
+			sourceTree = "<group>";
+		};
+		42FC66C91B8D902900A3A1D3 /* TAProtocolTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66CA1B8D902900A3A1D3 /* crc16Test.m */,
+				42FC66CC1B8D902900A3A1D3 /* TPSignalReceiverTests.m */,
+				42FC66CD1B8D902900A3A1D3 /* TPSignalTests.m */,
+				428425A81CE57FDD00BBB1FB /* TAPropertyFactoryTests.m */,
+			);
+			path = TAProtocolTests;
+			sourceTree = "<group>";
+		};
+		42FC66CE1B8D902900A3A1D3 /* TAPServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66CF1B8D902900A3A1D3 /* TADigitalSignalProcessingServiceTests */,
+				42FC66D11B8D902900A3A1D3 /* TAMediaLibraryServiceTests */,
+				42FC66D41B8D902900A3A1D3 /* TAPlatformServicesTests */,
+				42FC66D71B8D902900A3A1D3 /* TAPlayControlServiceTests */,
+				42FC66D91B8D902900A3A1D3 /* TAPServiceTests */,
+				42FC66DB1B8D902900A3A1D3 /* TASystemServiceTests */,
+			);
+			name = TAPServiceTests;
+			path = TAServiceTests;
+			sourceTree = "<group>";
+		};
+		42FC66CF1B8D902900A3A1D3 /* TADigitalSignalProcessingServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TADigitalSignalProcessingServiceTests;
+			sourceTree = "<group>";
+		};
+		42FC66D11B8D902900A3A1D3 /* TAMediaLibraryServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66D31B8D902900A3A1D3 /* TAMediaImportServiceTests.m */,
+			);
+			path = TAMediaLibraryServiceTests;
+			sourceTree = "<group>";
+		};
+		42FC66D41B8D902900A3A1D3 /* TAPlatformServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66D61B8D902900A3A1D3 /* TAPlatformServicesTests.m */,
+			);
+			path = TAPlatformServicesTests;
+			sourceTree = "<group>";
+		};
+		42FC66D71B8D902900A3A1D3 /* TAPlayControlServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TAPlayControlServiceTests;
+			sourceTree = "<group>";
+		};
+		42FC66D91B8D902900A3A1D3 /* TAPServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				42CCA28D1BCCB31000F6491E /* TAPServiceTests.m */,
+			);
+			name = TAPServiceTests;
+			path = TAServiceTests;
+			sourceTree = "<group>";
+		};
+		42FC66DB1B8D902900A3A1D3 /* TASystemServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				42BED2B91CD8AB59003B176A /* TASystemServiceTests.m */,
+			);
+			path = TASystemServiceTests;
+			sourceTree = "<group>";
+		};
+		42FC66F11B8D907A00A3A1D3 /* TAProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66F21B8D907A00A3A1D3 /* TAAllPlay */,
+				42FC66F51B8D907A00A3A1D3 /* TAPBluetoothLowEnergy */,
+				42FC67511B8D907A00A3A1D3 /* TAPProtocol */,
+			);
+			path = TAProtocol;
+			sourceTree = "<group>";
+		};
+		42FC66F21B8D907A00A3A1D3 /* TAAllPlay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TAAllPlay;
+			sourceTree = "<group>";
+		};
+		42FC66F51B8D907A00A3A1D3 /* TAPBluetoothLowEnergy */ = {
+			isa = PBXGroup;
+			children = (
+				42FC66F61B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.h */,
+				42FC66F71B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.m */,
+				42FC66FA1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.h */,
+				42FC66FB1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.m */,
+				42FC66FE1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.h */,
+				42FC66FF1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.m */,
+				42FC67021B8D907A00A3A1D3 /* TAPBluetoothLowEnergyService.h */,
+				42FC67031B8D907A00A3A1D3 /* TAPDataUtils.h */,
+				42FC67041B8D907A00A3A1D3 /* TAPDataUtils.m */,
+				42FC67051B8D907A00A3A1D3 /* TAPDocumentUtils.h */,
+				42FC67061B8D907A00A3A1D3 /* TAPDocumentUtils.m */,
+				42A525471B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.h */,
+				42A525481B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.m */,
+				42FC67071B8D907A00A3A1D3 /* TAPOperation.h */,
+				42FC67081B8D907A00A3A1D3 /* TAPOperation.m */,
+				42FC67091B8D907A00A3A1D3 /* TAPOperationQueue.h */,
+				42FC670A1B8D907A00A3A1D3 /* TAPOperationQueue.m */,
+			);
+			name = TAPBluetoothLowEnergy;
+			path = TABluetoothLowEnergy;
+			sourceTree = "<group>";
+		};
+		42FC67511B8D907A00A3A1D3 /* TAPProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				42BED2BE1CE432DA003B176A /* TAProperty */,
+				42FC681A1B8D9FBA00A3A1D3 /* TASignal */,
+				42FC67541B8D907A00A3A1D3 /* TAPProtocol.h */,
+				42FC67551B8D907A00A3A1D3 /* TAPProtocol.m */,
+				42FC67561B8D907A00A3A1D3 /* TAPProtocolAdaptor.h */,
+				42FC67571B8D907A00A3A1D3 /* TAPSystem.h */,
+				42FC67581B8D907A00A3A1D3 /* TAPSystem.m */,
+				42CCA2891BC6579200F6491E /* TAPError.h */,
+				42CCA28A1BC6579200F6491E /* TAPError.m */,
+			);
+			name = TAPProtocol;
+			path = TAProtocol;
+			sourceTree = "<group>";
+		};
+		42FC67731B8D907A00A3A1D3 /* TAService */ = {
+			isa = PBXGroup;
+			children = (
+				42FC67741B8D907A00A3A1D3 /* TADigitalSignalProcessingService */,
+				42FC67771B8D907A00A3A1D3 /* TAMediaImportService */,
+				42FC67781B8D907A00A3A1D3 /* TAMediaLibraryService */,
+				42FC67831B8D907A00A3A1D3 /* TAPlayControlService */,
+				42FC67861B8D907A00A3A1D3 /* TAService */,
+				42FC678B1B8D907A00A3A1D3 /* TAPSystemService */,
+				CEEC3F9B1E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService */,
+			);
+			path = TAService;
+			sourceTree = "<group>";
+		};
+		42FC67741B8D907A00A3A1D3 /* TADigitalSignalProcessingService */ = {
+			isa = PBXGroup;
+			children = (
+				42FC67751B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.h */,
+				42FC67761B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.m */,
+			);
+			path = TADigitalSignalProcessingService;
+			sourceTree = "<group>";
+		};
+		42FC67771B8D907A00A3A1D3 /* TAMediaImportService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TAMediaImportService;
+			sourceTree = "<group>";
+		};
+		42FC67781B8D907A00A3A1D3 /* TAMediaLibraryService */ = {
+			isa = PBXGroup;
+			children = (
+				42FC67791B8D907A00A3A1D3 /* TAMediaImportService.h */,
+				42FC677A1B8D907A00A3A1D3 /* TAMediaImportService.m */,
+				42FC677B1B8D907A00A3A1D3 /* TAMediaLibraryService.h */,
+				42FC677C1B8D907A00A3A1D3 /* TAMediaLibraryService.m */,
+				42FC677D1B8D907A00A3A1D3 /* TSLibraryImport */,
+			);
+			path = TAMediaLibraryService;
+			sourceTree = "<group>";
+		};
+		42FC677D1B8D907A00A3A1D3 /* TSLibraryImport */ = {
+			isa = PBXGroup;
+			children = (
+				42FC677E1B8D907A00A3A1D3 /* TSLibraryImport.h */,
+				42FC677F1B8D907A00A3A1D3 /* TSLibraryImport.m */,
+			);
+			path = TSLibraryImport;
+			sourceTree = "<group>";
+		};
+		42FC67831B8D907A00A3A1D3 /* TAPlayControlService */ = {
+			isa = PBXGroup;
+			children = (
+				42FC67841B8D907A00A3A1D3 /* TAPPlayControlService.h */,
+				42FC67851B8D907A00A3A1D3 /* TAPPlayControlService.m */,
+			);
+			path = TAPlayControlService;
+			sourceTree = "<group>";
+		};
+		42FC67861B8D907A00A3A1D3 /* TAService */ = {
+			isa = PBXGroup;
+			children = (
+				42FC67871B8D907A00A3A1D3 /* TAPProtocolFactory.h */,
+				42FC67881B8D907A00A3A1D3 /* TAPProtocolFactory.m */,
+				42FC67891B8D907A00A3A1D3 /* TAPService.h */,
+				42FC678A1B8D907A00A3A1D3 /* TAPService.m */,
+			);
+			path = TAService;
+			sourceTree = "<group>";
+		};
+		42FC678B1B8D907A00A3A1D3 /* TAPSystemService */ = {
+			isa = PBXGroup;
+			children = (
+				42FC678C1B8D907A00A3A1D3 /* TAPSystemService.h */,
+				42FC678D1B8D907A00A3A1D3 /* TAPSystemService.m */,
+			);
+			name = TAPSystemService;
+			path = TASystemService;
+			sourceTree = "<group>";
+		};
+		42FC68131B8D909900A3A1D3 /* ThirdPartyLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				420B2F9E1BA7F789003BB171 /* CocoaLumberjack */,
+				42FC65331B8D8EE100A3A1D3 /* libOCMock.a */,
+			);
+			name = ThirdPartyLibraries;
+			sourceTree = "<group>";
+		};
+		42FC681A1B8D9FBA00A3A1D3 /* TASignal */ = {
+			isa = PBXGroup;
+			children = (
+				42FC67521B8D907A00A3A1D3 /* Crc16.h */,
+				42FC67531B8D907A00A3A1D3 /* Crc16.m */,
+				42FC67591B8D907A00A3A1D3 /* TPDataPacketSet.h */,
+				42FC675A1B8D907A00A3A1D3 /* TPSignal.h */,
+				42FC675B1B8D907A00A3A1D3 /* TPSignal.m */,
+				42F0703A1C04379300A1401C /* TPSignalConfig.h */,
+				42F0703B1C04379300A1401C /* TPSignalConfig.m */,
+				42FC675C1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.h */,
+				42FC675D1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.m */,
+				42FC675E1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.h */,
+				42FC675F1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.m */,
+				42FC67601B8D907A00A3A1D3 /* TPSignalHeader.h */,
+				42FC67611B8D907A00A3A1D3 /* TPSignalHeader.m */,
+				42FC67621B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.h */,
+				42FC67631B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.m */,
+				42FC67641B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.h */,
+				42FC67651B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.m */,
+				42FC67661B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.h */,
+				42FC67671B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.m */,
+				42FC67681B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.h */,
+				42FC67691B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.m */,
+				42F070421C0468F200A1401C /* TPSignalResetItemPacketEncoder.h */,
+				42F070431C0468F200A1401C /* TPSignalResetItemPacketEncoder.m */,
+				42C5BD0C1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.h */,
+				42C5BD0D1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.m */,
+				42C5BD101C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.h */,
+				42C5BD111C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.m */,
+				CE0FDA361F39591F0021D524 /* TPSignalReadProductPacketEncoder.h */,
+				CE0FDA371F39591F0021D524 /* TPSignalReadProductPacketEncoder.m */,
+				CE0FDA381F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.h */,
+				CE0FDA391F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.m */,
+				CE5A9D571D1BC686002C1053 /* TPSignalReadFactoryReset.h */,
+				CE5A9D581D1BC686002C1053 /* TPSignalReadFactoryReset.m */,
+				CEDCF0581DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.h */,
+				CEDCF0591DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.m */,
+				CEE83DE91E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.h */,
+				CEE83DEA1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.m */,
+				CEC7732D1E49AF7300B68F84 /* TPSignalReadVersionEncoder.h */,
+				CEC7732E1E49AF7300B68F84 /* TPSignalReadVersionEncoder.m */,
+				CEC773311E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.h */,
+				CEC773321E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.m */,
+				CEDC44BB1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.h */,
+				CEDC44BC1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.m */,
+				CEDC44C31E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.h */,
+				CEDC44C41E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.m */,
+				42FC676A1B8D907A00A3A1D3 /* TPSignalReceiver.h */,
+				42FC676B1B8D907A00A3A1D3 /* TPSignalReceiver.m */,
+				42FC676C1B8D907A00A3A1D3 /* TPSignalSender.h */,
+				42FC676D1B8D907A00A3A1D3 /* TPSignalSender.m */,
+				42FC676E1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.h */,
+				42FC676F1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.m */,
+				42FC67701B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.h */,
+				42FC67711B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.m */,
+				42FC67721B8D907A00A3A1D3 /* TASignalType.h */,
+			);
+			name = TASignal;
+			sourceTree = "<group>";
+		};
+		CEEC3F9B1E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC3F9C1E545ABA00D8718D /* OTA Support */,
+				CEEC3FA11E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.h */,
+				CEEC3FA21E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.m */,
+			);
+			path = TAPFirmwareOverTheAirUpdateService;
+			sourceTree = "<group>";
+		};
+		CEEC3F9C1E545ABA00D8718D /* OTA Support */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC3FBB1E55858800D8718D /* parser.h */,
+				CEEC3FBC1E55858800D8718D /* utils.m */,
+				CEEC3FBD1E55858800D8718D /* utils.h */,
+			);
+			path = "OTA Support";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		423856001C3BBCBB009A8A0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423856571C3BC099009A8A0A /* TAPlatform.h in Headers */,
+				4201BE991CD8526100EAF276 /* TPSignalReadFeaturesResponseEncoder.h in Headers */,
+				423856581C3BC099009A8A0A /* TAPBluetoothLowEnergyCentral.h in Headers */,
+				423856591C3BC099009A8A0A /* TAPBluetoothLowEnergyDefaults.h in Headers */,
+				4238565A1C3BC099009A8A0A /* TAPBluetoothLowEnergyProxy.h in Headers */,
+				4238565C1C3BC099009A8A0A /* TAPDataUtils.h in Headers */,
+				4238565D1C3BC099009A8A0A /* TAPDocumentUtils.h in Headers */,
+				4238565E1C3BC099009A8A0A /* TAPBluetoothLowEnergyUtils.h in Headers */,
+				423856771C3BC09B009A8A0A /* TAMediaImportService.h in Headers */,
+				423856781C3BC09B009A8A0A /* TAMediaLibraryService.h in Headers */,
+				4238565F1C3BC099009A8A0A /* TAPOperation.h in Headers */,
+				423856601C3BC099009A8A0A /* TAPOperationQueue.h in Headers */,
+				423856631C3BC099009A8A0A /* TPSignal.h in Headers */,
+				423856711C3BC09A009A8A0A /* TASignalType.h in Headers */,
+				423856721C3BC09A009A8A0A /* TAPProtocol.h in Headers */,
+				423856731C3BC09A009A8A0A /* TAPProtocolAdaptor.h in Headers */,
+				423856741C3BC09A009A8A0A /* TAPSystem.h in Headers */,
+				423856761C3BC09A009A8A0A /* TAPDigitalSignalProcessingService.h in Headers */,
+				4238567A1C3BC09B009A8A0A /* TAPPlayControlService.h in Headers */,
+				4238567B1C3BC09B009A8A0A /* TAPProtocolFactory.h in Headers */,
+				4238567C1C3BC09B009A8A0A /* TAPService.h in Headers */,
+				CECE44371D3F0F0800A9B1FB /* TPSignalReadFactoryReset.h in Headers */,
+				4238567D1C3BC09B009A8A0A /* TAPSystemService.h in Headers */,
+				4238567E1C3BC09B009A8A0A /* TAPLogger.h in Headers */,
+				423856481C3BC098009A8A0A /* CLIColor.h in Headers */,
+				423856491C3BC098009A8A0A /* CocoaLumberjack.h in Headers */,
+				4238564A1C3BC098009A8A0A /* DDAbstractDatabaseLogger.h in Headers */,
+				4238564B1C3BC098009A8A0A /* DDASLLogCapture.h in Headers */,
+				4238564C1C3BC098009A8A0A /* DDASLLogger.h in Headers */,
+				4238564D1C3BC098009A8A0A /* DDAssertMacros.h in Headers */,
+				4238564E1C3BC098009A8A0A /* DDFileLogger.h in Headers */,
+				4238564F1C3BC098009A8A0A /* DDLegacyMacros.h in Headers */,
+				423856501C3BC098009A8A0A /* DDLog+LOGV.h in Headers */,
+				423856511C3BC098009A8A0A /* DDLog.h in Headers */,
+				423856521C3BC099009A8A0A /* DDLogMacros.h in Headers */,
+				423856531C3BC099009A8A0A /* DDTTYLogger.h in Headers */,
+				423856541C3BC099009A8A0A /* DDContextFilterLogFormatter.h in Headers */,
+				423856551C3BC099009A8A0A /* DDDispatchQueueLogFormatter.h in Headers */,
+				423856561C3BC099009A8A0A /* DDMultiFormatter.h in Headers */,
+				4238565B1C3BC099009A8A0A /* TAPBluetoothLowEnergyService.h in Headers */,
+				423856611C3BC099009A8A0A /* Crc16.h in Headers */,
+				423856621C3BC099009A8A0A /* TPDataPacketSet.h in Headers */,
+				423856641C3BC099009A8A0A /* TPSignalConfig.h in Headers */,
+				423856651C3BC099009A8A0A /* TPSignalButtonPacketEncoder.h in Headers */,
+				423856661C3BC099009A8A0A /* TPSignalDataPacketEncoder.h in Headers */,
+				423856671C3BC099009A8A0A /* TPSignalHeader.h in Headers */,
+				423856681C3BC099009A8A0A /* TPSignalReadSettingPacketEncoder.h in Headers */,
+				423856691C3BC099009A8A0A /* TPSignalReadSettingResponseEncoder.h in Headers */,
+				4238566A1C3BC09A009A8A0A /* TPSignalReadStringPacketEncoder.h in Headers */,
+				4238566B1C3BC09A009A8A0A /* TPSignalReadStringResponseEncoder.h in Headers */,
+				4238566C1C3BC09A009A8A0A /* TPSignalResetItemPacketEncoder.h in Headers */,
+				4238566D1C3BC09A009A8A0A /* TPSignalReceiver.h in Headers */,
+				4238566E1C3BC09A009A8A0A /* TPSignalSender.h in Headers */,
+				4238566F1C3BC09A009A8A0A /* TPSignalWriteSettingPacketEncoder.h in Headers */,
+				4201BE971CD8523000EAF276 /* TPSignalReadFeaturesPacketEncoder.h in Headers */,
+				423856701C3BC09A009A8A0A /* TPSignalWriteStringsPacketEncoder.h in Headers */,
+				423856751C3BC09A009A8A0A /* TAPError.h in Headers */,
+				423856791C3BC09B009A8A0A /* TSLibraryImport.h in Headers */,
+				4238567F1C3BC09B009A8A0A /* TAPLoggerFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63BE1B8D8B9B00A3A1D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC3FA71E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.h in Headers */,
+				42BED2D11CE44B4A003B176A /* TAPropertyRGC.h in Headers */,
+				42BED2CD1CE43C46003B176A /* TAPropertyLowPassFilter.h in Headers */,
+				CE0FDA3C1F39591F0021D524 /* TPSignalReadProductResponseDataPacketEncoder.h in Headers */,
+				42FC68111B8D907A00A3A1D3 /* TAPSystemService.h in Headers */,
+				42C5BD121C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.h in Headers */,
+				42FC68011B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.h in Headers */,
+				CE5A9D591D1BC686002C1053 /* TPSignalReadFactoryReset.h in Headers */,
+				42BED2C11CE43403003B176A /* TAProperty.h in Headers */,
+				42FC680B1B8D907A00A3A1D3 /* TAPPlayControlService.h in Headers */,
+				42FC68031B8D907A00A3A1D3 /* TAMediaImportService.h in Headers */,
+				42FC68051B8D907A00A3A1D3 /* TAMediaLibraryService.h in Headers */,
+				CEEC3FBE1E55858800D8718D /* parser.h in Headers */,
+				CEDCF05A1DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.h in Headers */,
+				42FC67981B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.h in Headers */,
+				42FC67E51B8D907A00A3A1D3 /* TAPSystem.h in Headers */,
+				42FC67E21B8D907A00A3A1D3 /* TAPProtocol.h in Headers */,
+				42FC680F1B8D907A00A3A1D3 /* TAPService.h in Headers */,
+				42FC67E01B8D907A00A3A1D3 /* Crc16.h in Headers */,
+				42FC679F1B8D907A00A3A1D3 /* TAPDocumentUtils.h in Headers */,
+				CEDC44C51E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.h in Headers */,
+				42FC679D1B8D907A00A3A1D3 /* TAPDataUtils.h in Headers */,
+				42FC67E81B8D907A00A3A1D3 /* TPSignal.h in Headers */,
+				42F0703C1C04379300A1401C /* TPSignalConfig.h in Headers */,
+				42BED2E91CE475E0003B176A /* TAPropertyPreset.h in Headers */,
+				42FC67A11B8D907A00A3A1D3 /* TAPOperation.h in Headers */,
+				42FC67A31B8D907A00A3A1D3 /* TAPOperationQueue.h in Headers */,
+				CEE83DEB1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.h in Headers */,
+				42FC67901B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.h in Headers */,
+				42BED2E11CE4659F003B176A /* TAPropertySettings.h in Headers */,
+				CE0FDA3A1F39591F0021D524 /* TPSignalReadProductPacketEncoder.h in Headers */,
+				42BED2DD1CE45D59003B176A /* TAPropertyParametricEQ.h in Headers */,
+				42BED2D91CE4584E003B176A /* TAPropertyPortTuning.h in Headers */,
+				42FC67941B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.h in Headers */,
+				42FC67E41B8D907A00A3A1D3 /* TAPProtocolAdaptor.h in Headers */,
+				42FC68001B8D907A00A3A1D3 /* TASignalType.h in Headers */,
+				42FC679C1B8D907A00A3A1D3 /* TAPBluetoothLowEnergyService.h in Headers */,
+				42FC67F61B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.h in Headers */,
+				42FC67EA1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.h in Headers */,
+				42FC67F81B8D907A00A3A1D3 /* TPSignalReceiver.h in Headers */,
+				42CCA28B1BC6579200F6491E /* TAPError.h in Headers */,
+				428425A61CE57A2200BBB1FB /* TAPropertyDevice.h in Headers */,
+				CEC773331E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.h in Headers */,
+				CEC7732F1E49AF7300B68F84 /* TPSignalReadVersionEncoder.h in Headers */,
+				42BED2C91CE43573003B176A /* TAPropertyVolume.h in Headers */,
+				42FC680D1B8D907A00A3A1D3 /* TAPProtocolFactory.h in Headers */,
+				CEEC3FC01E55858800D8718D /* utils.h in Headers */,
+				42FC67EE1B8D907A00A3A1D3 /* TPSignalHeader.h in Headers */,
+				42FC67FC1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.h in Headers */,
+				42FC67F21B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.h in Headers */,
+				42FC68071B8D907A00A3A1D3 /* TSLibraryImport.h in Headers */,
+				42FC67F01B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.h in Headers */,
+				CEDC44BD1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.h in Headers */,
+				42A525491B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.h in Headers */,
+				42FC67E71B8D907A00A3A1D3 /* TPDataPacketSet.h in Headers */,
+				42FC63C71B8D8B9B00A3A1D3 /* TAPlatform.h in Headers */,
+				42BED2E51CE46AA6003B176A /* TAPropertyScreenDisplay.h in Headers */,
+				42BED2D51CE44F31003B176A /* TAPropertyPhase.h in Headers */,
+				42FC67F41B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.h in Headers */,
+				42C5BD0E1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.h in Headers */,
+				42F070441C0468F200A1401C /* TPSignalResetItemPacketEncoder.h in Headers */,
+				42FC67EC1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.h in Headers */,
+				42BED2C51CE43417003B176A /* TAPropertyFactory.h in Headers */,
+				42FC67FA1B8D907A00A3A1D3 /* TPSignalSender.h in Headers */,
+				42FC67FE1B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		423856021C3BBCBB009A8A0A /* TAPlatformTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423856141C3BBCBB009A8A0A /* Build configuration list for PBXNativeTarget "TAPlatformTV" */;
+			buildPhases = (
+				423855FE1C3BBCBB009A8A0A /* Sources */,
+				423855FF1C3BBCBB009A8A0A /* Frameworks */,
+				423856001C3BBCBB009A8A0A /* Headers */,
+				423856011C3BBCBB009A8A0A /* Resources */,
+				CECE44361D3F0A4D00A9B1FB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAPlatformTV;
+			productName = TAPlatformTV;
+			productReference = 423856031C3BBCBB009A8A0A /* TAPlatformTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4238560B1C3BBCBB009A8A0A /* TAPlatformTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423856171C3BBCBB009A8A0A /* Build configuration list for PBXNativeTarget "TAPlatformTVTests" */;
+			buildPhases = (
+				423856081C3BBCBB009A8A0A /* Sources */,
+				423856091C3BBCBB009A8A0A /* Frameworks */,
+				4238560A1C3BBCBB009A8A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4238560F1C3BBCBB009A8A0A /* PBXTargetDependency */,
+			);
+			name = TAPlatformTVTests;
+			productName = TAPlatformTVTests;
+			productReference = 4238560C1C3BBCBB009A8A0A /* TAPlatformTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42FC63C01B8D8B9B00A3A1D3 /* TAPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FC63D71B8D8B9B00A3A1D3 /* Build configuration list for PBXNativeTarget "TAPlatform" */;
+			buildPhases = (
+				42FC63BC1B8D8B9B00A3A1D3 /* Sources */,
+				42FC63BD1B8D8B9B00A3A1D3 /* Frameworks */,
+				42CCA27F1BC52BAB00F6491E /* ShellScript */,
+				42FC63BE1B8D8B9B00A3A1D3 /* Headers */,
+				42FC63BF1B8D8B9B00A3A1D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAPlatform;
+			productName = TAPlatform;
+			productReference = 42FC63C11B8D8B9B00A3A1D3 /* TAPlatform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		42FC63CB1B8D8B9B00A3A1D3 /* TAPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FC63DA1B8D8B9B00A3A1D3 /* Build configuration list for PBXNativeTarget "TAPlatformTests" */;
+			buildPhases = (
+				42FC63C81B8D8B9B00A3A1D3 /* Sources */,
+				42FC63C91B8D8B9B00A3A1D3 /* Frameworks */,
+				42FC63CA1B8D8B9B00A3A1D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42FC63CF1B8D8B9B00A3A1D3 /* PBXTargetDependency */,
+			);
+			name = TAPlatformTests;
+			productName = TAPlatformTests;
+			productReference = 42FC63CC1B8D8B9B00A3A1D3 /* TAPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42FC63B81B8D8B9B00A3A1D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Tymphany;
+				TargetAttributes = {
+					423856021C3BBCBB009A8A0A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					4238560B1C3BBCBB009A8A0A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					42FC63C01B8D8B9B00A3A1D3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					42FC63CB1B8D8B9B00A3A1D3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 42FC63BB1B8D8B9B00A3A1D3 /* Build configuration list for PBXProject "TAPlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42FC63B71B8D8B9B00A3A1D3;
+			productRefGroup = 42FC63C21B8D8B9B00A3A1D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42FC63C01B8D8B9B00A3A1D3 /* TAPlatform */,
+				42FC63CB1B8D8B9B00A3A1D3 /* TAPlatformTests */,
+				423856021C3BBCBB009A8A0A /* TAPlatformTV */,
+				4238560B1C3BBCBB009A8A0A /* TAPlatformTVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423856011C3BBCBB009A8A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4238560A1C3BBCBB009A8A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63BF1B8D8B9B00A3A1D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63CA1B8D8B9B00A3A1D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42CCA27F1BC52BAB00F6491E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\n\n# Constants\nSF_TARGET_NAME=${PROJECT_NAME}\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nREFERENCE_OUTPUTFOLDER=${SOURCE_ROOT}/../Frameworks/TAPlatform\n\n\n# Take build target\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nIPHONE_DEVICE_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphonesimulator\" ]]\nthen\necho \"Build a universal framework when you choose iPhone simulator as build target\"\n\n# Build the other (non-simulator) platform\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/arm64\" SYMROOT=\"${SYMROOT}\" ARCHS='arm64' VALID_ARCHS='arm64' $ACTION\n\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\"  CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/armv7\" SYMROOT=\"${SYMROOT}\" ARCHS='armv7 armv7s' VALID_ARCHS='armv7 armv7s' $ACTION\n\n# Copy the framework structure to the universal folder (clean it first)\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\"\n\n\n# Smash them together to combine all architectures\nlipo -create  \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/arm64/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/armv7/${PROJECT_NAME}.framework/${PROJECT_NAME}\" -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n\n# Copy the universal framework structure to the ouput folder (clean it first)\nrm -rf \"${REFERENCE_OUTPUTFOLDER}\"\nmkdir -p \"${REFERENCE_OUTPUTFOLDER}\"\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${REFERENCE_OUTPUTFOLDER}/${PROJECT_NAME}.framework\"\n\nfi\n\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n\n# Copy the framework structure to the ouput folder (clean it first)\nrm -rf \"${REFERENCE_OUTPUTFOLDER}\"\nmkdir -p \"${REFERENCE_OUTPUTFOLDER}\"\ncp -R \"${IPHONE_DEVICE_BUILD_DIR}/${PROJECT_NAME}.framework\" \"${REFERENCE_OUTPUTFOLDER}/${PROJECT_NAME}.framework\"\n\nfi\n\n\n";
+		};
+		CECE44361D3F0A4D00A9B1FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\n\n# Constants\nSF_TARGET_NAME=${PROJECT_NAME}\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nREFERENCE_OUTPUTFOLDER=${SOURCE_ROOT}/../Frameworks/TAPlatformTV\n\n\n# Take build target\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nAPPLETV_DEVICE_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvos\n\n\nif [[ \"$SF_SDK_PLATFORM\" = \"appletvsimulator\" ]]\nthen\necho \"Build a universal framework when you choose appletv simulator as build target\"\n\n# Build the other (non-simulator) platform\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk appletvos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" CONFIGURATION_BUILD_DIR=\"${APPLETV_DEVICE_BUILD_DIR}/arm64\" SYMROOT=\"${SYMROOT}\" ARCHS='arm64' VALID_ARCHS='arm64' $ACTION\n\n# Copy the framework structure to the universal folder (clean it first)\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/${TARGET_NAME}.framework\"\n\n\n# Smash them together to combine all architectures\nlipo -create  \"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-appletvos/arm64/${TARGET_NAME}.framework/${TARGET_NAME}\" -output \"${UNIVERSAL_OUTPUTFOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n\n# Copy the universal framework structure to the ouput folder (clean it first)\nrm -rf \"${REFERENCE_OUTPUTFOLDER}\"\nmkdir -p \"${REFERENCE_OUTPUTFOLDER}\"\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${TARGET_NAME}.framework\" \"${REFERENCE_OUTPUTFOLDER}/${TARGET_NAME}.framework\"\n\nfi\n\n\nif [[ \"$SF_SDK_PLATFORM\" = \"appletvos\" ]]\nthen\n\n# Copy the framework structure to the ouput folder (clean it first)\nrm -rf \"${REFERENCE_OUTPUTFOLDER}\"\nmkdir -p \"${REFERENCE_OUTPUTFOLDER}\"\ncp -R \"${APPLETV_DEVICE_BUILD_DIR}/${TARGET_NAME}.framework\" \"${REFERENCE_OUTPUTFOLDER}/${TARGET_NAME}.framework\"\n\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		423855FE1C3BBCBB009A8A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECE44381D3F0FF300A9B1FB /* TPSignalReadFactoryReset.m in Sources */,
+				4238561A1C3BBD52009A8A0A /* CLIColor.m in Sources */,
+				4238561B1C3BBD52009A8A0A /* DDAbstractDatabaseLogger.m in Sources */,
+				4238561C1C3BBD52009A8A0A /* DDASLLogCapture.m in Sources */,
+				4238561D1C3BBD52009A8A0A /* DDASLLogger.m in Sources */,
+				4201BE981CD8523600EAF276 /* TPSignalReadFeaturesPacketEncoder.m in Sources */,
+				4238561E1C3BBD52009A8A0A /* DDFileLogger.m in Sources */,
+				4238561F1C3BBD52009A8A0A /* DDLog.m in Sources */,
+				423856201C3BBD52009A8A0A /* DDTTYLogger.m in Sources */,
+				423856211C3BBD52009A8A0A /* DDContextFilterLogFormatter.m in Sources */,
+				423856221C3BBD52009A8A0A /* DDDispatchQueueLogFormatter.m in Sources */,
+				423856231C3BBD52009A8A0A /* DDMultiFormatter.m in Sources */,
+				423856241C3BBD52009A8A0A /* TAPBluetoothLowEnergyCentral.m in Sources */,
+				423856251C3BBD52009A8A0A /* TAPBluetoothLowEnergyDefaults.m in Sources */,
+				423856261C3BBD52009A8A0A /* TAPBluetoothLowEnergyProxy.m in Sources */,
+				423856271C3BBD52009A8A0A /* TAPDataUtils.m in Sources */,
+				423856281C3BBD52009A8A0A /* TAPDocumentUtils.m in Sources */,
+				423856291C3BBD52009A8A0A /* TAPBluetoothLowEnergyUtils.m in Sources */,
+				4238562A1C3BBD52009A8A0A /* TAPOperation.m in Sources */,
+				4238562B1C3BBD52009A8A0A /* TAPOperationQueue.m in Sources */,
+				4238562C1C3BBD52009A8A0A /* Crc16.m in Sources */,
+				4238562D1C3BBD52009A8A0A /* TPSignal.m in Sources */,
+				4238562E1C3BBD52009A8A0A /* TPSignalConfig.m in Sources */,
+				4238562F1C3BBD52009A8A0A /* TPSignalButtonPacketEncoder.m in Sources */,
+				423856301C3BBD52009A8A0A /* TPSignalDataPacketEncoder.m in Sources */,
+				423856311C3BBD52009A8A0A /* TPSignalHeader.m in Sources */,
+				423856321C3BBD52009A8A0A /* TPSignalReadSettingPacketEncoder.m in Sources */,
+				423856331C3BBD52009A8A0A /* TPSignalReadSettingResponseEncoder.m in Sources */,
+				423856341C3BBD52009A8A0A /* TPSignalReadStringPacketEncoder.m in Sources */,
+				4201BE9A1CD8526400EAF276 /* TPSignalReadFeaturesResponseEncoder.m in Sources */,
+				423856351C3BBD52009A8A0A /* TPSignalReadStringResponseEncoder.m in Sources */,
+				423856361C3BBD52009A8A0A /* TPSignalResetItemPacketEncoder.m in Sources */,
+				423856371C3BBD52009A8A0A /* TPSignalReceiver.m in Sources */,
+				423856381C3BBD52009A8A0A /* TPSignalSender.m in Sources */,
+				423856391C3BBD52009A8A0A /* TPSignalWriteSettingPacketEncoder.m in Sources */,
+				4238563A1C3BBD52009A8A0A /* TPSignalWriteStringsPacketEncoder.m in Sources */,
+				4238563B1C3BBD52009A8A0A /* TAPProtocol.m in Sources */,
+				4238563C1C3BBD52009A8A0A /* TAPSystem.m in Sources */,
+				4238563D1C3BBD52009A8A0A /* TAPError.m in Sources */,
+				4238563E1C3BBD52009A8A0A /* TAPDigitalSignalProcessingService.m in Sources */,
+				4238563F1C3BBD52009A8A0A /* TAMediaImportService.m in Sources */,
+				423856401C3BBD52009A8A0A /* TAMediaLibraryService.m in Sources */,
+				423856411C3BBD52009A8A0A /* TSLibraryImport.m in Sources */,
+				423856421C3BBD52009A8A0A /* TAPPlayControlService.m in Sources */,
+				423856431C3BBD52009A8A0A /* TAPProtocolFactory.m in Sources */,
+				423856441C3BBD52009A8A0A /* TAPService.m in Sources */,
+				423856451C3BBD52009A8A0A /* TAPSystemService.m in Sources */,
+				423856461C3BBD52009A8A0A /* TAPLogger.m in Sources */,
+				423856471C3BBD52009A8A0A /* TAPLoggerFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423856081C3BBCBB009A8A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423856121C3BBCBB009A8A0A /* TAPlatformTVTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63BC1B8D8B9B00A3A1D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B2FC81BA7F79F003BB171 /* DDFileLogger.m in Sources */,
+				42FC67A01B8D907A00A3A1D3 /* TAPDocumentUtils.m in Sources */,
+				42FC679E1B8D907A00A3A1D3 /* TAPDataUtils.m in Sources */,
+				42BED2DE1CE45D59003B176A /* TAPropertyParametricEQ.m in Sources */,
+				42BED2CE1CE43C46003B176A /* TAPropertyLowPassFilter.m in Sources */,
+				42FC68041B8D907A00A3A1D3 /* TAMediaImportService.m in Sources */,
+				42C5BD0F1C4F3D6C0075ECCF /* TPSignalReadFeaturesPacketEncoder.m in Sources */,
+				42CCA28C1BC6579200F6491E /* TAPError.m in Sources */,
+				42FC67FF1B8D907A00A3A1D3 /* TPSignalWriteStringsPacketEncoder.m in Sources */,
+				CEEC3FA81E545ABA00D8718D /* TAPFirmwareOverTheAirUpdateService.m in Sources */,
+				420B2FC31BA7F79F003BB171 /* DDASLLogCapture.m in Sources */,
+				42FC68061B8D907A00A3A1D3 /* TAMediaLibraryService.m in Sources */,
+				42FC67F51B8D907A00A3A1D3 /* TPSignalReadStringPacketEncoder.m in Sources */,
+				42FC67951B8D907A00A3A1D3 /* TAPBluetoothLowEnergyDefaults.m in Sources */,
+				420B2FCF1BA7F79F003BB171 /* DDTTYLogger.m in Sources */,
+				42BED2C61CE43417003B176A /* TAPropertyFactory.m in Sources */,
+				42BED2DA1CE4584E003B176A /* TAPropertyPortTuning.m in Sources */,
+				42FC67A21B8D907A00A3A1D3 /* TAPOperation.m in Sources */,
+				42FC67E61B8D907A00A3A1D3 /* TAPSystem.m in Sources */,
+				CEE83DEC1E2F5A9700DDC7CD /* TPSignalReadDFUResponseEncoder.m in Sources */,
+				42BED2E61CE46AA6003B176A /* TAPropertyScreenDisplay.m in Sources */,
+				428425A71CE57A2200BBB1FB /* TAPropertyDevice.m in Sources */,
+				42BED2D21CE44B4A003B176A /* TAPropertyRGC.m in Sources */,
+				CEEC3FBF1E55858800D8718D /* utils.m in Sources */,
+				4273EFB71BFB31C90091DFC1 /* TAPLoggerFormatter.m in Sources */,
+				CEDCF05B1DE81DED003E2A24 /* TPSignalReadDFUPacketEncoder.m in Sources */,
+				42BED2C21CE43403003B176A /* TAProperty.m in Sources */,
+				42FC680C1B8D907A00A3A1D3 /* TAPPlayControlService.m in Sources */,
+				42FC68081B8D907A00A3A1D3 /* TSLibraryImport.m in Sources */,
+				CEC773301E49AF7300B68F84 /* TPSignalReadVersionEncoder.m in Sources */,
+				42FC67EB1B8D907A00A3A1D3 /* TPSignalButtonPacketEncoder.m in Sources */,
+				42FC67F71B8D907A00A3A1D3 /* TPSignalReadStringResponseEncoder.m in Sources */,
+				42FC67EF1B8D907A00A3A1D3 /* TPSignalHeader.m in Sources */,
+				42FC67FD1B8D907A00A3A1D3 /* TPSignalWriteSettingPacketEncoder.m in Sources */,
+				42FC67911B8D907A00A3A1D3 /* TAPBluetoothLowEnergyCentral.m in Sources */,
+				420B2FC11BA7F79F003BB171 /* DDAbstractDatabaseLogger.m in Sources */,
+				42F070451C0468F200A1401C /* TPSignalResetItemPacketEncoder.m in Sources */,
+				42FC680E1B8D907A00A3A1D3 /* TAPProtocolFactory.m in Sources */,
+				42BED2CA1CE43573003B176A /* TAPropertyVolume.m in Sources */,
+				420B2FD31BA7F79F003BB171 /* DDDispatchQueueLogFormatter.m in Sources */,
+				CEDC44BE1E77F7BA0093DA0D /* TPSignalReadProductPacketEncoder.m in Sources */,
+				42FC67E31B8D907A00A3A1D3 /* TAPProtocol.m in Sources */,
+				CEDC44C61E77F8480093DA0D /* TPSignalReadProductResponseDataPacketEncoder.m in Sources */,
+				42FC67F91B8D907A00A3A1D3 /* TPSignalReceiver.m in Sources */,
+				42C5BD131C4F5D4B0075ECCF /* TPSignalReadFeaturesResponseEncoder.m in Sources */,
+				420B2FD11BA7F79F003BB171 /* DDContextFilterLogFormatter.m in Sources */,
+				42FC68101B8D907A00A3A1D3 /* TAPService.m in Sources */,
+				42FC68121B8D907A00A3A1D3 /* TAPSystemService.m in Sources */,
+				42FC67991B8D907A00A3A1D3 /* TAPBluetoothLowEnergyProxy.m in Sources */,
+				42FC67E11B8D907A00A3A1D3 /* Crc16.m in Sources */,
+				42BED2E21CE4659F003B176A /* TAPropertySettings.m in Sources */,
+				42FC68021B8D907A00A3A1D3 /* TAPDigitalSignalProcessingService.m in Sources */,
+				CEC773341E49AF8000B68F84 /* TPSignalReadVersionResponseEncoder.m in Sources */,
+				42A5254A1B9C1AF9009ABFF0 /* TAPBluetoothLowEnergyUtils.m in Sources */,
+				42BED2D61CE44F31003B176A /* TAPropertyPhase.m in Sources */,
+				420B2FC51BA7F79F003BB171 /* DDASLLogger.m in Sources */,
+				420B2FCC1BA7F79F003BB171 /* DDLog.m in Sources */,
+				CE5A9D5A1D1BC686002C1053 /* TPSignalReadFactoryReset.m in Sources */,
+				42F0703D1C04379300A1401C /* TPSignalConfig.m in Sources */,
+				420B2FDA1BA7F8F3003BB171 /* TAPLogger.m in Sources */,
+				42FC67FB1B8D907A00A3A1D3 /* TPSignalSender.m in Sources */,
+				420B2FBD1BA7F79F003BB171 /* CLIColor.m in Sources */,
+				42FC67ED1B8D907A00A3A1D3 /* TPSignalDataPacketEncoder.m in Sources */,
+				42FC67F11B8D907A00A3A1D3 /* TPSignalReadSettingPacketEncoder.m in Sources */,
+				420B2FD51BA7F79F003BB171 /* DDMultiFormatter.m in Sources */,
+				42FC67A41B8D907A00A3A1D3 /* TAPOperationQueue.m in Sources */,
+				42FC67E91B8D907A00A3A1D3 /* TPSignal.m in Sources */,
+				42BED2EA1CE475E0003B176A /* TAPropertyPreset.m in Sources */,
+				42FC67F31B8D907A00A3A1D3 /* TPSignalReadSettingResponseEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FC63C81B8D8B9B00A3A1D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FC66EB1B8D902900A3A1D3 /* TAMediaImportServiceTests.m in Sources */,
+				42FC66E11B8D902900A3A1D3 /* TAPOperationQueueTests.m in Sources */,
+				42FC66ED1B8D902900A3A1D3 /* TAPlatformServicesTests.m in Sources */,
+				42FC66E81B8D902900A3A1D3 /* TPSignalTests.m in Sources */,
+				42FC66E01B8D902900A3A1D3 /* TAPBluetoothLowEnergyProxyTests.m in Sources */,
+				42FC66E21B8D902900A3A1D3 /* TAPOperationTests.m in Sources */,
+				42FC66E71B8D902900A3A1D3 /* TPSignalReceiverTests.m in Sources */,
+				428425A91CE57FDD00BBB1FB /* TAPropertyFactoryTests.m in Sources */,
+				42BED2BA1CD8AB59003B176A /* TASystemServiceTests.m in Sources */,
+				42CCA28E1BCCB31000F6491E /* TAPServiceTests.m in Sources */,
+				42FC66E51B8D902900A3A1D3 /* crc16Test.m in Sources */,
+				42FC66DF1B8D902900A3A1D3 /* TAPBluetoothLowEnergyDefaultsTests.m in Sources */,
+				42FC63D41B8D8B9B00A3A1D3 /* TAPlatformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4238560F1C3BBCBB009A8A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423856021C3BBCBB009A8A0A /* TAPlatformTV */;
+			targetProxy = 4238560E1C3BBCBB009A8A0A /* PBXContainerItemProxy */;
+		};
+		42FC63CF1B8D8B9B00A3A1D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42FC63C01B8D8B9B00A3A1D3 /* TAPlatform */;
+			targetProxy = 42FC63CE1B8D8B9B00A3A1D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		423856151C3BBCBB009A8A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TAPlatform/PrefixHeader.pch;
+				INFOPLIST_FILE = TAPlatformTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymphany.TAPlatformTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		423856161C3BBCBB009A8A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TAPlatform/PrefixHeader.pch;
+				INFOPLIST_FILE = TAPlatformTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymphany.TAPlatformTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		423856181C3BBCBB009A8A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = TAPlatformTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymphany.TAPlatformTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		423856191C3BBCBB009A8A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = TAPlatformTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tymphany.TAPlatformTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		42FC63D51B8D8B9B00A3A1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42FC63D61B8D8B9B00A3A1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42FC63D81B8D8B9B00A3A1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/allplay-controller-sdk-ios-v1.5.4/Frameworks/Release",
+					"../../**",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TAPlatform/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../**",
+				);
+				INFOPLIST_FILE = TAPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		42FC63D91B8D8B9B00A3A1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/allplay-controller-sdk-ios-v1.5.4/Frameworks/Release",
+					"../../**",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TAPlatform/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../**",
+				);
+				INFOPLIST_FILE = TAPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		42FC63DB1B8D8B9B00A3A1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../**",
+				);
+				INFOPLIST_FILE = TAPlatformTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/OCMock,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		42FC63DC1B8D8B9B00A3A1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../**",
+				);
+				INFOPLIST_FILE = TAPlatformTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/OCMock,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		423856141C3BBCBB009A8A0A /* Build configuration list for PBXNativeTarget "TAPlatformTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423856151C3BBCBB009A8A0A /* Debug */,
+				423856161C3BBCBB009A8A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		423856171C3BBCBB009A8A0A /* Build configuration list for PBXNativeTarget "TAPlatformTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423856181C3BBCBB009A8A0A /* Debug */,
+				423856191C3BBCBB009A8A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FC63BB1B8D8B9B00A3A1D3 /* Build configuration list for PBXProject "TAPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FC63D51B8D8B9B00A3A1D3 /* Debug */,
+				42FC63D61B8D8B9B00A3A1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FC63D71B8D8B9B00A3A1D3 /* Build configuration list for PBXNativeTarget "TAPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FC63D81B8D8B9B00A3A1D3 /* Debug */,
+				42FC63D91B8D8B9B00A3A1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FC63DA1B8D8B9B00A3A1D3 /* Build configuration list for PBXNativeTarget "TAPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FC63DB1B8D8B9B00A3A1D3 /* Debug */,
+				42FC63DC1B8D8B9B00A3A1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42FC63B81B8D8B9B00A3A1D3 /* Project object */;
+}

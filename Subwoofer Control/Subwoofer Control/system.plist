@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>services</key>
+	<array>
+		<dict>
+			<key>identifier</key>
+			<string>1FEE6ACF-A826-4E37-9635-4D8A01642C5D</string>
+			<key>description</key>
+			<string>TP Service</string>
+			<key>mode</key>
+			<string>TPSignal</string>
+			<key>characteristic</key>
+			<array>
+				<string>6409D79D-CD28-479C-A639-92F9E1948B43</string>
+				<string>7691B78A-9015-4367-9B95-FC631C412CC6</string>
+			</array>
+		</dict>
+	</array>
+	<key>mode</key>
+	<string>tp-signal</string>
+</dict>
+</plist>

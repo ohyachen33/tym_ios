@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42907F361A8606DE0094966F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42907F351A8606DE0094966F /* main.m */; };
+		42907F391A8606DE0094966F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42907F381A8606DE0094966F /* AppDelegate.m */; };
+		42907F3C1A8606DE0094966F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42907F3B1A8606DE0094966F /* ViewController.m */; };
+		42907F3F1A8606DE0094966F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42907F3D1A8606DE0094966F /* Main.storyboard */; };
+		42907F411A8606DE0094966F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42907F401A8606DE0094966F /* Images.xcassets */; };
+		42907F441A8606DE0094966F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42907F421A8606DE0094966F /* LaunchScreen.xib */; };
+		42907F501A8606DE0094966F /* BLE_RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42907F4F1A8606DE0094966F /* BLE_RemoteTests.m */; };
+		42907F5B1A8608260094966F /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42907F5A1A8608260094966F /* MainMenuTableViewController.m */; };
+		42907F5D1A860A290094966F /* libTABluetoothLowEnergy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42907F5C1A860A290094966F /* libTABluetoothLowEnergy.a */; };
+		42907F601A887C900094966F /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42907F5F1A887C900094966F /* ControlViewController.m */; };
+		42975BA61AC93D1800457A3D /* TymphanyServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42975BA51AC93D1800457A3D /* TymphanyServices.plist */; };
+		42975BDE1ACA8A5800457A3D /* libTASystemService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42975BDD1ACA8A5800457A3D /* libTASystemService.a */; };
+		42975C001AE4B01300457A3D /* libTADigitalSignalProcessingService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42975BFF1AE4B01300457A3D /* libTADigitalSignalProcessingService.a */; };
+		42F8620D1A8F19820015C5C0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8620C1A8F19820015C5C0 /* AudioToolbox.framework */; };
+		42F862101AB180B40015C5C0 /* ConnectionTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8620F1AB180B40015C5C0 /* ConnectionTestTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42907F4A1A8606DE0094966F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42907F281A8606DE0094966F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42907F2F1A8606DE0094966F;
+			remoteInfo = "BLE Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42907F301A8606DE0094966F /* BLE Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42907F341A8606DE0094966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42907F351A8606DE0094966F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42907F371A8606DE0094966F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42907F381A8606DE0094966F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42907F3A1A8606DE0094966F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		42907F3B1A8606DE0094966F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42907F3E1A8606DE0094966F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42907F401A8606DE0094966F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42907F431A8606DE0094966F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		42907F491A8606DE0094966F /* BLE RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42907F4E1A8606DE0094966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42907F4F1A8606DE0094966F /* BLE_RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE_RemoteTests.m; sourceTree = "<group>"; };
+		42907F591A8608260094966F /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableViewController.h; sourceTree = "<group>"; };
+		42907F5A1A8608260094966F /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableViewController.m; sourceTree = "<group>"; };
+		42907F5C1A860A290094966F /* libTABluetoothLowEnergy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTABluetoothLowEnergy.a; path = "../TAProtocol/build/Debug-iphoneos/libTABluetoothLowEnergy.a"; sourceTree = "<group>"; };
+		42907F5E1A887C900094966F /* ControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlViewController.h; sourceTree = "<group>"; };
+		42907F5F1A887C900094966F /* ControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
+		42975BA51AC93D1800457A3D /* TymphanyServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TymphanyServices.plist; sourceTree = "<group>"; };
+		42975BDD1ACA8A5800457A3D /* libTASystemService.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTASystemService.a; path = "../TAService/build/Debug-iphoneos/libTASystemService.a"; sourceTree = "<group>"; };
+		42975BFF1AE4B01300457A3D /* libTADigitalSignalProcessingService.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTADigitalSignalProcessingService.a; path = "../../../../Library/Developer/Xcode/DerivedData/TYMAppPlatform-hcxgftaskewessblcuiccecjjnmo/Build/Products/Debug-iphoneos/libTADigitalSignalProcessingService.a"; sourceTree = "<group>"; };
+		42F8620C1A8F19820015C5C0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		42F8620E1AB180B40015C5C0 /* ConnectionTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionTestTableViewController.h; sourceTree = "<group>"; };
+		42F8620F1AB180B40015C5C0 /* ConnectionTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionTestTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42907F2D1A8606DE0094966F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42975C001AE4B01300457A3D /* libTADigitalSignalProcessingService.a in Frameworks */,
+				42975BDE1ACA8A5800457A3D /* libTASystemService.a in Frameworks */,
+				42F8620D1A8F19820015C5C0 /* AudioToolbox.framework in Frameworks */,
+				42907F5D1A860A290094966F /* libTABluetoothLowEnergy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42907F461A8606DE0094966F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42907F271A8606DE0094966F = {
+			isa = PBXGroup;
+			children = (
+				42975BFF1AE4B01300457A3D /* libTADigitalSignalProcessingService.a */,
+				42975BDD1ACA8A5800457A3D /* libTASystemService.a */,
+				42907F5C1A860A290094966F /* libTABluetoothLowEnergy.a */,
+				42F8620C1A8F19820015C5C0 /* AudioToolbox.framework */,
+				42907F321A8606DE0094966F /* BLE Remote */,
+				42907F4C1A8606DE0094966F /* BLE RemoteTests */,
+				42907F311A8606DE0094966F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42907F311A8606DE0094966F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42907F301A8606DE0094966F /* BLE Remote.app */,
+				42907F491A8606DE0094966F /* BLE RemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42907F321A8606DE0094966F /* BLE Remote */ = {
+			isa = PBXGroup;
+			children = (
+				42907F371A8606DE0094966F /* AppDelegate.h */,
+				42907F381A8606DE0094966F /* AppDelegate.m */,
+				42907F3A1A8606DE0094966F /* ViewController.h */,
+				42907F3B1A8606DE0094966F /* ViewController.m */,
+				42907F591A8608260094966F /* MainMenuTableViewController.h */,
+				42907F5A1A8608260094966F /* MainMenuTableViewController.m */,
+				42907F5E1A887C900094966F /* ControlViewController.h */,
+				42907F5F1A887C900094966F /* ControlViewController.m */,
+				42F8620E1AB180B40015C5C0 /* ConnectionTestTableViewController.h */,
+				42F8620F1AB180B40015C5C0 /* ConnectionTestTableViewController.m */,
+				42907F3D1A8606DE0094966F /* Main.storyboard */,
+				42907F401A8606DE0094966F /* Images.xcassets */,
+				42907F421A8606DE0094966F /* LaunchScreen.xib */,
+				42907F331A8606DE0094966F /* Supporting Files */,
+			);
+			path = "BLE Remote";
+			sourceTree = "<group>";
+		};
+		42907F331A8606DE0094966F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42975BA51AC93D1800457A3D /* TymphanyServices.plist */,
+				42907F341A8606DE0094966F /* Info.plist */,
+				42907F351A8606DE0094966F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42907F4C1A8606DE0094966F /* BLE RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				42907F4F1A8606DE0094966F /* BLE_RemoteTests.m */,
+				42907F4D1A8606DE0094966F /* Supporting Files */,
+			);
+			path = "BLE RemoteTests";
+			sourceTree = "<group>";
+		};
+		42907F4D1A8606DE0094966F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42907F4E1A8606DE0094966F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42907F2F1A8606DE0094966F /* BLE Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42907F531A8606DE0094966F /* Build configuration list for PBXNativeTarget "BLE Remote" */;
+			buildPhases = (
+				42907F2C1A8606DE0094966F /* Sources */,
+				42907F2D1A8606DE0094966F /* Frameworks */,
+				42907F2E1A8606DE0094966F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BLE Remote";
+			productName = "BLE Remote";
+			productReference = 42907F301A8606DE0094966F /* BLE Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42907F481A8606DE0094966F /* BLE RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42907F561A8606DE0094966F /* Build configuration list for PBXNativeTarget "BLE RemoteTests" */;
+			buildPhases = (
+				42907F451A8606DE0094966F /* Sources */,
+				42907F461A8606DE0094966F /* Frameworks */,
+				42907F471A8606DE0094966F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42907F4B1A8606DE0094966F /* PBXTargetDependency */,
+			);
+			name = "BLE RemoteTests";
+			productName = "BLE RemoteTests";
+			productReference = 42907F491A8606DE0094966F /* BLE RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42907F281A8606DE0094966F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Tymphany;
+				TargetAttributes = {
+					42907F2F1A8606DE0094966F = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8X5NY24BHS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					42907F481A8606DE0094966F = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 42907F2F1A8606DE0094966F;
+					};
+				};
+			};
+			buildConfigurationList = 42907F2B1A8606DE0094966F /* Build configuration list for PBXProject "BLE Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42907F271A8606DE0094966F;
+			productRefGroup = 42907F311A8606DE0094966F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42907F2F1A8606DE0094966F /* BLE Remote */,
+				42907F481A8606DE0094966F /* BLE RemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42907F2E1A8606DE0094966F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42907F3F1A8606DE0094966F /* Main.storyboard in Resources */,
+				42907F441A8606DE0094966F /* LaunchScreen.xib in Resources */,
+				42975BA61AC93D1800457A3D /* TymphanyServices.plist in Resources */,
+				42907F411A8606DE0094966F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42907F471A8606DE0094966F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42907F2C1A8606DE0094966F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42907F3C1A8606DE0094966F /* ViewController.m in Sources */,
+				42907F5B1A8608260094966F /* MainMenuTableViewController.m in Sources */,
+				42907F391A8606DE0094966F /* AppDelegate.m in Sources */,
+				42907F361A8606DE0094966F /* main.m in Sources */,
+				42907F601A887C900094966F /* ControlViewController.m in Sources */,
+				42F862101AB180B40015C5C0 /* ConnectionTestTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42907F451A8606DE0094966F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42907F501A8606DE0094966F /* BLE_RemoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42907F4B1A8606DE0094966F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42907F2F1A8606DE0094966F /* BLE Remote */;
+			targetProxy = 42907F4A1A8606DE0094966F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42907F3D1A8606DE0094966F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42907F3E1A8606DE0094966F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42907F421A8606DE0094966F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42907F431A8606DE0094966F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42907F511A8606DE0094966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42907F521A8606DE0094966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42907F541A8606DE0094966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../**",
+				);
+				INFOPLIST_FILE = "BLE Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/TAProtocol/build/Debug-iphoneos",
+					"/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/TAService/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/TYMAppPlatform-hcxgftaskewessblcuiccecjjnmo/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		42907F551A8606DE0094966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../**",
+				);
+				INFOPLIST_FILE = "BLE Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/TAProtocol/build/Debug-iphoneos",
+					"/Users/honglam/Home/TYM_App_Platform/TYM_App_Platform_IOS/TAService/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/TYMAppPlatform-hcxgftaskewessblcuiccecjjnmo/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		42907F571A8606DE0094966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLE RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE Remote.app/BLE Remote";
+			};
+			name = Debug;
+		};
+		42907F581A8606DE0094966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLE RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE Remote.app/BLE Remote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42907F2B1A8606DE0094966F /* Build configuration list for PBXProject "BLE Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42907F511A8606DE0094966F /* Debug */,
+				42907F521A8606DE0094966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42907F531A8606DE0094966F /* Build configuration list for PBXNativeTarget "BLE Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42907F541A8606DE0094966F /* Debug */,
+				42907F551A8606DE0094966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42907F561A8606DE0094966F /* Build configuration list for PBXNativeTarget "BLE RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42907F571A8606DE0094966F /* Debug */,
+				42907F581A8606DE0094966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42907F281A8606DE0094966F /* Project object */;
+}

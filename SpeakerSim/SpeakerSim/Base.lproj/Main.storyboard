@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-jl-aax">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allplay_now_playing_album" translatesAutoresizingMaskIntoConstraints="NO" id="oZH-E8-xpp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="GfQ-rS-Em3"/>
+                                    <constraint firstAttribute="width" constant="230" id="qel-MX-fWx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GfQ-rS-Em3"/>
+                                        <exclude reference="qel-MX-fWx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GfQ-rS-Em3"/>
+                                        <include reference="qel-MX-fWx"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxx-Rl-Rlg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="284" y="133" width="300" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k21-31-QMo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="284" y="90" width="300" height="30"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume: 5 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-7B-GNw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="width" secondItem="XPy-jl-aax" secondAttribute="height" multiplier="300:47" id="0N2-Cb-hPw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pbF-7B-GNw" secondAttribute="bottom" constant="20" id="1Ye-HO-HpR"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9ax-ev-cyV"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="top" secondItem="XPy-jl-aax" secondAttribute="bottom" constant="8" id="I96-IC-dTq"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="width" secondItem="Dxx-Rl-Rlg" secondAttribute="width" id="JSl-xl-cXh"/>
+                            <constraint firstItem="oZH-E8-xpp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NlJ-Ck-WqF"/>
+                            <constraint firstItem="XPy-jl-aax" firstAttribute="leading" secondItem="oZH-E8-xpp" secondAttribute="trailing" constant="38" id="R52-jH-fjR"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="SDc-xq-5Rh"/>
+                            <constraint firstItem="XPy-jl-aax" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="SJN-lh-OQK"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="width" secondItem="XPy-jl-aax" secondAttribute="width" id="Xt2-7y-nCL"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="leading" secondItem="oZH-E8-xpp" secondAttribute="trailing" constant="38" id="Y3j-3g-JxQ"/>
+                            <constraint firstItem="pbF-7B-GNw" firstAttribute="width" secondItem="oZH-E8-xpp" secondAttribute="width" id="fqt-L6-1Y1"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="width" secondItem="Dxx-Rl-Rlg" secondAttribute="height" multiplier="100:11" id="kil-je-gSg"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="kma-o6-uVD"/>
+                            <constraint firstItem="XPy-jl-aax" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lUN-mw-c5o"/>
+                            <constraint firstItem="pbF-7B-GNw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nzH-dL-OU9"/>
+                            <constraint firstItem="Dxx-Rl-Rlg" firstAttribute="top" secondItem="k21-31-QMo" secondAttribute="bottom" constant="37" id="pZA-y4-J5f"/>
+                            <constraint firstItem="oZH-E8-xpp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="rS4-Tw-u2u"/>
+                            <constraint firstItem="k21-31-QMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="smf-xF-hWs"/>
+                            <constraint firstItem="Dxx-Rl-Rlg" firstAttribute="leading" secondItem="oZH-E8-xpp" secondAttribute="trailing" constant="38" id="uQb-wt-Kji"/>
+                            <constraint firstItem="Dxx-Rl-Rlg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vcY-gD-gRh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XPy-jl-aax"/>
+                                <exclude reference="oZH-E8-xpp"/>
+                                <exclude reference="Dxx-Rl-Rlg"/>
+                                <exclude reference="k21-31-QMo"/>
+                                <exclude reference="pbF-7B-GNw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NlJ-Ck-WqF"/>
+                                <exclude reference="rS4-Tw-u2u"/>
+                                <exclude reference="R52-jH-fjR"/>
+                                <exclude reference="SJN-lh-OQK"/>
+                                <exclude reference="lUN-mw-c5o"/>
+                                <exclude reference="0N2-Cb-hPw"/>
+                                <exclude reference="9ax-ev-cyV"/>
+                                <exclude reference="I96-IC-dTq"/>
+                                <exclude reference="JSl-xl-cXh"/>
+                                <exclude reference="SDc-xq-5Rh"/>
+                                <exclude reference="Xt2-7y-nCL"/>
+                                <exclude reference="Y3j-3g-JxQ"/>
+                                <exclude reference="kil-je-gSg"/>
+                                <exclude reference="kma-o6-uVD"/>
+                                <exclude reference="smf-xF-hWs"/>
+                                <exclude reference="pZA-y4-J5f"/>
+                                <exclude reference="uQb-wt-Kji"/>
+                                <exclude reference="vcY-gD-gRh"/>
+                                <exclude reference="fqt-L6-1Y1"/>
+                                <exclude reference="nzH-dL-OU9"/>
+                                <exclude reference="1Ye-HO-HpR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="XPy-jl-aax"/>
+                                <include reference="oZH-E8-xpp"/>
+                                <include reference="Dxx-Rl-Rlg"/>
+                                <include reference="k21-31-QMo"/>
+                                <include reference="pbF-7B-GNw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NlJ-Ck-WqF"/>
+                                <include reference="rS4-Tw-u2u"/>
+                                <include reference="R52-jH-fjR"/>
+                                <include reference="SJN-lh-OQK"/>
+                                <include reference="lUN-mw-c5o"/>
+                                <include reference="0N2-Cb-hPw"/>
+                                <include reference="9ax-ev-cyV"/>
+                                <include reference="I96-IC-dTq"/>
+                                <include reference="JSl-xl-cXh"/>
+                                <exclude reference="SDc-xq-5Rh"/>
+                                <include reference="Xt2-7y-nCL"/>
+                                <include reference="Y3j-3g-JxQ"/>
+                                <include reference="kil-je-gSg"/>
+                                <exclude reference="kma-o6-uVD"/>
+                                <exclude reference="smf-xF-hWs"/>
+                                <include reference="pZA-y4-J5f"/>
+                                <include reference="uQb-wt-Kji"/>
+                                <include reference="vcY-gD-gRh"/>
+                                <include reference="fqt-L6-1Y1"/>
+                                <include reference="nzH-dL-OU9"/>
+                                <include reference="1Ye-HO-HpR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imgArtwork" destination="oZH-E8-xpp" id="oCq-Bn-ua3"/>
+                        <outlet property="lblAlbumTitle" destination="k21-31-QMo" id="q8g-jg-Oyb"/>
+                        <outlet property="lblArtistName" destination="Dxx-Rl-Rlg" id="9zG-6p-pUz"/>
+                        <outlet property="lblSongTitle" destination="XPy-jl-aax" id="ccc-ta-VTs"/>
+                        <outlet property="lblVolume" destination="pbF-7B-GNw" id="jSd-Xo-vg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="-84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="allplay_now_playing_album" width="230" height="230"/>
+    </resources>
+</document>

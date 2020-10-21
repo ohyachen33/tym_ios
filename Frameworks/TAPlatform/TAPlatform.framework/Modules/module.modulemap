@@ -1,0 +1,6 @@
+framework module TAPlatform {
+  umbrella header "TAPlatform.h"
+
+  export *
+  module * { export * }
+}
